@@ -325,7 +325,7 @@ html {
 .about__nav {
     display: inline-flex;
     height: 18px;
-    padding: 3px 232.27px 4px 20px;
+    padding: 3px 0 4px 20px;
     align-items: flex-start;
     gap: 5.8px;
     flex-shrink: 0;
