@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="script.js" defer></script>
     <title>ADAB</title>
 </head>
 
@@ -41,13 +42,90 @@
                     <img src="./images/img2.jpg" alt="белая форма" class="intro__image-pctr">
                 </div>
             </section>
+            <section>
+                <h1 class="index-catalog__title">КАТАЛОГ</h1>
+                <div class="container">
+                    <div class="slider-wrapper">
+                        <button id="prev-slide" class="slide-button material-symbols-rounded">
+                            chevron_left
+                        </button>
+                        <ul class="image-list">
+                            <div class="image-item-container">
+
+                                <img class="image-item" src="images/img1.jpg" alt="img-1" />
+                                <div class="image-caption">СМОТРЕТЬ ВСЕ</div>
+                            </div>
+                            <div class="image-item-container">
+
+                                <img class="image-item" src="images/img2.jpg" alt="img-2" />
+                                <div class="image-caption">СКИДКИ</div>
+                            </div>
+                            <div class="image-item-container">
+
+                                <img class="image-item" src="images/img3.jpg" alt="img-3" />
+                                <div class="image-caption">ФОРМЫ</div>
+                            </div>
+                            <div class="image-item-container">
+
+                                <img class="image-item" src="images/img4.jpg" alt="img-4" />
+                                <div class="image-caption">РУБАШКИ</div>
+                            </div>
+                            <div class="image-item-container">
+
+                                <img class="image-item" src="images/img5.jpg" alt="img-5" />
+                                <div class="image-caption">КУРТКИ</div>
+                            </div>
+                            <div class="image-item-container">
+
+                                <img class="image-item" src="images/img6.jpg" alt="img-6" />
+                                <div class="image-caption">БЕЗРУКАВКИ</div>
+                            </div>
+                            <div class="image-item-container">
+
+                                <img class="image-item" src="images/img1.jpg" alt="img-7" />
+                                <div class="image-caption">ОБУВЬ</div>
+                            </div>
+                            <div class="image-item-container">
+
+                                <img class="image-item" src="images/img2.jpg" alt="img-8" />
+                                <div class="image-caption">ДЕТСКАЯ ОДЕЖДА</div>
+                            </div>
+                            <div class="image-item-container">
+
+                                <img class="image-item" src="images/img3.jpg" alt="img-9" />
+                                <div class="image-caption">ГОЛОВНЫЕ УБОРЫ</div>
+                            </div>
+                            <div class="image-item-container">
+
+                                <img class="image-item" src="images/img4.jpg" alt="img-10" />
+                                <div class="image-caption">НОВИНКИ</div>
+                            </div>
+                        </ul>
+                        <button id="next-slide" class="slide-button material-symbols-rounded">
+                            chevron_right
+                        </button>
+                    </div>
+                    <div class="slider-scrollbar">
+                        <div class="scrollbar-track">
+                            <div class="scrollbar-thumb"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__link-container">
+                    <a href="./catalog.html" class="catalog__link">
+                        <p class="catalog__link-text">Смотреть всю коллекцию</p>
+                    </a>
+                </div>
+            </section>
             <section class="advantage">
                 <div class="advantage__ferst">
                     <h2 class="advantage__title">Lorem, ipsum dolor sit amet adipisicing elit</h2>
                     <p class="advantage__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae id porro
                         unde, aliquam expedita voluptate dignissimos debitis ut eaque eum soluta consectetur ratione cum
                         nulla adipisci mollitia harum iure sapiente.</p>
-                    <a href="./about.html" class="advantage__link"><p class="advantage__link-text">Подробнее о нас</p></a>
+                    <a href="./about.html" class="advantage__link">
+                        <p class="advantage__link-text">Подробнее о нас</p>
+                    </a>
                     <div class="agvantage__image-ferst">
                         <img src="./images/img3.jpg" alt="" class="advantage__pctr-ferst">
                     </div>
@@ -60,7 +138,9 @@
                     <p class="advantage__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae id porro
                         unde, aliquam expedita voluptate dignissimos debitis ut eaque eum soluta consectetur ratione cum
                         nulla adipisci mollitia harum iure sapiente.</p>
-                    <a href="./about.html" class="advantage__link"><p class="advantage__link-text">Подробнее о нас</p></a>
+                    <a href="./about.html" class="advantage__link">
+                        <p class="advantage__link-text">Подробнее о нас</p>
+                    </a>
                 </div>
                 <div class="video-container">
                     <video class="video" src="./video/video1.MP4" controls></video>
@@ -73,7 +153,8 @@
                 <div class="footer__menu-column">
                     <h3 class="footer__menu-title">Каталог</h3>
                     <ul class="footer__menu-item">
-                        <li class="footer__menu-links"><a href="./catalog.html" class="footer__menu-link">смотреть все</a></li>
+                        <li class="footer__menu-links"><a href="./catalog.html" class="footer__menu-link">смотреть
+                                все</a></li>
                         <li class="footer__menu-links"><a href="#" class="footer__menu-link">новинки</a></li>
                         <li class="footer__menu-links"><a href="#" class="footer__menu-link">акции</a></li>
                     </ul>
