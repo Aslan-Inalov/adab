@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js" defer></script>
+    <title>Каталог | ADAB</title>
+</head>
+
+<body class="root">
+    <div class="page">
+        <header class="header">
+            <div class="header__logo">
+                <img src="./images/logo.jpg" alt="логотип" class="header__logo-img">
+            </div>
+            <div class="lang-buttons">
+                <a href="#" class="lang-button lang-button_active rus_lang">
+                    Ru
+                </a>
+                <a href="#" class="lang-button ar_lang">
+                    Ar
+                </a>
+                <a href="#" class="lang-button tr_lang">
+                    Tr
+                </a>
+            </div>
+            <button class="header__burger-btn"></button>
+        </header>
+        <main class="main">
+            <div class="nav">
+                <ul class="nav__item">
+                    <li class="nav__links"><a href="./index.html" class="nav__link">ГЛАВНАЯ</a><span
+                            class="nav__breadcrumb-divider">/</span></li>
+                    <li class="nav__links"><a href="./about.html" class="nav__link nav__link-active">КАТАЛОГ</a>
+                    </li>
+                </ul>
+            </div>
+            <h1 class="catalog__title">КАТАЛОГ</h1>
+            <div class="container">
+                <div class="slider-wrapper">
+                    <button id="prev-slide" class="slide-button material-symbols-rounded">
+                        chevron_left
+                    </button>
+                    <ul class="image-list">
+                        <div class="image-item-container">
+
+                            <img class="image-item" src="images/img1.jpg" alt="img-1" />
+                            <div class="image-caption">СМОТРЕТЬ ВСЕ</div>
+                        </div>
+                        <div class="image-item-container">
+
+                            <img class="image-item" src="images/img2.jpg" alt="img-2" />
+                            <div class="image-caption">СКИДКИ</div>
+                        </div>
+                        <div class="image-item-container">
+
+                            <img class="image-item" src="images/img3.jpg" alt="img-3" />
+                            <div class="image-caption">ФОРМЫ</div>
+                        </div>
+                        <div class="image-item-container">
+
+                            <img class="image-item" src="images/img4.jpg" alt="img-4" />
+                            <div class="image-caption">РУБАШКИ</div>
+                        </div>
+                        <div class="image-item-container">
+
+                            <img class="image-item" src="images/img5.jpg" alt="img-5" />
+                            <div class="image-caption">КУРТКИ</div>
+                        </div>
+                        <div class="image-item-container">
+
+                            <img class="image-item" src="images/img6.jpg" alt="img-6" />
+                            <div class="image-caption">БЕЗРУКАВКИ</div>
+                        </div>
+                        <div class="image-item-container">
+
+                            <img class="image-item" src="images/img1.jpg" alt="img-7" />
+                            <div class="image-caption">ОБУВЬ</div>
+                        </div>
+                        <div class="image-item-container">
+
+                            <img class="image-item" src="images/img2.jpg" alt="img-8" />
+                            <div class="image-caption">ДЕТСКАЯ ОДЕЖДА</div>
+                        </div>
+                        <div class="image-item-container">
+
+                            <img class="image-item" src="images/img3.jpg" alt="img-9" />
+                            <div class="image-caption">ГОЛОВНЫЕ УБОРЫ</div>
+                        </div>
+                        <div class="image-item-container">
+
+                            <img class="image-item" src="images/img4.jpg" alt="img-10" />
+                            <div class="image-caption">НОВИНКИ</div>
+                        </div>
+                    </ul>
+                    <button id="next-slide" class="slide-button material-symbols-rounded">
+                        chevron_right
+                    </button>
+                </div>
+                <div class="slider-scrollbar">
+                    <div class="scrollbar-track">
+                        <div class="scrollbar-thumb"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-cards">
+                <ul class="cards">
+                    <li class="card">
+                        <img src="./images/img2.jpg" alt="белая форма" class="card__img">
+                        <div class="card__discription">
+                            <h3 class="card__name">Белая форма ДЖУМУА</h3>
+                            <p class="card__price">8 500 РУБ</p>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <img src="./images/img3.jpg" alt="белая форма" class="card__img">
+                        <div class="card__discription">
+                            <h3 class="card__name">Черная форма</h3>
+                            <p class="card__price">7 500 РУБ</p>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <img src="./images/img6.jpg" alt="тактическая рубашка" class="card__img">
+                        <div class="card__discription">
+                            <h3 class="card__name">Тактическая рубашка</h3>
+                            <p class="card__price">4 450 РУБ</p>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <img src="./images/img4.jpg" alt="тактическая рубашка" class="card__img">
+                        <div class="card__discription">
+                            <h3 class="card__name">Белая бейсболка</h3>
+                            <p class="card__price">990 РУБ</p>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <img src="./images/img1.jpg" alt="белая форма" class="card__img">
+                        <div class="card__discription">
+                            <h3 class="card__name">Темно-синяя форма</h3>
+                            <p class="card__price">7 990 РУБ</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <footer class="footer">
+            <h2 class="footer__title">Adab</h2>
+            <div class="footer__menu">
+                <div class="footer__menu-column">
+                    <h3 class="footer__menu-title">Каталог</h3>
+                    <ul class="footer__menu-item">
+                        <li class="footer__menu-links"><a href="./catalog.html" class="footer__menu-link">смотреть
+                                все</a></li>
+                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">новинки</a></li>
+                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">акции</a></li>
+                    </ul>
+                </div>
+                <div class="footer__menu-column">
+                    <h3 class="footer__menu-title">Поддержка</h3>
+                    <ul class="footer__menu-item">
+                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">размерная сетка</a></li>
+                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">доставка и оплата</a></li>
+                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">возврат</a></li>
+                    </ul>
+                </div>
+                <div class="footer__menu-column">
+                    <h3 class="footer__menu-title">О бренде</h3>
+                    <ul class="footer__menu-item">
+                        <li class="footer__menu-links"><a href="./about.html" class="footer__menu-link">История</a></li>
+                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">Статьи</a></li>
+                    </ul>
+                </div>
+                <div class="footer__menu-column">
+                    <h3 class="footer__menu-title">Контакты</h3>
+                    <ul class="footer__menu-item">
+                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">info@adab.ru</a></li>
+                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">Whatsapp</a></li>
+                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">Instagram</a></li>
+                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">Telegram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer__copyright">&copy; 2023 Adab</p>
+        </footer>
+    </div>
+</body>
+
+</html>
