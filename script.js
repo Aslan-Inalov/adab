@@ -69,3 +69,30 @@ const initSlider = () => {
 }
 window.addEventListener("resize", initSlider);
 window.addEventListener("load", initSlider);
+
+document.querySelector('.header__burger-btn').addEventListener('click', function() {
+    document.querySelector('.burger-container').classList.remove('hidden');
+});
+
+document.querySelector('.burger-container__close-btn').addEventListener('click', function() {
+    document.querySelector('.burger-container').classList.add('hidden');
+});
+
+// Получаем все ссылки в меню
+var links = document.querySelectorAll('.burger-menu__link');
+// Добавляем обработчик события для каждой ссылки
+links.forEach(function(link) {
+    link.addEventListener('click', function() {
+        // Добавляем класс "hidden" к контейнеру "burger-container"
+        document.querySelector('.burger-container').classList.add('hidden');
+    });
+});
+
+// Получаем все ссылки в меню
+var links = document.querySelectorAll('.burger-menu__link');
+// Проверяем каждую ссылку, если ее URL соответствует текущему пути, добавляем стиль "active"
+links.forEach(function(link) {
+    if (link.href === window.location.href) {
+        link.classList.add('active');
+    }
+});

@@ -64,6 +64,115 @@ html {
     border-bottom: 1px solid black;
 }
 
+/* BURGER */
+
+.burger-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: white;
+}
+
+.burger-container__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger-container__header-logo {
+    margin: 20px;
+}
+
+.burger-container__close-btn {
+    all: unset;
+    width: 44px;
+    height: 44px;
+    background: url('./images/icon-close.svg') no-repeat center;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 38px auto;
+}
+
+.burger-menu__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+
+}
+
+.burger-menu__item {
+    list-style: none;
+}
+
+.burger-menu__link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    position: relative;
+    color: #000000;
+}
+
+.burger-menu__link:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    content: "";
+    transition: width 0.2s ease-out;
+}
+
+.burger-menu__link:hover:after,
+.burger-menu__link:focus:after {
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.burger-menu__link:hover,
+.burger-menu__link:focus {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.burger-contacts-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.burger-contacts__list {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.burger-contacts__link {
+    list-style-type: none;
+}
+
+.hidden {
+    display: none;
+}
+
+
 /* INTRO */
 
 .intro {
@@ -734,6 +843,7 @@ html {
     font-weight: 400;
     line-height: 23.4px;
 }
+
 .card__price {
     color: #2B2A29;
     font-family: Arial;
@@ -745,3 +855,17 @@ html {
     letter-spacing: 0.26px;
     text-transform: uppercase;
 }
+
+.burger-menu__link.active {
+    position: relative;
+}
+.burger-menu__link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; /* отступ между ссылкой и линией */
+    left: 0;
+    width: 100%;
+    height: 2px; /* толщина линии */
+    background-color: #000; /* цвет линии */
+}
+
