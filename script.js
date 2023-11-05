@@ -71,11 +71,13 @@ window.addEventListener("resize", initSlider);
 window.addEventListener("load", initSlider);
 
 document.querySelector('.header__burger-btn').addEventListener('click', function() {
-    document.querySelector('.burger-container').classList.remove('hidden');
+    document.querySelector('.burger-container').classList.add('burger-container_opened');
+    document.querySelector('.root').style.overflow = 'hidden';
 });
 
 document.querySelector('.burger-container__close-btn').addEventListener('click', function() {
-    document.querySelector('.burger-container').classList.add('hidden');
+    document.querySelector('.burger-container').classList.remove('burger-container_opened');
+    document.querySelector('.root').style.overflow = 'auto';
 });
 
 // Получаем все ссылки в меню
