@@ -20,19 +20,29 @@ html {
     -webkit-tap-highlight-color: transparent;
 }
 
+.main {
+    margin-top: 76px;
+}
+
 /* HEADER */
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
     border-bottom: 1px solid #DADADA;
 }
 
 .header__logo {
     display: flex;
     margin-top: 5px;
+    margin-left: 20px;
 }
 
 .header__logo-img {
@@ -44,6 +54,7 @@ html {
     background: url(./images/icon-burger.svg) no-repeat center;
     width: 40px;
     height: 40px;
+    margin-right: 20px;
 }
 
 .lang-buttons {
@@ -104,7 +115,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin: 38px auto;
+    margin: 30px auto;
 }
 
 .burger-menu__list {
@@ -177,14 +188,13 @@ html {
 
 .burger-container_opened {
     transform: translateX(0);
-    overflow: auto;
 }
 
 
 /* INTRO */
 
 .intro {
-    margin-top: 60px;
+    padding-top: 60px;
 }
 
 .intro__title {
