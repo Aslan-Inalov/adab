@@ -107,43 +107,43 @@
             </div>
             <div class="container-cards">
                 <ul class="cards">
-                    <li class="card">
+                    <li class="card" id="openModal">
                         <img src="./images/img2.jpg" alt="белая форма" class="card__img">
                         <div class="card__discription">
-                            <h3 class="card__name">Мужская форма</h3>
-                            <p class="card__about">DZHUMUA, белая</p>
+                            <h3 class="card__name">Мужская форма <br> DZHUMUA, белая</h3>
+                            <!-- <p class="card__about">DZHUMUA, белая</p> -->
                             <p class="card__price">8 500 РУБ</p>
                         </div>
                     </li>
-                    <li class="card">
+                    <li class="card" id="openModal">
                         <img src="./images/img3.jpg" alt="белая форма" class="card__img">
                         <div class="card__discription">
-                            <h3 class="card__name">Мужская форма</h3>
-                            <p class="card__about">ADAB, черная</p>
+                            <h3 class="card__name">Мужская форма <br> ADAB, черная</h3>
+                            <!-- <p class="card__about">ADAB, черная</p> -->
                             <p class="card__price">7 500 РУБ</p>
                         </div>
                     </li>
-                    <li class="card">
+                    <li class="card" id="openModal">
                         <img src="./images/img6.jpg" alt="тактическая рубашка" class="card__img">
                         <div class="card__discription">
-                            <h3 class="card__name">Тактическая рубашка</h3>
-                            <p class="card__about">ADAB, хаки</p>
+                            <h3 class="card__name">Тактическая рубашка <br> ADAB, хаки</h3>
+                            <!-- <p class="card__about">ADAB, хаки</p> -->
                             <p class="card__price">4 450 РУБ</p>
                         </div>
                     </li>
-                    <li class="card">
+                    <li class="card" id="openModal">
                         <img src="./images/img4.jpg" alt="тактическая рубашка" class="card__img">
                         <div class="card__discription">
-                            <h3 class="card__name">Бейсболка</h3>
-                            <p class="card__about">ADAB, белая</p>
+                            <h3 class="card__name">Бейсболка <br> ADAB, белая</h3>
+                            <!-- <p class="card__about">ADAB, белая</p> -->
                             <p class="card__price">990 РУБ</p>
                         </div>
                     </li>
-                    <li class="card">
+                    <li class="card" id="openModal">
                         <img src="./images/img1.jpg" alt="белая форма" class="card__img">
                         <div class="card__discription">
-                            <h3 class="card__name">Мужская форма</h3>
-                            <p class="card__about">ADAB, темно-синяя</p>
+                            <h3 class="card__name">Мужская форма <br> ADAB, темно-синяя</h3>
+                            <!-- <p class="card__about">ADAB, темно-синяя</p> -->
                             <p class="card__price">7 990 РУБ</p>
                         </div>
                     </li>
@@ -212,13 +212,16 @@
             <div class="burger-contacts">
                 <ul class="burger-contacts__list">
                     <li class="burger-contacts__link">
-                        <a href="#"><img src="./images/icons_telegram.svg" alt="иконка" class="burger-contacts-icon" /></a>
+                        <a href="#"><img src="./images/icons_telegram.svg" alt="иконка"
+                                class="burger-contacts-icon" /></a>
                     </li>
                     <li class="burger-contacts__link">
-                        <a href="#"><img src="./images/icons_whatsapp.svg" alt="иконка" class="burger-contacts-icon" /></a>
+                        <a href="#"><img src="./images/icons_whatsapp.svg" alt="иконка"
+                                class="burger-contacts-icon" /></a>
                     </li>
                     <li class="burger-contacts__link">
-                        <a href="#"><img src="./images/icons_instagram.svg" alt="иконка" class="burger-contacts-icon" /></a>
+                        <a href="#"><img src="./images/icons_instagram.svg" alt="иконка"
+                                class="burger-contacts-icon" /></a>
                     </li>
                     <li class="burger-contacts__link">
                         <a href="#"><img src="./images/icons_mail.svg" alt="иконка" class="burger-contacts-icon" /></a>
@@ -228,5 +231,42 @@
         </div>
     </div>
 </body>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="product-info">
+            <div class="product-images">
+                <img id="mainImage" src="фото_товара.jpg" alt="Фотография товара">
+            </div>
+            <div class="gallery">
+                <img src="./images/img1.jpg" alt="Фото 1" class="gallery-item">
+                <img src="./images/img2.jpg" alt="Фото 2" class="gallery-item">
+                <img src="./images/img3.jpg" alt="Фото 3" class="gallery-item">
+            </div>
+        </div>
+        <div class="product-description">
+            <h3 class="product-title">Мужская форма <br> ADAB, черная</h3>
+            <p class="product-price">7 500 РУБ</p>
+        </div>
+        <div class="product-size">
+            <h3 class="product-size__name">Размер</h3>
+            <ul class="product-size__items">
+                <li class="product-size__item">48</li>
+                <li class="product-size__item">50</li>
+                <li class="product-size__item">52</li>
+                <li class="product-size__item">54</li>
+            </ul>
+            <a href="#" class="product-size__link">Как подобрать размер</a>
+        </div>
+        <div class="product-about">
+            <p class="product-about__text">Тактическая рубашка в кавказском стиле, рукава выполнены из ткани Gabardin ,
+                а центр представлен Microfiber. У данной модели газыри представлены с одной стороны, рукав раскрывается
+                для удобства взятия омовения, в плечах имеются специальная ставка для того, чтобы не болели плечи при
+                ношение тяжелых рюкзаков.
+            </p>
+        </div>
+    </div>
+</div>
 
 </html>

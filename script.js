@@ -6,13 +6,13 @@ const initSlider = () => {
     const sliderScrollbar = document.querySelector(".container .slider-scrollbar");
     const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
     const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
-    
+
     // Handle scrollbar thumb drag
     scrollbarThumb.addEventListener("mousedown", (e) => {
         const startX = e.clientX;
         const thumbPosition = scrollbarThumb.offsetLeft;
         const maxThumbPosition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
-        
+
         // Update thumb position on mouse move
         const handleMouseMove = (e) => {
             const deltaX = e.clientX - startX;
@@ -20,7 +20,7 @@ const initSlider = () => {
             // Ensure the scrollbar thumb stays within bounds
             const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
             const scrollPosition = (boundedPosition / maxThumbPosition) * maxScrollLeft;
-            
+
             scrollbarThumb.style.left = `${boundedPosition}px`;
             imageList.scrollLeft = scrollPosition;
         }
@@ -44,13 +44,13 @@ const initSlider = () => {
                 const caption = container.querySelector(".image-caption");
                 image.style.transform = `translateX(${-scrollAmount}px)`;
                 caption.style.transform = `translateX(${-scrollAmount}px)`;
-            }); 
+            });
             imageCaptions.forEach(caption => {
                 caption.style.transform = `translateX(${-scrollAmount}px)`;
-            });         
+            });
         });
     });
-     // Show or hide slide buttons based on scroll position
+    // Show or hide slide buttons based on scroll position
     const handleSlideButtons = () => {
         slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "flex";
         slideButtons[1].style.display = imageList.scrollLeft >= maxScrollLeft ? "none" : "flex";
@@ -70,12 +70,12 @@ const initSlider = () => {
 window.addEventListener("resize", initSlider);
 window.addEventListener("load", initSlider);
 
-document.querySelector('.header__burger-btn').addEventListener('click', function() {
+document.querySelector('.header__burger-btn').addEventListener('click', function () {
     document.querySelector('.burger-container').classList.add('burger-container_opened');
     document.querySelector('.root').style.overflow = 'hidden';
 });
 
-document.querySelector('.burger-container__close-btn').addEventListener('click', function() {
+document.querySelector('.burger-container__close-btn').addEventListener('click', function () {
     document.querySelector('.burger-container').classList.remove('burger-container_opened');
     document.querySelector('.root').style.overflow = 'auto';
 });
@@ -83,8 +83,8 @@ document.querySelector('.burger-container__close-btn').addEventListener('click',
 // Получаем все ссылки в меню
 var links = document.querySelectorAll('.burger-menu__link');
 // Добавляем обработчик события для каждой ссылки
-links.forEach(function(link) {
-    link.addEventListener('click', function() {
+links.forEach(function (link) {
+    link.addEventListener('click', function () {
         // Добавляем класс "hidden" к контейнеру "burger-container"
         document.querySelector('.burger-container').classList.add('hidden');
     });
@@ -93,8 +93,53 @@ links.forEach(function(link) {
 // Получаем все ссылки в меню
 var links = document.querySelectorAll('.burger-menu__link');
 // Проверяем каждую ссылку, если ее URL соответствует текущему пути, добавляем стиль "active"
-links.forEach(function(link) {
+links.forEach(function (link) {
     if (link.href === window.location.href) {
         link.classList.add('active');
     }
 });
+
+const modal = document.getElementById("myModal");
+const btns = document.querySelectorAll("#openModal");
+const span = document.getElementsByClassName("close")[0];
+const mainImage = document.getElementById("mainImage");
+const galleryItems = document.getElementsByClassName("gallery-item");
+
+btns.forEach(function(btn) {
+    btn.addEventListener("click", function () {
+      modal.style.display = "block";
+      setInitialActiveImage();
+      disableScroll();
+    });
+  });
+  
+span.onclick = function () {
+    modal.style.display = "none";
+    enableScroll();
+}
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        enableScroll();
+    }
+}
+function setInitialActiveImage() {
+    galleryItems[0].classList.add("active");
+    mainImage.src = galleryItems[0].src;
+}
+for (var i = 0; i < galleryItems.length; i++) {
+    galleryItems[i].addEventListener("click", function () {
+        var currentActive = document.getElementsByClassName("active")[0];
+        currentActive.classList.remove("active");
+        this.classList.add("active");
+        mainImage.src = this.src;
+    });
+}
+function disableScroll() {
+    document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
+}
+function enableScroll() {
+    document.body.style.overflow = "auto";
+    document.documentElement.style.overflow = "auto";
+}

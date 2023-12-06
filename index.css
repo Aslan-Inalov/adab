@@ -438,7 +438,12 @@ html {
     /* 167.143% */
 }
 
+.advantage__text-paragraph {
+    margin-top: 15px;
+}
+
 .advantage__text-ayat {
+    margin-top: 10px;
     padding: 0 20px;
     color: #4B5A7A;
     font-family: Inter;
@@ -847,32 +852,27 @@ html {
 .card__name {
     margin: 15px 0 2px;
     color: #2B2A29;
-    font-family: Inter;
     font-size: 14.906px;
-    font-style: normal;
     font-weight: 400;
     line-height: 23.4px;
 }
 .card__about {
     margin: 0;
     color: #2B2A29;
-    font-family: Inter;
     font-size: 14.906px;
-    font-style: normal;
     font-weight: 400;
     line-height: 23.4px;
 }
 
 .card__price {
     color: #2B2A29;
-    font-family: Arial;
     font-size: 13px;
-    font-style: normal;
     font-weight: 400;
     line-height: 13px;
     /* 100% */
     letter-spacing: 0.26px;
     text-transform: uppercase;
+    margin-top: 15px;
 }
 
 .burger-menu__link.active {
@@ -888,3 +888,181 @@ html {
     background-color: #000; /* цвет линии */
 }
 
+/* MODAL */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 15px;
+    max-width: 330px;
+    border-radius: 2px;
+}
+
+.close {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 5px;
+    right: 4px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.product-info {
+    display: flex;
+}
+
+.product-images {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#mainImage {
+    object-fit: cover;
+    width: 235px;
+    height: 335px;
+    border-radius: 2px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.gallery-item {
+    width: 84px;
+    height: 104px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.gallery-item:last-child {
+    margin-bottom: 0;
+}
+
+.gallery-item.active {
+    border: 1px solid var(--lefaro-ru-tuatara, #2B2A29);
+}
+
+.product-description {
+    flex-grow: 1;
+    margin-top: 40px;
+}
+
+p {
+    margin-top: 0;
+}
+
+img {
+    border-style: none;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.product-title {
+    color: var(--lefaro-ru-tuatara, #2B2A29);
+    font-size: 24.961px;
+    font-weight: 400;
+    line-height: 33px;
+    margin: 0 5px;
+}
+
+.product-price {
+    margin: 20px 5px 0;
+    color: var(--lefaro-ru-tuatara, #2B2A29);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.product-size__name {
+    color: var(--lefaro-ru-gull-gray, #99A3B8);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 11px;
+    letter-spacing: 0.22px;
+    text-transform: uppercase;
+    margin: 30px 5px 0;
+}
+
+.product-size__items {
+    all: unset;
+    margin: 15px 0 25px 5px;
+    display: flex;
+    padding-right: 68.61px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 0px 10px;
+    flex-wrap: wrap;
+}
+
+.product-size__item {
+    all: unset;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0.26px;
+    text-transform: uppercase;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    border: 1px solid var(--lefaro-ru-alto, #DADADA);
+    color: var(--lefaro-ru-tuatara, #2B2A29);
+}
+
+.product-size__link {
+    color: var(--lefaro-ru-tuatara, #2B2A29);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 11px;
+    letter-spacing: 0.22px;
+    text-transform: uppercase;
+    margin-left: 5px;
+}
+
+.product-about {
+    margin: 30px 5px 0;
+}
+
+.product-about__text {
+    margin: 0;
+    color: #2B2A29;
+    font-size: 14.484px;
+    font-weight: 400;
+    line-height: 23.4px;
+}
