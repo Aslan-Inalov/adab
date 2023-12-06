@@ -107,11 +107,14 @@ const galleryItems = document.getElementsByClassName("gallery-item");
 
 btns.forEach(function(btn) {
     btn.addEventListener("click", function () {
-      modal.style.display = "block";
-      setInitialActiveImage();
-      disableScroll();
+        modal.style.display = "block";
+        setInitialActiveImage();
+        disableScroll();
+        modal.scrollTo(0, 0); // Сбросить положение прокрутки модального окна
     });
-  });
+});
+
+
   
 span.onclick = function () {
     modal.style.display = "none";
