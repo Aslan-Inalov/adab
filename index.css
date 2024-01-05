@@ -6,6 +6,7 @@
 @import url(./blocks/header/__menu/header__menu.css);
 @import url(./blocks/header/__menu-item/header__menu-item.css);
 @import url(./blocks/header/__menu-link/header__menu-link.css);
+@import url(./blocks/header/__menu-link-active/header__menu-link-active.css);
 @import url(./blocks/header/__burger-btn/header__burger-btn.css);
 @import url(./blocks/logo-container/logo-container.css);
 @import url(./blocks/main/main.css);
@@ -34,6 +35,7 @@
 @import url(./blocks/burger/__menu-item/burger__menu-item.css);
 @import url(./blocks/burger/__menu-list/burger__menu-list.css);
 @import url(./blocks/burger/__menu-link/burger__menu-link.css);
+@import url(./blocks/burger/__menu-link-active/burger__menu-link-active.css);
 @import url(./blocks/burger/__contacts/burger__contacts.css);
 @import url(./blocks/burger/__contacts-list/burger__contacts-list.css);
 @import url(./blocks/burger/__contacts-link/burger__contacts-link.css);

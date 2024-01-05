@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <script src="script.js" defer></script>
-    <title>Каталог | ADAB</title>
+    <title>Обувь | ADAB</title>
 </head>
 
 <body class="root">
@@ -21,7 +21,7 @@
 
             <nav>
                 <ul class="header__menu">
-                    <li class="header__menu-item"><a class="header__menu-link header__menu-link-active"
+                    <li class="header__menu-item"><a class="header__menu-link"
                             href="./catalog.html">Каталог</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="#">О Бренде</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
@@ -38,23 +38,29 @@
                     <ul class="nav-intro__item">
                         <li class="nav-intro__links"><a href="./index.html" class="nav-intro__link">Главная</a><span
                                 class="nav-intro__breadcrumb-divider">/</span></li>
-                        <li class="nav-intro__links"><a href="./catalog.html" class="nav-intro__link-active">Каталог</a>
+                        <li class="nav-intro__links"><a href="./catalog.html" class="nav-intro__link">Каталог</a><span
+                                class="nav-intro__breadcrumb-divider">/</span>
+                        </li>
+                        <li class="nav-intro__links"><a href="./catalog-shoes.html"
+                                class="nav-intro__link-active">Обувь</a>
                         </li>
                     </ul>
                 </div>
             </section>
 
             <section class="index-catalog">
-                <h2 class="index-catalog__title">Каталог</h1>
+                <h2 class="index-catalog__title">Обувь</h1>
                     <div class="index-catalog__container">
                         <div class="slider-wrapper">
                             <button id="prev-slide" class="slide-button material-symbols-rounded">
                                 chevron_left
                             </button>
                             <ul class="image-list">
-                                <div class="image-item-container-active">
-                                    <img class="image-item-all" src="images/logo.jpg" alt="img-1" />
-                                    <div class="image-caption">Смотреть все</div>
+                                <div class="image-item-container">
+                                    <a href="./catalog.html">
+                                        <img class="image-item-all" src="images/logo.jpg" alt="img-1" />
+                                        <div class="image-caption">Смотреть все</div>
+                                    </a>
                                 </div>
                                 <div class="image-item-container">
                                     <a href="./catalog-uniform.html">
@@ -74,7 +80,7 @@
                                         <div class="image-caption">Безрукавки</div>
                                     </a>
                                 </div>
-                                <div class="image-item-container">
+                                <div class="image-item-container-active">
                                     <a href="./catalog-shoes.html">
                                         <img class="image-item" src="images/img7.jpg" alt="img-7" />
                                         <div class="image-caption">Обувь</div>
@@ -116,7 +122,7 @@
                         <li class="card">
                             <img src="#" alt="товар" class="card__img">
                             <div class="card__discription">
-                                <h3 class="card__name">Мужская форма</h3>
+                                <h3 class="card__name">навзвание</h3>
                                 <div class="card__price-container">
                                     <p class="card__price">цена</p>
                                     <p class="card__price-currency">цена</p>
@@ -146,7 +152,7 @@
             <nav class="burger__menu">
                 <ul class="burger__menu-list">
                     <li class="burger__menu-item">
-                        <a href="./catalog.html" class="burger__menu-link burger__menu-link-active">Каталог</a>
+                        <a href="./catalog.html" class="burger__menu-link">Каталог</a>
                     </li>
                     <li class="burger__menu-item">
                         <a href="./about.html" class="burger__menu-link">О бренде</a>
@@ -185,94 +191,6 @@
         <script>
             const products = [
                 {
-                    category: 'рубашки',
-                    image: './images/img6.jpg',
-                    title: 'Мужская тактическая рубаха ADAB, зеленная',
-                    price: '4 450₽',
-                    currency: '(1 000₺ / 45$)',
-                    size: 'S, M, L, XL, XXL'
-                },
-                {
-                    category: 'формы',
-                    image: './images/img2.jpg',
-                    title: 'Мужская форма ADAB, лето белая',
-                    price: '7 990₽',
-                    currency: '(1 750₺ / 75$)',
-                    size: 'S, M, L, XL, XXL'
-                },
-                {
-                    category: 'формы',
-                    image: './images/img11.jpg',
-                    title: 'Мужская форма ADAB, темно-синяя',
-                    price: '7 990₽',
-                    currency: '(1 750₺ / 75$)',
-                    size: 'S, M, L, XL, XXL'
-                },
-                {
-                    category: 'формы',
-                    image: './images/img12.jpg',
-                    title: 'Мужская форма ADAB, чёрная',
-                    price: '7 990₽',
-                    currency: '(1 750₺ / 75$)',
-                    size: 'M, L, XL'
-                },
-                {
-                    category: 'формы',
-                    image: './images/img13.jpg',
-                    title: 'Мужская форма ADAB, осень белая',
-                    price: '7 990₽',
-                    currency: '(1 750₺ / 75$)',
-                    size: 'S, M, L, XL, XXL'
-                },
-                {
-                    category: 'безрукавка',
-                    image: './images/img14.jpg',
-                    title: 'Мужская каракулевая жикетка, под заказ',
-                    price: '45 300₽',
-                    currency: '(14 000₺ / 500$)',
-                    size: 'под заказ'
-                },
-                {
-                    category: 'безрукавка',
-                    image: './images/img15.jpg',
-                    title: 'Мужская двухсторонняя жикетка, под заказ',
-                    price: '27 180₽',
-                    currency: '(8 300₺ / 300$)',
-                    size: 'под заказ'
-                },
-                {
-                    category: 'головные уборы',
-                    image: './images/img16.jpg',
-                    title: 'Мужская бейсболка ADAB, чёрная',
-                    price: '990₽',
-                    currency: '(250₺ / 10$)',
-                    size: 'один размер'
-                },
-                {
-                    category: 'головные уборы',
-                    image: './images/img17.jpg',
-                    title: 'Мужская бейсболка ADAB, белая',
-                    price: '990₽',
-                    currency: '(250₺ / 10$)',
-                    size: 'один размер'
-                },
-                {
-                    category: 'детская одежда',
-                    image: './images/img18.jpg',
-                    title: 'Детская форма ADAB, чёрная',
-                    price: '4 500₽',
-                    currency: '(1 100₺ / 45$)',
-                    size: '104, 116, 128, 140, 152, 164, 176'
-                },
-                {
-                    category: 'детская одежда',
-                    image: './images/img19.jpg',
-                    title: 'Детская форма ADAB, серая',
-                    price: '4 500₽',
-                    currency: '(1 100₺ / 45$)',
-                    size: '104, 116, 128, 140, 152, 164, 176'
-                },
-                {
                     category: 'обувь',
                     image: './images/img7.jpg',
                     title: 'Мужская обувь ADAB, черно-коричневые',
@@ -301,6 +219,7 @@
             const productContainer = document.querySelector('.container-cards');
             const productTemplate = productContainer.querySelector('.cards');
             let loadedCards = 0;
+            const loadMoreButton = document.querySelector('.load-more-button');
             function loadCards() {
                 const cardsToLoad = products.slice(loadedCards, loadedCards + 12);
                 cardsToLoad.forEach((product, index) => {
@@ -322,11 +241,14 @@
                 });
                 if (loadedCards >= products.length) {
                     loadMoreButton.style.display = 'none';
+                } else {
+                    loadMoreButton.style.display = loadedCards < 12 ? 'none' : 'block';
                 }
             }
             loadCards();
-            const loadMoreButton = document.querySelector('.load-more-button');
             loadMoreButton.addEventListener('click', loadCards);
+
+
         </script>
 </body>
 
