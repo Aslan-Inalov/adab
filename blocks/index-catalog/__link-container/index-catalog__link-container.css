@@ -1,0 +1,18 @@
+.index-catalog__link-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 760px) {
+    .index-catalog__link-container {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .index-catalog__link-container {
+        margin-top: 40px;
+    }
+}

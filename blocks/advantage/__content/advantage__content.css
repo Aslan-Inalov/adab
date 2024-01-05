@@ -1,0 +1,17 @@
+.advantage__content {
+    width: 80%;
+    min-height: 620px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 920px) {
+    .advantage__content {
+        width: 90%;
+        min-height: 550px;
+    }
+}
+

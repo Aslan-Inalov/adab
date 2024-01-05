@@ -11,228 +11,322 @@
 
 <body class="root">
     <div class="page">
+
         <header class="header">
-            <div class="header__logo">
-                <img src="./images/logo.jpg" alt="логотип" class="header__logo-img">
+            <div class="logo-container">
+                <img src="./images/logo.jpg" alt="логотип" class="logo">
             </div>
-            <div class="lang-buttons">
-                <a href="#" class="lang-button lang-button_active rus_lang">
-                    Ru
-                </a>
-                <a href="#" class="lang-button ar_lang">
-                    Ar
-                </a>
-                <a href="#" class="lang-button tr_lang">
-                    Tr
-                </a>
-            </div>
+
+            <nav>
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a class="header__menu-link header__menu-link-active"
+                            href="./catalog.html">Каталог</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">О Бренде</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">Поддержка</a></li>
+                </ul>
+            </nav>
+
             <button class="header__burger-btn"></button>
         </header>
+
         <main class="main">
-            <div class="nav">
-                <ul class="nav__item">
-                    <li class="nav__links"><a href="./index.html" class="nav__link">ГЛАВНАЯ</a><span
-                            class="nav__breadcrumb-divider">/</span></li>
-                    <li class="nav__links"><a href="./about.html" class="nav__link nav__link-active">КАТАЛОГ</a>
-                    </li>
-                </ul>
-            </div>
-            <h1 class="catalog__title">КАТАЛОГ</h1>
-            <div class="container">
-                <div class="slider-wrapper">
-                    <button id="prev-slide" class="slide-button material-symbols-rounded">
-                        chevron_left
-                    </button>
-                    <ul class="image-list">
-                        <div class="image-item-container">
-
-                            <img class="image-item" src="images/img1.jpg" alt="img-1" />
-                            <div class="image-caption">СМОТРЕТЬ ВСЕ</div>
-                        </div>
-                        <div class="image-item-container">
-
-                            <img class="image-item" src="images/img2.jpg" alt="img-2" />
-                            <div class="image-caption">СКИДКИ</div>
-                        </div>
-                        <div class="image-item-container">
-
-                            <img class="image-item" src="images/img3.jpg" alt="img-3" />
-                            <div class="image-caption">ФОРМЫ</div>
-                        </div>
-                        <div class="image-item-container">
-
-                            <img class="image-item" src="images/img4.jpg" alt="img-4" />
-                            <div class="image-caption">РУБАШКИ</div>
-                        </div>
-                        <div class="image-item-container">
-
-                            <img class="image-item" src="images/img5.jpg" alt="img-5" />
-                            <div class="image-caption">КУРТКИ</div>
-                        </div>
-                        <div class="image-item-container">
-
-                            <img class="image-item" src="images/img6.jpg" alt="img-6" />
-                            <div class="image-caption">БЕЗРУКАВКИ</div>
-                        </div>
-                        <div class="image-item-container">
-
-                            <img class="image-item" src="images/img1.jpg" alt="img-7" />
-                            <div class="image-caption">ОБУВЬ</div>
-                        </div>
-                        <div class="image-item-container">
-
-                            <img class="image-item" src="images/img2.jpg" alt="img-8" />
-                            <div class="image-caption">ДЕТСКАЯ ОДЕЖДА</div>
-                        </div>
-                        <div class="image-item-container">
-
-                            <img class="image-item" src="images/img3.jpg" alt="img-9" />
-                            <div class="image-caption">ГОЛОВНЫЕ УБОРЫ</div>
-                        </div>
-                        <div class="image-item-container">
-
-                            <img class="image-item" src="images/img4.jpg" alt="img-10" />
-                            <div class="image-caption">НОВИНКИ</div>
-                        </div>
+            <section class="nav-intro">
+                <div class="nav-intro__container">
+                    <ul class="nav-intro__item">
+                        <li class="nav-intro__links"><a href="./index.html" class="nav-intro__link">Главная</a><span
+                                class="nav-intro__breadcrumb-divider">/</span></li>
+                        <li class="nav-intro__links"><a href="./catalog.html" class="nav-intro__link-active">Каталог</a>
+                        </li>
                     </ul>
-                    <button id="next-slide" class="slide-button material-symbols-rounded">
-                        chevron_right
-                    </button>
                 </div>
-                <div class="slider-scrollbar">
-                    <div class="scrollbar-track">
-                        <div class="scrollbar-thumb"></div>
+            </section>
+
+            <section class="index-catalog">
+                <h2 class="index-catalog__title">Каталог</h1>
+                    <div class="index-catalog__container">
+                        <div class="slider-wrapper">
+                            <button id="prev-slide" class="slide-button material-symbols-rounded">
+                                chevron_left
+                            </button>
+                            <ul class="image-list">
+                                <div class="image-item-container-active">
+                                    <img class="image-item-all" src="images/logo.jpg" alt="img-1" />
+                                    <div class="image-caption">Смотреть все</div>
+                                </div>
+                                <div class="image-item-container">
+                                    <a href="#">
+                                        <img class="image-item" src="images/img3.jpg" alt="img-3" />
+                                        <div class="image-caption">Формы</div>
+                                    </a>
+                                </div>
+                                <div class="image-item-container">
+                                    <a href="#">
+                                        <img class="image-item" src="images/img6.jpg" alt="img-4" />
+                                        <div class="image-caption">Рубашки</div>
+                                    </a>
+                                </div>
+                                <div class="image-item-container">
+                                    <a href="#">
+                                        <img class="image-item" src="images/img8.jpg" alt="img-6" />
+                                        <div class="image-caption">Безрукавки</div>
+                                    </a>
+                                </div>
+                                <div class="image-item-container">
+                                    <a href="#">
+                                        <img class="image-item" src="images/img7.jpg" alt="img-7" />
+                                        <div class="image-caption">Обувь</div>
+                                    </a>
+                                </div>
+                                <div class="image-item-container">
+                                    <a href="#">
+                                        <img class="image-item" src="images/img9.jpg" alt="img-8" />
+                                        <div class="image-caption">Детская одежда</div>
+                                    </a>
+                                </div>
+                                <div class="image-item-container">
+                                    <a href="#">
+                                        <img class="image-item" src="images/img10.jpg" alt="img-9" />
+                                        <div class="image-caption">Головные уборы</div>
+                                    </a>
+                                </div>
+                                <div class="image-item-container">
+                                    <a href="#">
+                                        <img class="image-item" src="images/sale.png" alt="img-9" />
+                                        <div class="image-caption">Скидки</div>
+                                    </a>
+                                </div>
+                            </ul>
+                            <button id="next-slide" class="slide-button material-symbols-rounded">
+                                chevron_right
+                            </button>
+                        </div>
+                        <div class="slider-scrollbar">
+                            <div class="scrollbar-track">
+                                <div class="scrollbar-thumb"></div>
+                            </div>
+                        </div>
                     </div>
+            </section>
+            <section>
+                <div class="container-cards">
+                    <ul class="cards" style="display: none;">
+                        <li class="card">
+                            <img src="#" alt="товар" class="card__img">
+                            <div class="card__discription">
+                                <h3 class="card__name">Мужская форма</h3>
+                                <div class="card__price-container">
+                                    <p class="card__price">цена</p>
+                                    <p class="card__price-currency">цена</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="container-cards">
-                <ul class="cards">
-                    <li class="card" id="openModal">
-                        <img src="./images/img2.jpg" alt="белая форма" class="card__img">
-                        <div class="card__discription">
-                            <h3 class="card__name">Мужская форма <br> DZHUMUA, белая</h3>
-                            <!-- <p class="card__about">DZHUMUA, белая</p> -->
-                            <p class="card__price">8 500 РУБ</p>
-                        </div>
-                    </li>
-                    <li class="card" id="openModal">
-                        <img src="./images/img3.jpg" alt="белая форма" class="card__img">
-                        <div class="card__discription">
-                            <h3 class="card__name">Мужская форма <br> ADAB, черная</h3>
-                            <!-- <p class="card__about">ADAB, черная</p> -->
-                            <p class="card__price">7 500 РУБ</p>
-                        </div>
-                    </li>
-                    <li class="card" id="openModal">
-                        <img src="./images/img6.jpg" alt="тактическая рубашка" class="card__img">
-                        <div class="card__discription">
-                            <h3 class="card__name">Тактическая рубашка <br> ADAB, хаки</h3>
-                            <!-- <p class="card__about">ADAB, хаки</p> -->
-                            <p class="card__price">4 450 РУБ</p>
-                        </div>
-                    </li>
-                    <li class="card" id="openModal">
-                        <img src="./images/img4.jpg" alt="тактическая рубашка" class="card__img">
-                        <div class="card__discription">
-                            <h3 class="card__name">Бейсболка <br> ADAB, белая</h3>
-                            <!-- <p class="card__about">ADAB, белая</p> -->
-                            <p class="card__price">990 РУБ</p>
-                        </div>
-                    </li>
-                    <li class="card" id="openModal">
-                        <img src="./images/img1.jpg" alt="белая форма" class="card__img">
-                        <div class="card__discription">
-                            <h3 class="card__name">Мужская форма <br> ADAB, темно-синяя</h3>
-                            <!-- <p class="card__about">ADAB, темно-синяя</p> -->
-                            <p class="card__price">7 990 РУБ</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+                <button class="load-more-button">Загрузить еще</button>
+            </section>
         </main>
+
         <footer class="footer">
-            <h2 class="footer__title">Adab</h2>
-            <div class="footer__menu">
-                <div class="footer__menu-column">
-                    <h3 class="footer__menu-title">Каталог</h3>
-                    <ul class="footer__menu-item">
-                        <li class="footer__menu-links"><a href="./catalog.html" class="footer__menu-link">смотреть
-                                все</a></li>
-                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">новинки</a></li>
-                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">акции</a></li>
-                    </ul>
-                </div>
-                <div class="footer__menu-column">
-                    <h3 class="footer__menu-title">Поддержка</h3>
-                    <ul class="footer__menu-item">
-                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">размерная сетка</a></li>
-                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">доставка и оплата</a></li>
-                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">возврат</a></li>
-                    </ul>
-                </div>
-                <div class="footer__menu-column">
-                    <h3 class="footer__menu-title">О бренде</h3>
-                    <ul class="footer__menu-item">
-                        <li class="footer__menu-links"><a href="./about.html" class="footer__menu-link">История</a></li>
-                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">Статьи</a></li>
-                    </ul>
-                </div>
-                <div class="footer__menu-column">
-                    <h3 class="footer__menu-title">Контакты</h3>
-                    <ul class="footer__menu-item">
-                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">info@adab.ru</a></li>
-                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">Whatsapp</a></li>
-                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">Instagram</a></li>
-                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">Telegram</a></li>
-                    </ul>
-                </div>
-            </div>
-            <p class="footer__copyright">&copy; 2023 Adab</p>
+            <p class="footer__copyright">© <span id="currentYear"></span> Adab</p>
         </footer>
-        <div class="burger-container hidden">
-            <div class="burger-container__header">
-                <div class="burger-container__header-logo">
-                    <img src="./images/logo.jpg" alt="логотип" class="header__logo-img">
+
+        <div class="burger">
+            <div class="burger__header">
+                <div class="logo-container">
+                    <img src="./images/logo.jpg" alt="логотип" class="logo">
                 </div>
-                <button class="burger-container__close-btn"></button>
+                <button class="burger__close-btn"></button>
             </div>
-            <nav class="burger-menu">
-                <ul class="burger-menu__list">
-                    <li class="burger-menu__item">
-                        <a href="./catalog.html" class="burger-menu__link">КАТАЛОГ</a>
+
+            <nav class="burger__menu">
+                <ul class="burger__menu-list">
+                    <li class="burger__menu-item">
+                        <a href="./catalog.html" class="burger__menu-link">Каталог</a>
                     </li>
-                    <li class="burger-menu__item">
-                        <a href="./about.html" class="burger-menu__link">О БРЕНДЕ</a>
+                    <li class="burger__menu-item">
+                        <a href="./about.html" class="burger__menu-link">О бренде</a>
                     </li>
-                    <li class="burger-menu__item">
-                        <a href="#" class="burger-menu__link">КОНТАКТЫ</a>
+                    <li class="burger__menu-item">
+                        <a href="#" class="burger__menu-link">Контакты</a>
+                    </li>
+                    <li class="burger__menu-item">
+                        <a href="#" class="burger__menu-link">Поддержка</a>
                     </li>
                 </ul>
             </nav>
-            <div class="burger-contacts">
-                <ul class="burger-contacts__list">
-                    <li class="burger-contacts__link">
-                        <a href="#"><img src="./images/icons_telegram.svg" alt="иконка"
-                                class="burger-contacts-icon" /></a>
+
+            <div class="burger__contacts">
+                <ul class="burger__contacts-list">
+                    <li class="burger__contacts-link">
+                        <a href="#"><img src="./images/icons_telegram.svg" alt="иконка telegram"
+                                class="burger__contacts-icon"></a>
                     </li>
-                    <li class="burger-contacts__link">
-                        <a href="#"><img src="./images/icons_whatsapp.svg" alt="иконка"
-                                class="burger-contacts-icon" /></a>
+                    <li class="burger__contacts-link">
+                        <a href="#"><img src="./images/icons_whatsapp.svg" alt="иконка whatsapp"
+                                class="burger__contacts-icon"></a>
                     </li>
-                    <li class="burger-contacts__link">
-                        <a href="#"><img src="./images/icons_instagram.svg" alt="иконка"
-                                class="burger-contacts-icon" /></a>
+                    <li class="burger__contacts-link">
+                        <a href="#"><img src="./images/icons_instagram.svg" alt="иконка instagram"
+                                class="burger__contacts-icon"></a>
                     </li>
-                    <li class="burger-contacts__link">
-                        <a href="#"><img src="./images/icons_mail.svg" alt="иконка" class="burger-contacts-icon" /></a>
+                    <li class="burger__contacts-link">
+                        <a href="#"><img src="./images/icons_mail.svg" alt="иконка mail"
+                                class="burger__contacts-icon"></a>
                     </li>
                 </ul>
             </div>
         </div>
-    </div>
+
+        <script>
+            const products = [
+                {
+                    category: 'рубашки',
+                    image: './images/img6.jpg',
+                    title: 'Мужская тактическая рубаха ADAB, зеленная',
+                    price: '4 450₽',
+                    currency: '(1 000₺ / 45$)',
+                    size: 'S, M, L, XL, XXL'
+                },
+                {
+                    category: 'формы',
+                    image: './images/img2.jpg',
+                    title: 'Мужская форма ADAB, лето белая',
+                    price: '7 990₽',
+                    currency: '(1 750₺ / 75$)',
+                    size: 'S, M, L, XL, XXL'
+                },
+                {
+                    category: 'формы',
+                    image: './images/img11.jpg',
+                    title: 'Мужская форма ADAB, темно-синяя',
+                    price: '7 990₽',
+                    currency: '(1 750₺ / 75$)',
+                    size: 'S, M, L, XL, XXL'
+                },
+                {
+                    category: 'формы',
+                    image: './images/img12.jpg',
+                    title: 'Мужская форма ADAB, чёрная',
+                    price: '7 990₽',
+                    currency: '(1 750₺ / 75$)',
+                    size: 'M, L, XL'
+                },
+                {
+                    category: 'формы',
+                    image: './images/img13.jpg',
+                    title: 'Мужская форма ADAB, осень белая',
+                    price: '7 990₽',
+                    currency: '(1 750₺ / 75$)',
+                    size: 'S, M, L, XL, XXL'
+                },
+                {
+                    category: 'безрукавка',
+                    image: './images/img14.jpg',
+                    title: 'Мужская каракулевая жикетка, под заказ',
+                    price: '45 300₽',
+                    currency: '(14 000₺ / 500$)',
+                    size: 'под заказ'
+                },
+                {
+                    category: 'безрукавка',
+                    image: './images/img15.jpg',
+                    title: 'Мужская двухсторонняя жикетка, под заказ',
+                    price: '27 180₽',
+                    currency: '(8 300₺ / 300$)',
+                    size: 'под заказ'
+                },
+                {
+                    category: 'головные уборы',
+                    image: './images/img16.jpg',
+                    title: 'Мужская бейсболка ADAB, чёрная',
+                    price: '990₽',
+                    currency: '(250₺ / 10$)',
+                    size: 'один размер'
+                },
+                {
+                    category: 'головные уборы',
+                    image: './images/img17.jpg',
+                    title: 'Мужская бейсболка ADAB, белая',
+                    price: '990₽',
+                    currency: '(250₺ / 10$)',
+                    size: 'один размер'
+                },
+                {
+                    category: 'детская одежда',
+                    image: './images/img18.jpg',
+                    title: 'Детская форма ADAB, чёрная',
+                    price: '4 500₽',
+                    currency: '(1 100₺ / 45$)',
+                    size: '104, 116, 128, 140, 152, 164, 176'
+                },
+                {
+                    category: 'детская одежда',
+                    image: './images/img19.jpg',
+                    title: 'Детская форма ADAB, серая',
+                    price: '4 500₽',
+                    currency: '(1 100₺ / 45$)',
+                    size: '104, 116, 128, 140, 152, 164, 176'
+                },
+                {
+                    category: 'обувь',
+                    image: './images/img7.jpg',
+                    title: 'Мужская обувь ADAB, черно-коричневые',
+                    price: '5 500₽',
+                    currency: '(1 500₺ / 60$)',
+                    size: '40, 41, 42, 43, 44, 45'
+                },
+                {
+                    category: 'обувь',
+                    image: './images/img20.jpg',
+                    title: 'Мужская обувь ADAB, синяя',
+                    price: '5 500₽',
+                    currency: '(1 500₺ / 60$)',
+                    size: '40'
+                },
+                {
+                    category: 'обувь',
+                    image: './images/img21.jpg',
+                    title: 'Мужская обувь ADAB, черная',
+                    price: '5 500₽',
+                    currency: '(1 500₺ / 60$)',
+                    size: '40, 41'
+                },
+            ];
+
+            const productContainer = document.querySelector('.container-cards');
+            const productTemplate = productContainer.querySelector('.cards');
+            let loadedCards = 0;
+            function loadCards() {
+                const cardsToLoad = products.slice(loadedCards, loadedCards + 12);
+                cardsToLoad.forEach((product, index) => {
+                    const card = productTemplate.cloneNode(true);
+                    card.classList.add('cards');
+                    card.style.opacity = '0'; // Устанавливаем начальную прозрачность карточки
+                    card.style.display = 'block';
+                    card.querySelector('.card__img').src = product.image;
+                    card.querySelector('.card__img').alt = product.title;
+                    card.querySelector('.card__name').textContent = product.title;
+                    card.querySelector('.card__price').textContent = product.price;
+                    card.querySelector('.card__price-currency').textContent = product.currency;
+                    productContainer.appendChild(card);
+                    // Задержка перед установкой полной прозрачности
+                    setTimeout(() => {
+                        card.style.opacity = '1'; // Плавно устанавливаем полную прозрачность
+                    }, index * 70); // Устанавливаем небольшую задержку
+                    loadedCards++;
+                });
+                if (loadedCards >= products.length) {
+                    loadMoreButton.style.display = 'none';
+                }
+            }
+            loadCards();
+            const loadMoreButton = document.querySelector('.load-more-button');
+            loadMoreButton.addEventListener('click', loadCards);
+        </script>
 </body>
 
-<div id="myModal" class="modal">
+<!-- <div id="myModal" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
         <div class="product-info">
@@ -267,6 +361,6 @@
             </p>
         </div>
     </div>
-</div>
+</div> -->
 
 </html>

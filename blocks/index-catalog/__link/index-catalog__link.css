@@ -1,0 +1,19 @@
+.index-catalog__link {
+    text-decoration: none;
+    display: flex;
+    padding-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #2B2A29;
+    transition: all 0.2s linear;
+}
+
+.index-catalog__link:hover {
+    opacity: .7;
+}
+
+@media screen and (max-width: 420px) {
+    .index-catalog__link {
+        padding-bottom: 4px;
+    }
+}

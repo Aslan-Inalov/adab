@@ -1,0 +1,14 @@
+.header__menu-link {
+    text-decoration: none;
+    color: #2B2A29;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.28px;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+}
+
+.header__menu-link:hover {
+    opacity: .7;
+}

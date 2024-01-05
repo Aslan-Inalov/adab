@@ -1,0 +1,25 @@
+.advantage__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+@media screen and (max-width: 1024px) {
+    .advantage__container {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .advantage__container {
+        flex-direction: column-reverse;
+        gap: 120px;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .advantage__container {
+        gap: 80px;
+    }
+}

@@ -1,0 +1,11 @@
+.advantage__link {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+.advantage__link:hover {
+    opacity: .7;
+}

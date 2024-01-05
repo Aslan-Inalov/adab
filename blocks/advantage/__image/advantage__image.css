@@ -1,0 +1,27 @@
+.advantage__image {
+    background-image: url(../../../images/img4.jpg);
+    background-size: cover;
+    width: 40%;
+    min-height: 620px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .advantage__image {
+        width: 50%;
+        min-height: 550px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .advantage__image {
+        width: 100%;
+        min-height: 600px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .advantage__image {
+        min-height: 400px;
+    }
+}

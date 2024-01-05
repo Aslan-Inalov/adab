@@ -1,0 +1,8 @@
+.burger__menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}

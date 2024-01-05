@@ -1,0 +1,23 @@
+.intro__image-oval {
+    display: block;
+    margin-top: 30px;
+    object-fit: cover;
+    width: 300px;
+    height: 240px;
+    border-radius: 150px / 120px;
+}
+
+@media screen and (max-width: 980px) {
+    .intro__image-oval {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .intro__image-oval {
+        width: 215px;
+        height: 170px;
+        max-width: 215px;
+        border-radius: 100px / 85px;
+    }
+}

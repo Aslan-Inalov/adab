@@ -1,0 +1,6 @@
+.intro__catalog {
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: flex-start;
+}

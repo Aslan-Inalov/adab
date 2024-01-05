@@ -1,0 +1,6 @@
+.nav-intro__link-active {
+    text-decoration: none;
+    pointer-events: none;
+    cursor: default;
+    color: #99A3B8;
+}

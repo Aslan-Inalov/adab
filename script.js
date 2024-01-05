@@ -1,9 +1,15 @@
+var year = new Date().getFullYear();
+
+// Вставляем текущий год в элемент с id "currentYear"
+document.getElementById("currentYear").innerHTML = year;
+
+
 const initSlider = () => {
     const imageList = document.querySelector(".slider-wrapper .image-list");
     const imageItemContainers = document.querySelectorAll(".slider-wrapper .image-item-container");
     const imageCaptions = document.querySelectorAll(".slider-wrapper .image-caption");
     const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
-    const sliderScrollbar = document.querySelector(".container .slider-scrollbar");
+    const sliderScrollbar = document.querySelector(".index-catalog__container .slider-scrollbar");
     const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
     const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
 
@@ -71,12 +77,12 @@ window.addEventListener("resize", initSlider);
 window.addEventListener("load", initSlider);
 
 document.querySelector('.header__burger-btn').addEventListener('click', function () {
-    document.querySelector('.burger-container').classList.add('burger-container_opened');
+    document.querySelector('.burger').classList.add('burger_opened');
     document.querySelector('.root').style.overflow = 'hidden';
 });
 
-document.querySelector('.burger-container__close-btn').addEventListener('click', function () {
-    document.querySelector('.burger-container').classList.remove('burger-container_opened');
+document.querySelector('.burger__close-btn').addEventListener('click', function () {
+    document.querySelector('.burger').classList.remove('burger_opened');
     document.querySelector('.root').style.overflow = 'auto';
 });
 
@@ -115,29 +121,29 @@ btns.forEach(function(btn) {
 });
 
 
-  
-span.onclick = function () {
-    modal.style.display = "none";
-    enableScroll();
-}
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-        enableScroll();
-    }
-}
-function setInitialActiveImage() {
-    galleryItems[0].classList.add("active");
-    mainImage.src = galleryItems[0].src;
-}
-for (var i = 0; i < galleryItems.length; i++) {
-    galleryItems[i].addEventListener("click", function () {
-        var currentActive = document.getElementsByClassName("active")[0];
-        currentActive.classList.remove("active");
-        this.classList.add("active");
-        mainImage.src = this.src;
-    });
-}
+
+// span.onclick = function () {
+//     modal.style.display = "none";
+//     enableScroll();
+// }
+// window.onclick = function (event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//         enableScroll();
+//     }
+// }
+// function setInitialActiveImage() {
+//     galleryItems[0].classList.add("active");
+//     mainImage.src = galleryItems[0].src;
+// }
+// for (var i = 0; i < galleryItems.length; i++) {
+//     galleryItems[i].addEventListener("click", function () {
+//         var currentActive = document.getElementsByClassName("active")[0];
+//         currentActive.classList.remove("active");
+//         this.classList.add("active");
+//         mainImage.src = this.src;
+//     });
+// }
 function disableScroll() {
     document.body.style.overflow = "hidden";
     document.documentElement.style.overflow = "hidden";

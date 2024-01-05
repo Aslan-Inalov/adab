@@ -1,0 +1,9 @@
+.nav-intro__link {
+    color: #2B2A29;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+.nav-intro__link:hover {
+    opacity: .7;
+}

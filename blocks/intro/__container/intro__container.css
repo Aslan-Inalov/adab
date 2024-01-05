@@ -1,0 +1,13 @@
+.intro__container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 760px) {
+    .intro__container {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+}

@@ -1,0 +1,27 @@
+.advantage__image-ferst {
+    background-image: url(../../../images/img3.jpg);
+    background-size: cover;
+    width: 50%;
+    min-height: 750px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .advantage__image-ferst {
+        width: 50%;
+        min-height: 550px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .advantage__image-ferst {
+        width: 100%;
+        min-height: 750px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .advantage__image-ferst {
+        min-height: 550px;
+    }
+}

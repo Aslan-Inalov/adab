@@ -1,0 +1,11 @@
+.advantage__container-content {
+    width: 50%;
+}
+
+@media screen and (max-width: 920px) {
+    .advantage__container-content {
+        width: 100%;
+        max-width: 620px;
+        margin: 0 auto;
+    }
+}

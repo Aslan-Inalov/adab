@@ -1,0 +1,11 @@
+.nav-intro__item {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    color: #2B2A29;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0.26px;
+    text-transform: uppercase;
+}

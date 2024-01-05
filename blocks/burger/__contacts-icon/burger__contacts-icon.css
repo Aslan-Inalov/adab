@@ -1,0 +1,9 @@
+.burger__contacts-icon {
+    width: 40px;
+    height: 40px;
+    transition: all 0.2s linear;
+}
+
+.burger__contacts-icon:hover {
+    opacity: .8;
+}

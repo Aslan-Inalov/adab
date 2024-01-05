@@ -1,0 +1,13 @@
+.intro__image {
+    background-image: url(../../../images/img2.jpg);
+    background-size: cover;
+    width: 50%;
+    min-height: 560px;
+}
+
+@media screen and (max-width: 760px) {
+    .intro__image {
+        width: 100%;
+        min-height: 590px;
+    }
+}

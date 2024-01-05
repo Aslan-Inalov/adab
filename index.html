@@ -11,237 +11,243 @@
 
 <body class="root">
     <div class="page">
+
         <header class="header">
-            <div class="header__logo">
-                <img src="./images/logo.jpg" alt="логотип" class="header__logo-img">
+            <div class="logo-container">
+                <img src="./images/logo.jpg" alt="логотип" class="logo">
             </div>
-            <div class="lang-buttons">
-                <a href="#" class="lang-button lang-button_active rus_lang">
-                    Ru
-                </a>
-                <a href="#" class="lang-button ar_lang">
-                    Ar
-                </a>
-                <a href="#" class="lang-button tr_lang">
-                    Tr
-                </a>
-            </div>
+
+            <nav>
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a class="header__menu-link" href="./catalog.html">Каталог</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">О Бренде</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">Поддержка</a></li>
+                </ul>
+            </nav>
+
             <button class="header__burger-btn"></button>
         </header>
+
         <main class="main">
             <section class="intro">
-                <h1 class="intro__title">Мужская одежда<br><span style="line-height: initial;">Adab</span></h1>
-                <p class="intro__subtitle">Современная Кавказская одежда<br> в стиле Militarily</p>
-                <img src="./images/img1.jpg" alt="форма" class="intro__image-oval">
-                <div class="intro__catalog">
-                    <a href="./catalog.html" class="intro__catalog-link">
-                        <p class="intro__catalog-text">ПЕРЕЙТИ В КАТАЛОГ</p>
-                    </a>
-                </div>
-                <div class="intro__image">
-                    <img src="./images/img2.jpg" alt="белая форма" class="intro__image-pctr">
-                </div>
-            </section>
-            <section>
-                <h1 class="index-catalog__title">КАТАЛОГ</h1>
-                <div class="container">
-                    <div class="slider-wrapper">
-                        <button id="prev-slide" class="slide-button material-symbols-rounded">
-                            chevron_left
-                        </button>
-                        <ul class="image-list">
-                            <div class="image-item-container">
-
-                                <img class="image-item" src="images/img1.jpg" alt="img-1" />
-                                <div class="image-caption">СМОТРЕТЬ ВСЕ</div>
-                            </div>
-                            <div class="image-item-container">
-
-                                <img class="image-item" src="images/img2.jpg" alt="img-2" />
-                                <div class="image-caption">СКИДКИ</div>
-                            </div>
-                            <div class="image-item-container">
-
-                                <img class="image-item" src="images/img3.jpg" alt="img-3" />
-                                <div class="image-caption">ФОРМЫ</div>
-                            </div>
-                            <div class="image-item-container">
-
-                                <img class="image-item" src="images/img4.jpg" alt="img-4" />
-                                <div class="image-caption">РУБАШКИ</div>
-                            </div>
-                            <div class="image-item-container">
-
-                                <img class="image-item" src="images/img5.jpg" alt="img-5" />
-                                <div class="image-caption">КУРТКИ</div>
-                            </div>
-                            <div class="image-item-container">
-
-                                <img class="image-item" src="images/img6.jpg" alt="img-6" />
-                                <div class="image-caption">БЕЗРУКАВКИ</div>
-                            </div>
-                            <div class="image-item-container">
-
-                                <img class="image-item" src="images/img1.jpg" alt="img-7" />
-                                <div class="image-caption">ОБУВЬ</div>
-                            </div>
-                            <div class="image-item-container">
-
-                                <img class="image-item" src="images/img2.jpg" alt="img-8" />
-                                <div class="image-caption">ДЕТСКАЯ ОДЕЖДА</div>
-                            </div>
-                            <div class="image-item-container">
-
-                                <img class="image-item" src="images/img3.jpg" alt="img-9" />
-                                <div class="image-caption">ГОЛОВНЫЕ УБОРЫ</div>
-                            </div>
-                            <div class="image-item-container">
-
-                                <img class="image-item" src="images/img4.jpg" alt="img-10" />
-                                <div class="image-caption">НОВИНКИ</div>
-                            </div>
-                        </ul>
-                        <button id="next-slide" class="slide-button material-symbols-rounded">
-                            chevron_right
-                        </button>
+                <div class="intro__container">
+                    <h1 class="intro__title">Мужская одежда<br><span style="line-height: initial;">Adab</span></h1>
+                    <p class="intro__subtitle">Современная Кавказская одежда<br> в стиле Militarily</p>
+                    <img src="./images/img1.jpg" alt="мужская форма Adab" class="intro__image-oval">
+                    <div class="intro__catalog">
+                        <a href="./catalog.html" class="intro__catalog-link">
+                            <p class="intro__catalog-text">Перейти в каталог</p>
+                        </a>
                     </div>
-                    <div class="slider-scrollbar">
-                        <div class="scrollbar-track">
-                            <div class="scrollbar-thumb"></div>
+                </div>
+                <div class="intro__image"></div>
+            </section>
+            <section class="index-catalog">
+                <h2 class="index-catalog__title">Каталог</h1>
+                    <div class="index-catalog__container">
+                        <div class="slider-wrapper">
+                            <button id="prev-slide" class="slide-button material-symbols-rounded">
+                                chevron_left
+                            </button>
+                            <ul class="image-list">
+                                <div class="image-item-container">
+                                    <a href="./catalog.html">
+                                        <img class="image-item-all" src="images/logo.jpg" alt="img-1" />
+                                        <div class="image-caption">Смотреть все</div>
+                                    </a>
+                                </div>
+                                <div class="image-item-container">
+                                    <a href="#">
+                                        <img class="image-item" src="images/img3.jpg" alt="img-3" />
+                                        <div class="image-caption">Формы</div>
+                                    </a>
+                                </div>
+                                <div class="image-item-container">
+                                    <a href="#">
+                                        <img class="image-item" src="images/img6.jpg" alt="img-4" />
+                                        <div class="image-caption">Рубашки</div>
+                                    </a>
+                                </div>
+                                <div class="image-item-container">
+                                    <a href="#">
+                                        <img class="image-item" src="images/img8.jpg" alt="img-6" />
+                                        <div class="image-caption">Безрукавки</div>
+                                    </a>
+                                </div>
+                                <div class="image-item-container">
+                                    <a href="#">
+                                        <img class="image-item" src="images/img7.jpg" alt="img-7" />
+                                        <div class="image-caption">Обувь</div>
+                                    </a>
+                                </div>
+                                <div class="image-item-container">
+                                    <a href="#">
+                                        <img class="image-item" src="images/img9.jpg" alt="img-8" />
+                                        <div class="image-caption">Детская одежда</div>
+                                    </a>
+                                </div>
+                                <div class="image-item-container">
+                                    <a href="#">
+                                        <img class="image-item" src="images/img10.jpg" alt="img-9" />
+                                        <div class="image-caption">Головные уборы</div>
+                                    </a>
+                                </div>
+                                <div class="image-item-container">
+                                    <a href="#">
+                                        <img class="image-item" src="images/sale.png" alt="img-9" />
+                                        <div class="image-caption">Скидки</div>
+                                    </a>
+                                </div>
+                            </ul>
+                            <button id="next-slide" class="slide-button material-symbols-rounded">
+                                chevron_right
+                            </button>
+                        </div>
+                        <div class="slider-scrollbar">
+                            <div class="scrollbar-track">
+                                <div class="scrollbar-thumb"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-catalog__link-container">
+                        <a href="./catalog.html" class="index-catalog__link">
+                            <p class="index-catalog__link-text">Смотреть всю коллекцию</p>
+                        </a>
+                    </div>
+            </section>
+            <section class="advantage">
+                <div class="advantage__container advantage__container-ferst">
+                    <div class="advantage__image-ferst">
+                    </div>
+                    <div class="advantage__container-content">
+                        <div class="advantage__content-ferst">
+                            <h2 class="advantage__title">Одежда которая подчеркнёт твой характер</h2>
+                            <div class="advantage__description">
+                                <p class="advantage__text">В самом сердце Кавказа среди величественных гор и
+                                    непроходимых ущелий
+                                    раскинулась земля горцев. Это место где их корни уходят в глубину веков и каждый
+                                    холм,
+                                    каждая
+                                    река обладает своей легендой. Здесь кажется что время течёт медленнее, а души людей
+                                    сохранили
+                                    дух старины и чести.
+
+                                </p>
+                                <p class="advantage__text">Настало время подчеркнуть Свою
+                                    уверенность
+                                    и
+                                    силу характера
+                                    новой
+                                    коллекцией мужской одежды от ADAB, повседневные занятия, деловые встречи или даже
+                                    поход на
+                                    конях, наша одежда включает в себя все, что для вас нужно. Мы гордимся тем что
+                                    предлагаем
+                                    только
+                                    высококачественные материалы и аккуратное исполнение.
+
+                                </p>
+                                <p class="advantage__text">Наша одежда создана для тех кто
+                                    ценит не
+                                    только
+                                    комфорт,
+                                    стиль и
+                                    долговечность, но и для тех кто хочет одеваться соответственно духовным, этическим
+                                    правилам.
+                                    Наша одежда носит символическое значение, отражает культурные и религиозные
+                                    убеждения.
+                                </p>
+                            </div>
+                            <a href="./about.html" class="advantage__link">
+                                <p class="advantage__link-text">Подробнее о нас</p>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="catalog__link-container">
-                    <a href="./catalog.html" class="catalog__link">
-                        <p class="catalog__link-text">Смотреть всю коллекцию</p>
-                    </a>
-                </div>
-            </section>
-            <section class="advantage">
-                <div class="advantage__ferst">
-                    <h2 class="advantage__title">сохранение кавказской идентичности</h2>
-                    <p class="advantage__text">Бренд ADAB основан для сохранения кавказской идентичности в рамках
-                        ислама. Внешний вид напоминает окружающим и самому человеку о его культурной принадлежности.
-                    </p>
-                    <p class="advantage__text-ayat">«О люди! Поистине, мы создали вас из мужчины и женщины и сделали вас
-                        народами и племенами, чтобы вы узнавали друг друга, и самый почитаемый среди вас - наиболее
-                        богобоязненный. Воистину, Аллах Знающий, Ведущий».
-                        Коран: сура Комнаты 13-й Аят.</p>
-                    <a href="./about.html" class="advantage__link">
-                        <p class="advantage__link-text">Подробнее о нас</p>
-                    </a>
-                    <div class="agvantage__image-ferst">
-                        <img src="./images/img3.jpg" alt="" class="advantage__pctr-ferst">
+                <div class="advantage__container">
+                    <div class="advantage__container-content">
+                        <div class="advantage__content">
+                            <h2 class="advantage__title">Сохранение кавказской идентичности</h2>
+                            <p class="advantage__text">Бренд ADAB основан для сохранения кавказской идентичности в
+                                рамках
+                                ислама. Внешний вид напоминает окружающим и самому человеку о его культурной
+                                принадлежности.
+                            </p>
+                            <p class="advantage__text advantage__text-quote">«О люди! Поистине, мы создали вас из
+                                мужчины и
+                                женщины
+                                и
+                                сделали
+                                вас
+                                народами и племенами, чтобы вы узнавали друг друга, и самый почитаемый среди вас -
+                                наиболее
+                                богобоязненный. Воистину, Аллах Знающий, Ведущий».<br>
+                                Коран: сура Комнаты 13-й Аят.</p>
+                            <a href="./about.html" class="advantage__link">
+                                <p class="advantage__link-text">Подробнее о нас</p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="advantage__ferst">
-                    <h2 class="advantage__title">одежда которая подчеркнёт твой характер</h2>
-                    <div class="agvantage__image">
-                        <img src="./images/img4.jpg" alt="" class="advantage__pctr">
+                    <div class="advantage__image">
                     </div>
-                    <p class="advantage__text">В самом сердце Кавказа среди величественных гор и непроходимых ущелий
-                        раскинулась земля горцев. Это место где их корни уходят в глубину веков и каждый холм, каждая
-                        река обладает своей легендой. Здесь кажется что время течёт медленнее, а души людей сохранили
-                        дух старины и чести.
-
-                    </p>
-                    <p class="advantage__text advantage__text-paragraph">Настало время подчеркнуть Свою уверенность и силу характера новой
-                        коллекцией мужской одежды от ADAB, повседневные занятия, деловые встречи или даже поход на
-                        конях, наша одежда включает в себя все, что для вас нужно. Мы гордимся тем что предлагаем только
-                        высококачественные материалы и аккуратное исполнение.
-
-                    </p>
-                    <p class="advantage__text advantage__text-paragraph">Наша одежда создана для тех кто ценит не только комфорт, стиль и
-                        долговечность, но и для тех кто хочет одеваться соответственно духовным, этическим правилам.
-                        Наша одежда носит символическое значение, отражает культурные и религиозные убеждения.
-                    </p>
-                    <a href="./about.html" class="advantage__link">
-                        <p class="advantage__link-text">Подробнее о нас</p>
-                    </a>
                 </div>
                 <div class="video-container">
-                    <video class="video" src="./video/video1.MP4" controls></video>
+                    <video class="video" src="./video/video1.MP4" preload="metadata" poster="./images/poster1.png"
+                        controls></video>
                 </div>
             </section>
         </main>
+
         <footer class="footer">
-            <h2 class="footer__title">Adab</h2>
-            <div class="footer__menu">
-                <div class="footer__menu-column">
-                    <h3 class="footer__menu-title">Каталог</h3>
-                    <ul class="footer__menu-item">
-                        <li class="footer__menu-links"><a href="./catalog.html" class="footer__menu-link">смотреть
-                                все</a></li>
-                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">новинки</a></li>
-                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">акции</a></li>
-                    </ul>
-                </div>
-                <div class="footer__menu-column">
-                    <h3 class="footer__menu-title">Поддержка</h3>
-                    <ul class="footer__menu-item">
-                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">размерная сетка</a></li>
-                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">доставка и оплата</a></li>
-                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">возврат</a></li>
-                    </ul>
-                </div>
-                <div class="footer__menu-column">
-                    <h3 class="footer__menu-title">О бренде</h3>
-                    <ul class="footer__menu-item">
-                        <li class="footer__menu-links"><a href="./about.html" class="footer__menu-link">История</a></li>
-                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">Статьи</a></li>
-                    </ul>
-                </div>
-                <div class="footer__menu-column">
-                    <h3 class="footer__menu-title">Контакты</h3>
-                    <ul class="footer__menu-item">
-                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">info@adab.ru</a></li>
-                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">Whatsapp</a></li>
-                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">Instagram</a></li>
-                        <li class="footer__menu-links"><a href="#" class="footer__menu-link">Telegram</a></li>
-                    </ul>
-                </div>
-            </div>
-            <p class="footer__copyright">&copy; 2023 Adab</p>
+            <p class="footer__copyright">© <span id="currentYear"></span> Adab</p>
         </footer>
-        <div class="burger-container hidden">
-            <div class="burger-container__header">
-                <div class="burger-container__header-logo">
-                    <img src="./images/logo.jpg" alt="логотип" class="header__logo-img">
+
+        <div class="burger">
+            <div class="burger__header">
+                <div class="logo-container">
+                    <img src="./images/logo.jpg" alt="логотип" class="logo">
                 </div>
-                <button class="burger-container__close-btn"></button>
+                <button class="burger__close-btn"></button>
             </div>
-            <nav class="burger-menu">
-                <ul class="burger-menu__list">
-                    <li class="burger-menu__item">
-                        <a href="./catalog.html" class="burger-menu__link">КАТАЛОГ</a>
+
+            <nav class="burger__menu">
+                <ul class="burger__menu-list">
+                    <li class="burger__menu-item">
+                        <a href="./catalog.html" class="burger__menu-link">Каталог</a>
                     </li>
-                    <li class="burger-menu__item">
-                        <a href="./about.html" class="burger-menu__link">О БРЕНДЕ</a>
+                    <li class="burger__menu-item">
+                        <a href="./about.html" class="burger__menu-link">О бренде</a>
                     </li>
-                    <li class="burger-menu__item">
-                        <a href="#" class="burger-menu__link">КОНТАКТЫ</a>
+                    <li class="burger__menu-item">
+                        <a href="#" class="burger__menu-link">Контакты</a>
+                    </li>
+                    <li class="burger__menu-item">
+                        <a href="#" class="burger__menu-link">Поддержка</a>
                     </li>
                 </ul>
             </nav>
-            <div class="burger-contacts">
-                <ul class="burger-contacts__list">
-                    <li class="burger-contacts__link">
-                        <a href="#"><img src="./images/icons_telegram.svg" alt="иконка"
-                                class="burger-contacts-icon" /></a>
+
+            <div class="burger__contacts">
+                <ul class="burger__contacts-list">
+                    <li class="burger__contacts-link">
+                        <a href="#"><img src="./images/icons_telegram.svg" alt="иконка telegram"
+                                class="burger__contacts-icon"></a>
                     </li>
-                    <li class="burger-contacts__link">
-                        <a href="#"><img src="./images/icons_whatsapp.svg" alt="иконка"
-                                class="burger-contacts-icon" /></a>
+                    <li class="burger__contacts-link">
+                        <a href="#"><img src="./images/icons_whatsapp.svg" alt="иконка whatsapp"
+                                class="burger__contacts-icon"></a>
                     </li>
-                    <li class="burger-contacts__link">
-                        <a href="#"><img src="./images/icons_instagram.svg" alt="иконка"
-                                class="burger-contacts-icon" /></a>
+                    <li class="burger__contacts-link">
+                        <a href="#"><img src="./images/icons_instagram.svg" alt="иконка instagram"
+                                class="burger__contacts-icon"></a>
                     </li>
-                    <li class="burger-contacts__link">
-                        <a href="#"><img src="./images/icons_mail.svg" alt="иконка" class="burger-contacts-icon" /></a>
+                    <li class="burger__contacts-link">
+                        <a href="#"><img src="./images/icons_mail.svg" alt="иконка mail"
+                                class="burger__contacts-icon"></a>
                     </li>
                 </ul>
             </div>
+
         </div>
     </div>
 </body>
