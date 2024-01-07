@@ -1,0 +1,13 @@
+.about__container-img {
+    width: 45%;
+    background-image: url(../../../images/img__about.jpg);
+    background-size: cover;
+}
+
+@media screen and (max-width: 860px) {
+    .about__container-img {
+        width: 100%;
+        min-height: 700px;
+        margin-top: 60px;
+    }
+}

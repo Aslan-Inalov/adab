@@ -1,0 +1,31 @@
+.about__container {
+    margin: 160px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1030px) {
+    .about__container {
+        margin: 140px 0;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .about__container {
+        margin: 120px 20px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .about__container {
+        margin-top: 80px;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .about__container {
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+}

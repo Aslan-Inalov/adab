@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js" defer></script>
+    <title>О бренде | ADAB</title>
+</head>
+
+<body class="root">
+    <div class="page">
+        <header class="header">
+            <a href="./index.html">
+                <div class="logo-container">
+                    <img src="./images/logo.jpg" alt="логотип" class="logo">
+                </div>
+            </a>
+
+            <nav>
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a class="header__menu-link" href="./catalog.html">Каталог</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link header__menu-link-active"
+                            href="./about.html">О Бренде</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">Поддержка</a></li>
+                </ul>
+            </nav>
+
+            <button class="header__burger-btn"></button>
+        </header>
+
+        <main class="main">
+            <section class="nav-intro">
+                <div class="nav-intro__container">
+                    <ul class="nav-intro__item">
+                        <li class="nav-intro__links"><a href="./index.html" class="nav-intro__link">Главная</a><span
+                                class="nav-intro__breadcrumb-divider">/</span></li>
+                        <li class="nav-intro__links"><a href="./about.html" class="nav-intro__link-active">О Бренде</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="about">
+                <h1 class="about__title">Ощути на себе настоящий <br> дух Кавказа</h1>
+                <img src="./images/loon-image-original.jpeg" alt="горы кавказа" class="about__img-intro">
+                <div class="about__text-intro">
+                    <p class="about__description">Бренд ADAB ставит перед собой задачу возрождения кавказской
+                        идентичности в рамках ислама.</p>
+                </div>
+                <div class="about__container">
+                    <div class="about__container-img">
+                    </div>
+                    <div class="about__container-description">
+                        <img src="./images/img5.jpg" alt="форма" class="about__img">
+                        <div class="about__container-text">
+                            <p class="about__text">Нам хочется
+                                напомнить, что такое Адаб (воспитанность) в одежде; напомнить о достоинстве и чести.
+                                Напомнить о единстве кавказцев и всех мусульман, ведь мы - органы одного тела. Нас
+                                объединяют в
+                                первую очередь религия, а затем географическое положение, культура и обычаи. Единый
+                                внешний вид,
+                                с
+                                дозволения Аллаха, освежит нашу память и станет дополнительным объединяющим фактором.
+                            </p>
+                            <p class="about__text">Компания ADAB рассчитывает повлиять и на поведение, ведь одежда
+                                обязует, а
+                                одевающий её подсознательно старается соответствовать тем моральным идеалам, которые
+                                дошли до
+                                нас от
+                                наших предков, таким как серьезность, благой нрав, мужество и почтение к старшим.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="about__title">Замещение в индустрии одежды</h2>
+                <div class="about__container">
+                    <div class="about__video-container">
+                        <video class="video" src="./video/video-about.mp4" preload="metadata"
+                            poster="./images/poster2.png" controls></video>
+                    </div>
+                    <div class="about__container-description">
+                        <div class="about__container-text about__container-text-next">
+                            <div>
+                            <p class="about__text">Ещё одна из целей компании ADAB - импортозамещение в индустрии одежды
+                                с
+                                дальнейшим развитием и в других отраслях. Закупая у западных и других брендов продукцию,
+                                мы
+                                вкладываем в их развитие и в собственную деградацию средства, которые, как известно, они
+                                зачастую
+                                тратят против нас самих. Ярким примером этому является так называемый Израиль, львиная
+                                доля
+                                финансирования которого происходит за счёт дотаций известных мировых компаний, продукцию
+                                которых мы
+                                активно покупаем. 
+                                Мы постараемся стать началом полного замещения этих ненужных для нас
+                                компаний, с дозволения Аллаха.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="about__description about__description-last">Также мы активно работаем над ценой и качеством, понимая,
+                                что они
+                                должны
+                                быть конкурентоспособными. Мы надеемся, что по милости Аллаха компания ADAB будет
+                                развиваться,
+                                принося пользу мусульманам.<br>
+                                И вся хвала принадлежит Аллаху, Господу миров.</p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+    </div>
+    </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__copyright">© <span id="currentYear"></span> Adab</p>
+    </footer>
+
+    <div class="burger">
+        <div class="burger__header">
+            <a href="./index.html">
+                <div class="logo-container">
+                    <img src="./images/logo.jpg" alt="логотип" class="logo">
+                </div>
+            </a>
+            <button class="burger__close-btn"></button>
+        </div>
+
+        <nav class="burger__menu">
+            <ul class="burger__menu-list">
+                <li class="burger__menu-item">
+                    <a href="./catalog.html" class="burger__menu-link">Каталог</a>
+                </li>
+                <li class="burger__menu-item">
+                    <a href="./about.html" class="burger__menu-link">О бренде</a>
+                </li>
+                <li class="burger__menu-item">
+                    <a href="#" class="burger__menu-link">Контакты</a>
+                </li>
+                <li class="burger__menu-item">
+                    <a href="#" class="burger__menu-link">Поддержка</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="burger__contacts">
+            <ul class="burger__contacts-list">
+                <li class="burger__contacts-link">
+                    <a href="https://t.me/adab_kav" title="Написать нам в Telegram"><img src="./images/icons_telegram.svg" alt="иконка telegram"
+                            class="burger__contacts-icon"></a>
+                </li>
+                <li class="burger__contacts-link">
+                    <a href="https://wa.me/905078405635" title="Написать нам в Whatsapp"><img src="./images/icons_whatsapp.svg" alt="иконка whatsapp"
+                            class="burger__contacts-icon"></a>
+                </li>
+                <li class="burger__contacts-link">
+                    <a href="https://instagram.com/adab_kav?igshid=YmMyMTA2M2Y=" title="Написать нам в Instagram"><img src="./images/icons_instagram.svg" alt="иконка instagram"
+                            class="burger__contacts-icon"></a>
+                </li>
+                <li class="burger__contacts-link">
+                    <a href="mailto:dinislam.gu@gmail.com" title="Написать нам на почту"><img src="./images/icons_mail.svg" alt="иконка mail"
+                            class="burger__contacts-icon"></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>

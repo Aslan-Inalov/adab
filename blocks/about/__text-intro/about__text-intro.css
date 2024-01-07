@@ -1,0 +1,20 @@
+.about__text-intro {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 50%;
+}
+
+@media screen and (max-width: 1030px) {
+    .about__text-intro {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .about__text-intro {
+        margin-top: 60px;
+        width: 80%;
+    }
+}

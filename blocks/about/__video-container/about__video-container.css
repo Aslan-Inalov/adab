@@ -1,0 +1,19 @@
+.about__video-container {
+    width: 45%;
+}
+
+@media screen and (max-width: 860px) {
+    .about__video-container {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .about__video-container {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+}
