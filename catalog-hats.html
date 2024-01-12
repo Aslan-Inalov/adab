@@ -69,7 +69,7 @@
                                 </div>
                                 <div class="image-item-container">
                                     <a href="./catalog-shirts.html">
-                                        <img class="image-item" src="images/img6.jpg" alt="img-4" />
+                                        <img class="image-item" src="images/shirt-green.jpg" alt="img-4" />
                                         <div class="image-caption">Рубашки</div>
                                     </a>
                                 </div>
@@ -168,20 +168,23 @@
             <div class="burger__contacts">
                 <ul class="burger__contacts-list">
                     <li class="burger__contacts-link">
-                        <a href="https://t.me/adab_kav" title="Написать нам в Telegram"><img src="./images/icons_telegram.svg" alt="иконка telegram"
+                        <a href="https://t.me/adab_kav" title="Написать нам в Telegram"><img
+                                src="./images/icons_telegram.svg" alt="иконка telegram"
                                 class="burger__contacts-icon"></a>
                     </li>
                     <li class="burger__contacts-link">
-                        <a href="https://wa.me/905078405635" title="Написать нам в Whatsapp"><img src="./images/icons_whatsapp.svg" alt="иконка whatsapp"
+                        <a href="https://wa.me/905078405635" title="Написать нам в Whatsapp"><img
+                                src="./images/icons_whatsapp.svg" alt="иконка whatsapp"
                                 class="burger__contacts-icon"></a>
                     </li>
                     <li class="burger__contacts-link">
-                        <a href="https://instagram.com/adab_kav?igshid=YmMyMTA2M2Y=" title="Написать нам в Instagram"><img src="./images/icons_instagram.svg" alt="иконка instagram"
-                                class="burger__contacts-icon"></a>
+                        <a href="https://instagram.com/adab_kav?igshid=YmMyMTA2M2Y="
+                            title="Написать нам в Instagram"><img src="./images/icons_instagram.svg"
+                                alt="иконка instagram" class="burger__contacts-icon"></a>
                     </li>
                     <li class="burger__contacts-link">
-                        <a href="mailto:dinislam.gu@gmail.com" title="Написать нам на почту"><img src="./images/icons_mail.svg" alt="иконка mail"
-                                class="burger__contacts-icon"></a>
+                        <a href="mailto:dinislam.gu@gmail.com" title="Написать нам на почту"><img
+                                src="./images/icons_mail.svg" alt="иконка mail" class="burger__contacts-icon"></a>
                     </li>
                 </ul>
             </div>
@@ -190,16 +193,18 @@
         <script>
             const products = [
                 {
+                    url: './card-pages/baseball-cap-black.html',
                     category: 'головные уборы',
-                    image: './images/img16.jpg',
+                    image: './images/baseball-cap-black.jpg',
                     title: 'Мужская бейсболка ADAB, чёрная',
                     price: '990₽',
                     currency: '(250₺ / 10$)',
                     size: 'один размер'
                 },
                 {
+                    url: './card-pages/baseball-cap-white.html',
                     category: 'головные уборы',
-                    image: './images/img17.jpg',
+                    image: './images/baseball-cap-white.jpg',
                     title: 'Мужская бейсболка ADAB, белая',
                     price: '990₽',
                     currency: '(250₺ / 10$)',
@@ -223,6 +228,10 @@
                     card.querySelector('.card__name').textContent = product.title;
                     card.querySelector('.card__price').textContent = product.price;
                     card.querySelector('.card__price-currency').textContent = product.currency;
+                    card.classList.add('card');
+                    card.onclick = function () {
+                        redirectToPage(product.url);
+                    };
                     productContainer.appendChild(card);
                     // Задержка перед установкой полной прозрачности
                     setTimeout(() => {
@@ -239,45 +248,12 @@
             loadCards();
             loadMoreButton.addEventListener('click', loadCards);
 
+            function redirectToPage(url) {
+                window.location.href = url;
+            }
+
 
         </script>
 </body>
-
-<!-- <div id="myModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <div class="product-info">
-            <div class="product-images">
-                <img id="mainImage" src="фото_товара.jpg" alt="Фотография товара">
-            </div>
-            <div class="gallery">
-                <img src="./images/img1.jpg" alt="Фото 1" class="gallery-item">
-                <img src="./images/img2.jpg" alt="Фото 2" class="gallery-item">
-                <img src="./images/img3.jpg" alt="Фото 3" class="gallery-item">
-            </div>
-        </div>
-        <div class="product-description">
-            <h3 class="product-title">Мужская форма <br> ADAB, черная</h3>
-            <p class="product-price">7 500 РУБ</p>
-        </div>
-        <div class="product-size">
-            <h3 class="product-size__name">Размер</h3>
-            <ul class="product-size__items">
-                <li class="product-size__item">48</li>
-                <li class="product-size__item">50</li>
-                <li class="product-size__item">52</li>
-                <li class="product-size__item">54</li>
-            </ul>
-            <a href="#" class="product-size__link">Как подобрать размер</a>
-        </div>
-        <div class="product-about">
-            <p class="product-about__text">Тактическая рубашка в кавказском стиле, рукава выполнены из ткани Gabardin ,
-                а центр представлен Microfiber. У данной модели газыри представлены с одной стороны, рукав раскрывается
-                для удобства взятия омовения, в плечах имеются специальная ставка для того, чтобы не болели плечи при
-                ношение тяжелых рюкзаков.
-            </p>
-        </div>
-    </div>
-</div> -->
 
 </html>

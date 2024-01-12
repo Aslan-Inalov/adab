@@ -1,0 +1,13 @@
+.card-content__size-items {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    margin-top: 18px;
+}
+
+@media screen and (max-width: 420px) {
+    .card-content__size-items {
+        margin-top: 14px;
+    }
+}

@@ -1,0 +1,10 @@
+.link-intro__container {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.link-intro__container:hover {
+    opacity: .7;
+}

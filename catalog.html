@@ -64,7 +64,7 @@
                                 </div>
                                 <div class="image-item-container">
                                     <a href="./catalog-shirts.html">
-                                        <img class="image-item" src="images/img6.jpg" alt="img-4" />
+                                        <img class="image-item" src="images/shirt-green.jpg" alt="img-4" />
                                         <div class="image-caption">Рубашки</div>
                                     </a>
                                 </div>
@@ -113,7 +113,7 @@
             <section>
                 <div class="container-cards">
                     <ul class="cards" style="display: none;">
-                        <li class="card">
+                        <li class="card" onclick="redirectToPage('')">
                             <img src="#" alt="товар" class="card__img">
                             <div class="card__discription">
                                 <h3 class="card__name">Мужская форма</h3>
@@ -163,20 +163,23 @@
             <div class="burger__contacts">
                 <ul class="burger__contacts-list">
                     <li class="burger__contacts-link">
-                        <a href="https://t.me/adab_kav" title="Написать нам в Telegram"><img src="./images/icons_telegram.svg" alt="иконка telegram"
+                        <a href="https://t.me/adab_kav" title="Написать нам в Telegram"><img
+                                src="./images/icons_telegram.svg" alt="иконка telegram"
                                 class="burger__contacts-icon"></a>
                     </li>
                     <li class="burger__contacts-link">
-                        <a href="https://wa.me/905078405635" title="Написать нам в Whatsapp"><img src="./images/icons_whatsapp.svg" alt="иконка whatsapp"
+                        <a href="https://wa.me/905078405635" title="Написать нам в Whatsapp"><img
+                                src="./images/icons_whatsapp.svg" alt="иконка whatsapp"
                                 class="burger__contacts-icon"></a>
                     </li>
                     <li class="burger__contacts-link">
-                        <a href="https://instagram.com/adab_kav?igshid=YmMyMTA2M2Y=" title="Написать нам в Instagram"><img src="./images/icons_instagram.svg" alt="иконка instagram"
-                                class="burger__contacts-icon"></a>
+                        <a href="https://instagram.com/adab_kav?igshid=YmMyMTA2M2Y="
+                            title="Написать нам в Instagram"><img src="./images/icons_instagram.svg"
+                                alt="иконка instagram" class="burger__contacts-icon"></a>
                     </li>
                     <li class="burger__contacts-link">
-                        <a href="mailto:dinislam.gu@gmail.com" title="Написать нам на почту"><img src="./images/icons_mail.svg" alt="иконка mail"
-                                class="burger__contacts-icon"></a>
+                        <a href="mailto:dinislam.gu@gmail.com" title="Написать нам на почту"><img
+                                src="./images/icons_mail.svg" alt="иконка mail" class="burger__contacts-icon"></a>
                     </li>
                 </ul>
             </div>
@@ -185,112 +188,126 @@
         <script>
             const products = [
                 {
+                    url: './card-pages/shirt-green.html',
                     category: 'рубашки',
-                    image: './images/img6.jpg',
+                    image: './images/shirt-green.jpg',
                     title: 'Мужская тактическая рубаха ADAB, зеленная',
                     price: '4 450₽',
                     currency: '(1 000₺ / 45$)',
                     size: 'S, M, L, XL, XXL'
                 },
                 {
+                    url: './card-pages/uniform-white-summer.html',
                     category: 'формы',
-                    image: './images/img2.jpg',
+                    image: './images/uniform-white-summer.jpg',
                     title: 'Мужская форма ADAB, лето белая',
                     price: '7 990₽',
                     currency: '(1 750₺ / 75$)',
                     size: 'S, M, L, XL, XXL'
                 },
                 {
+                    url: './card-pages/uniform-dark-blue.html',
                     category: 'формы',
-                    image: './images/img11.jpg',
+                    image: './images/uniform-dark-blue.jpg',
                     title: 'Мужская форма ADAB, темно-синяя',
                     price: '7 990₽',
                     currency: '(1 750₺ / 75$)',
                     size: 'S, M, L, XL, XXL'
                 },
                 {
+                    url: './card-pages/uniform-black.html',
                     category: 'формы',
-                    image: './images/img12.jpg',
+                    image: './images/uniform-black.jpg',
                     title: 'Мужская форма ADAB, чёрная',
                     price: '7 990₽',
                     currency: '(1 750₺ / 75$)',
                     size: 'M, L, XL'
                 },
                 {
+                    url: './card-pages/uniform-white.html',
                     category: 'формы',
-                    image: './images/img13.jpg',
+                    image: './images/uniform-white.jpg',
                     title: 'Мужская форма ADAB, осень белая',
                     price: '7 990₽',
                     currency: '(1 750₺ / 75$)',
                     size: 'S, M, L, XL, XXL'
                 },
                 {
+                    url: './card-pages/sleeveless-natural.html',
                     category: 'безрукавка',
-                    image: './images/img14.jpg',
+                    image: './images/sleeveless-natural.jpg',
                     title: 'Мужской жилет из натурального каракуля',
                     price: '45 300₽',
                     currency: '(14 000₺ / 500$)',
                     size: 'под заказ'
                 },
                 {
+                    url: './card-pages/sleeveless-eco.html',
                     category: 'безрукавка',
-                    image: './images/img15.jpg',
-                    title: 'Мужской жилет из эко меха под каракуль',
+                    image: './images/sleeveless-eco.jpg',
+                    title: 'Мужской жилет из овчины под каракуль',
                     price: '27 180₽',
                     currency: '(8 300₺ / 300$)',
                     size: 'под заказ'
                 },
                 {
+                    url: './card-pages/baseball-cap-black.html',
                     category: 'головные уборы',
-                    image: './images/img16.jpg',
+                    image: './images/baseball-cap-black.jpg',
                     title: 'Мужская бейсболка ADAB, чёрная',
                     price: '990₽',
                     currency: '(250₺ / 10$)',
                     size: 'один размер'
                 },
                 {
+                    url: './card-pages/baseball-cap-white.html',
                     category: 'головные уборы',
-                    image: './images/img17.jpg',
+                    image: './images/baseball-cap-white.jpg',
                     title: 'Мужская бейсболка ADAB, белая',
                     price: '990₽',
                     currency: '(250₺ / 10$)',
                     size: 'один размер'
                 },
                 {
+                    url: './card-pages/kids-uniform-black.html',
                     category: 'детская одежда',
-                    image: './images/img18.jpg',
+                    image: './images/kids-uniform-black.jpg',
                     title: 'Детская форма ADAB, чёрная',
                     price: '4 500₽',
                     currency: '(1 100₺ / 45$)',
                     size: '104, 116, 128, 140, 152, 164, 176'
                 },
                 {
+                    url: './card-pages/kids-uniform-gray.html',
                     category: 'детская одежда',
-                    image: './images/img19.jpg',
+                    image: './images/kids-uniform-gray.jpg',
                     title: 'Детская форма ADAB, серая',
                     price: '4 500₽',
                     currency: '(1 100₺ / 45$)',
                     size: '104, 116, 128, 140, 152, 164, 176'
                 },
                 {
+                    url: './card-pages/shoes-black-brown.html',
                     category: 'обувь',
-                    image: './images/img7.jpg',
+                    image: './images/shoes-black-brown.jpg',
                     title: 'Мужская обувь ADAB, черно-коричневые',
                     price: '5 500₽',
                     currency: '(1 500₺ / 60$)',
                     size: '40, 41, 42, 43, 44, 45'
                 },
                 {
+                    url: './card-pages/shoes-blue.html',
                     category: 'обувь',
-                    image: './images/img20.jpg',
+                    image: './images/shoes-blue.jpg',
                     title: 'Мужская обувь ADAB, синяя',
                     price: '5 500₽',
                     currency: '(1 500₺ / 60$)',
                     size: '40'
                 },
                 {
+                    url: './card-pages/shoes-black.html',
                     category: 'обувь',
-                    image: './images/img21.jpg',
+                    image: './images/shoes-black.jpg',
                     title: 'Мужская обувь ADAB, черная',
                     price: '5 500₽',
                     currency: '(1 500₺ / 60$)',
@@ -313,6 +330,10 @@
                     card.querySelector('.card__name').textContent = product.title;
                     card.querySelector('.card__price').textContent = product.price;
                     card.querySelector('.card__price-currency').textContent = product.currency;
+                    card.classList.add('card');
+                    card.onclick = function () {
+                        redirectToPage(product.url);
+                    };
                     productContainer.appendChild(card);
                     // Задержка перед установкой полной прозрачности
                     setTimeout(() => {
@@ -327,44 +348,13 @@
             loadCards();
             const loadMoreButton = document.querySelector('.load-more-button');
             loadMoreButton.addEventListener('click', loadCards);
+
+            function redirectToPage(url) {
+                window.location.href = url;
+            }
+
+
         </script>
 </body>
-
-<!-- <div id="myModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <div class="product-info">
-            <div class="product-images">
-                <img id="mainImage" src="фото_товара.jpg" alt="Фотография товара">
-            </div>
-            <div class="gallery">
-                <img src="./images/img1.jpg" alt="Фото 1" class="gallery-item">
-                <img src="./images/img2.jpg" alt="Фото 2" class="gallery-item">
-                <img src="./images/img3.jpg" alt="Фото 3" class="gallery-item">
-            </div>
-        </div>
-        <div class="product-description">
-            <h3 class="product-title">Мужская форма <br> ADAB, черная</h3>
-            <p class="product-price">7 500 РУБ</p>
-        </div>
-        <div class="product-size">
-            <h3 class="product-size__name">Размер</h3>
-            <ul class="product-size__items">
-                <li class="product-size__item">48</li>
-                <li class="product-size__item">50</li>
-                <li class="product-size__item">52</li>
-                <li class="product-size__item">54</li>
-            </ul>
-            <a href="#" class="product-size__link">Как подобрать размер</a>
-        </div>
-        <div class="product-about">
-            <p class="product-about__text">Тактическая рубашка в кавказском стиле, рукава выполнены из ткани Gabardin ,
-                а центр представлен Microfiber. У данной модели газыри представлены с одной стороны, рукав раскрывается
-                для удобства взятия омовения, в плечах имеются специальная ставка для того, чтобы не болели плечи при
-                ношение тяжелых рюкзаков.
-            </p>
-        </div>
-    </div>
-</div> -->
 
 </html>

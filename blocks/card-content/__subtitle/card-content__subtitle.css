@@ -1,0 +1,24 @@
+.card-content__subtitle {
+    margin: 0;
+    color: #99A3B8;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0.26px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    .card-content__subtitle {
+        font-size: 12px;
+        line-height: 12px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .card-content__subtitle {
+        font-size: 11px;
+        line-height: 11px;
+    }
+}

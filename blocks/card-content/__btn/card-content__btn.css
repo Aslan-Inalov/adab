@@ -1,0 +1,28 @@
+.card-content__btn {
+    border: none;
+    border-radius: 3px;
+    background: #38527A;
+    color: #FFF;
+    text-align: center;
+    font-size: 13.891px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.28px;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 18px 0;
+    margin-top: 50px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.card-content__btn:hover {
+    background: #2b2a29;
+}
+
+@media screen and (max-width: 420px) {
+    .card-content__btn {
+        font-size: 13px;
+        line-height: 13px;
+    }
+}

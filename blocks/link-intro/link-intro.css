@@ -1,0 +1,10 @@
+.link-intro {
+    margin-top: 116px;
+    padding: 0 60px;
+}
+
+@media screen and (max-width: 1180px) {
+    .link-intro {
+        padding: 0 20px;
+    }
+}

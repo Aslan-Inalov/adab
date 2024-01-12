@@ -1,0 +1,5 @@
+@media screen and (max-width: 420px) {
+    .card-content__btn-container {
+        padding: 0 20px;
+    }
+}

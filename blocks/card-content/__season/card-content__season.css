@@ -1,0 +1,12 @@
+.card-content__season {
+    margin-top: 18px;
+    border-radius: 3px;
+    border: 1px solid #DADADA;
+}
+
+@media screen and (max-width: 420px) {
+    .card-content__season {
+        margin-top: 14px;
+    }
+}
+

@@ -120,30 +120,6 @@ btns.forEach(function(btn) {
     });
 });
 
-
-
-// span.onclick = function () {
-//     modal.style.display = "none";
-//     enableScroll();
-// }
-// window.onclick = function (event) {
-//     if (event.target == modal) {
-//         modal.style.display = "none";
-//         enableScroll();
-//     }
-// }
-// function setInitialActiveImage() {
-//     galleryItems[0].classList.add("active");
-//     mainImage.src = galleryItems[0].src;
-// }
-// for (var i = 0; i < galleryItems.length; i++) {
-//     galleryItems[i].addEventListener("click", function () {
-//         var currentActive = document.getElementsByClassName("active")[0];
-//         currentActive.classList.remove("active");
-//         this.classList.add("active");
-//         mainImage.src = this.src;
-//     });
-// }
 function disableScroll() {
     document.body.style.overflow = "hidden";
     document.documentElement.style.overflow = "hidden";

@@ -21,8 +21,7 @@
 
             <nav>
                 <ul class="header__menu">
-                    <li class="header__menu-item"><a class="header__menu-link"
-                            href="./catalog.html">Каталог</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="./catalog.html">Каталог</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="./about.html">О Бренде</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="#">Поддержка</a></li>
@@ -70,7 +69,7 @@
                                 </div>
                                 <div class="image-item-container">
                                     <a href="./catalog-shirts.html">
-                                        <img class="image-item" src="images/img6.jpg" alt="img-4" />
+                                        <img class="image-item" src="images/shirt-green.jpg" alt="img-4" />
                                         <div class="image-caption">Рубашки</div>
                                     </a>
                                 </div>
@@ -169,20 +168,23 @@
             <div class="burger__contacts">
                 <ul class="burger__contacts-list">
                     <li class="burger__contacts-link">
-                        <a href="https://t.me/adab_kav" title="Написать нам в Telegram"><img src="./images/icons_telegram.svg" alt="иконка telegram"
+                        <a href="https://t.me/adab_kav" title="Написать нам в Telegram"><img
+                                src="./images/icons_telegram.svg" alt="иконка telegram"
                                 class="burger__contacts-icon"></a>
                     </li>
                     <li class="burger__contacts-link">
-                        <a href="https://wa.me/905078405635" title="Написать нам в Whatsapp"><img src="./images/icons_whatsapp.svg" alt="иконка whatsapp"
+                        <a href="https://wa.me/905078405635" title="Написать нам в Whatsapp"><img
+                                src="./images/icons_whatsapp.svg" alt="иконка whatsapp"
                                 class="burger__contacts-icon"></a>
                     </li>
                     <li class="burger__contacts-link">
-                        <a href="https://instagram.com/adab_kav?igshid=YmMyMTA2M2Y=" title="Написать нам в Instagram"><img src="./images/icons_instagram.svg" alt="иконка instagram"
-                                class="burger__contacts-icon"></a>
+                        <a href="https://instagram.com/adab_kav?igshid=YmMyMTA2M2Y="
+                            title="Написать нам в Instagram"><img src="./images/icons_instagram.svg"
+                                alt="иконка instagram" class="burger__contacts-icon"></a>
                     </li>
                     <li class="burger__contacts-link">
-                        <a href="mailto:dinislam.gu@gmail.com" title="Написать нам на почту"><img src="./images/icons_mail.svg" alt="иконка mail"
-                                class="burger__contacts-icon"></a>
+                        <a href="mailto:dinislam.gu@gmail.com" title="Написать нам на почту"><img
+                                src="./images/icons_mail.svg" alt="иконка mail" class="burger__contacts-icon"></a>
                     </li>
                 </ul>
             </div>
@@ -191,24 +193,27 @@
         <script>
             const products = [
                 {
+                    url: './card-pages/shoes-black-brown.html',
                     category: 'обувь',
-                    image: './images/img7.jpg',
+                    image: './images/shoes-black-brown.jpg',
                     title: 'Мужская обувь ADAB, черно-коричневые',
                     price: '5 500₽',
                     currency: '(1 500₺ / 60$)',
                     size: '40, 41, 42, 43, 44, 45'
                 },
                 {
+                    url: './card-pages/shoes-blue.html',
                     category: 'обувь',
-                    image: './images/img20.jpg',
+                    image: './images/shoes-blue.jpg',
                     title: 'Мужская обувь ADAB, синяя',
                     price: '5 500₽',
                     currency: '(1 500₺ / 60$)',
                     size: '40'
                 },
                 {
+                    url: './card-pages/shoes-black.html',
                     category: 'обувь',
-                    image: './images/img21.jpg',
+                    image: './images/shoes-black.jpg',
                     title: 'Мужская обувь ADAB, черная',
                     price: '5 500₽',
                     currency: '(1 500₺ / 60$)',
@@ -232,6 +237,10 @@
                     card.querySelector('.card__name').textContent = product.title;
                     card.querySelector('.card__price').textContent = product.price;
                     card.querySelector('.card__price-currency').textContent = product.currency;
+                    card.classList.add('card');
+                    card.onclick = function () {
+                        redirectToPage(product.url);
+                    };
                     productContainer.appendChild(card);
                     // Задержка перед установкой полной прозрачности
                     setTimeout(() => {
@@ -247,6 +256,10 @@
             }
             loadCards();
             loadMoreButton.addEventListener('click', loadCards);
+
+            function redirectToPage(url) {
+                window.location.href = url;
+            }
 
 
         </script>

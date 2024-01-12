@@ -1,0 +1,18 @@
+.card-content__season-text {
+    color: #2B2A29;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.28px;
+    text-transform: uppercase;
+    padding: 16px;
+    margin: 0;
+}
+
+@media screen and (max-width: 420px) {
+    .card-content__season-text {
+        font-size: 13px;
+        line-height: 13px;
+    }
+}

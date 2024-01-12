@@ -15,6 +15,7 @@
 
 .card {
     list-style-type: none;
+    cursor: pointer;
 }
 
 .card__img {

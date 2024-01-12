@@ -1,0 +1,10 @@
+.card-content__price-container {
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 420px) {
+    .card-content__price-container {
+        margin-top: 40px;
+        padding: 0 20px;
+    }
+}

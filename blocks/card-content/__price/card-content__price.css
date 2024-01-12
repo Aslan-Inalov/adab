@@ -1,0 +1,22 @@
+.card-content__price {
+    margin: 0;
+    color: #2B2A29;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 27.5px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    .card-content__price {
+        font-size: 22px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .card-content__price {
+        font-size: 20px;
+        line-height: 22px;
+    }
+}

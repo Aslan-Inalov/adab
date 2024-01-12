@@ -1,0 +1,26 @@
+.card-content {
+    padding: 0 60px;
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1180px) {
+    .card-content {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .card-content {
+        padding: 0;
+        gap: 29px;
+    }
+}

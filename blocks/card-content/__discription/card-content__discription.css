@@ -1,0 +1,17 @@
+.card-content__discription {
+    width: 50%;
+    padding-left: 50px;
+}
+
+@media screen and (max-width: 1180px) {
+    .card-content__discription {
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-content__discription {
+        width: 100%;
+        padding-left: 0;
+    }
+}

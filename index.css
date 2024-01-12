@@ -90,3 +90,28 @@
 @import url(./blocks/about/__text/about__text.css);
 @import url(./blocks/about/__container-text/about__container-text.css);
 @import url(./blocks/about/__video-container/about__video-container.css);
+
+/* CARD-PAGE */
+@import url(./blocks/link-intro/link-intro.css);
+@import url(./blocks/link-intro/__container/link-intro__container.css);
+@import url(./blocks/link-intro/__logo/link-intro__logo.css);
+@import url(./blocks/link-intro/__text/link-intro__text.css);
+@import url(./blocks/card-content/card-content.css);
+@import url(./blocks/card-content/__slider/card-content__slider.css);
+@import url(./blocks/card-slider/card-slider.css);
+@import url(./blocks/card-content/__discription/card-content__discription.css);
+@import url(./blocks/card-content/__title/card-content__title.css);
+@import url(./blocks/card-content/__price-container/card-content__price-container.css);
+@import url(./blocks/card-content/__price/card-content__price.css);
+@import url(./blocks/card-content/__price-currency/card-content__price-currency.css);
+@import url(./blocks/card-content/__size/card-content__size.css);
+@import url(./blocks/card-content/__subtitle/card-content__subtitle.css);
+@import url(./blocks/card-content/__size-items/card-content__size-items.css);
+@import url(./blocks/card-content/__size-item/card-content__size-item.css);
+@import url(./blocks/card-content/__season-container/card-content__season-container.css);
+@import url(./blocks/card-content/__season/card-content__season.css);
+@import url(./blocks/card-content/__season-text/card-content__season-text.css);
+@import url(./blocks/card-content/__about/card-content__about.css);
+@import url(./blocks/card-content/__about-text/card-content__about-text.css);
+@import url(./blocks/card-content/__btn-container/card-content__btn-container.css);
+@import url(./blocks/card-content/__btn/card-content__btn.css);

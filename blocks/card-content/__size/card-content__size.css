@@ -1,0 +1,17 @@
+.card-content__size {
+    margin-top: 38px;
+    width: max-content;
+}
+
+@media screen and (max-width: 768px) {
+    .card-content__size {
+        margin-top: 33px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .card-content__size {
+        margin-top: 28px;
+        padding: 0 20px;
+    }
+}

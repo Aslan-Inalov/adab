@@ -1,0 +1,115 @@
+.basic {
+    width: 86%;
+}
+
+.basic-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid white;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.ancillari {
+    width: 12%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.basic-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-bottom: 115%;
+}
+
+.ancillari-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+}
+
+.ancillari-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid white;
+}
+
+.buttons {
+    padding: 0 20px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.btn-left,
+.btn-right {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.50);
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    padding: 15px 20px;
+    transition: all 0.2s linear;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.slide-left {
+    transform: translateX(-100%);
+}
+
+.slide-right {
+    transform: translateX(100%);
+}
+
+.fade-out {
+    opacity: 0.9;
+}
+
+.ancillari-container.active .ancillari-img {
+    border: 1px solid black; 
+}
+
+@media screen and (max-width: 420px) {
+    .basic {
+        width: 100%;
+    }
+
+    .ancillari {
+        flex-direction: row;
+        width: 82%;
+        margin-left: 20px;
+        margin-top: 10px;
+        gap: 5px;
+    }
+
+    .buttons {
+        padding: 0 10px;
+    }
+
+    .ancillari-container {
+        padding-bottom: 15.5%;
+    }
+}

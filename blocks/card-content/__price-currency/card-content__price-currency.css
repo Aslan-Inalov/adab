@@ -1,0 +1,11 @@
+.card-content__price-currency {
+    margin: 0;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-content__price-currency {
+        margin: 0;
+        margin-top: 15px;
+    }
+}
