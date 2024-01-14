@@ -15,14 +15,13 @@
         <header class="header">
             <a href="./index.html">
                 <div class="logo-container">
-                    <img src="./images/logo.jpg" alt="логотип" class="logo">
+                    <img src="./images/logo.png" alt="логотип" class="logo">
                 </div>
             </a>
 
             <nav>
                 <ul class="header__menu">
-                    <li class="header__menu-item"><a class="header__menu-link"
-                            href="./catalog.html">Каталог</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="./catalog.html">Каталог</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="./about.html">О Бренде</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="#">Поддержка</a></li>
@@ -144,7 +143,7 @@
             <div class="burger__header">
                 <a href="./index.html">
                     <div class="logo-container">
-                        <img src="./images/logo.jpg" alt="логотип" class="logo">
+                        <img src="./images/logo.png" alt="логотип" class="logo">
                     </div>
                 </a>
                 <button class="burger__close-btn"></button>
@@ -170,133 +169,100 @@
             <div class="burger__contacts">
                 <ul class="burger__contacts-list">
                     <li class="burger__contacts-link">
-                        <a href="https://t.me/adab_kav" title="Написать нам в Telegram"><img src="./images/icons_telegram.svg" alt="иконка telegram"
+                        <a href="https://t.me/adab_kav" title="Написать нам в Telegram"><img
+                                src="./images/icons_telegram.svg" alt="иконка telegram"
                                 class="burger__contacts-icon"></a>
                     </li>
                     <li class="burger__contacts-link">
-                        <a href="https://wa.me/905078405635" title="Написать нам в Whatsapp"><img src="./images/icons_whatsapp.svg" alt="иконка whatsapp"
+                        <a href="https://wa.me/905078405635" title="Написать нам в Whatsapp"><img
+                                src="./images/icons_whatsapp.svg" alt="иконка whatsapp"
                                 class="burger__contacts-icon"></a>
                     </li>
                     <li class="burger__contacts-link">
-                        <a href="https://instagram.com/adab_kav?igshid=YmMyMTA2M2Y=" title="Написать нам в Instagram"><img src="./images/icons_instagram.svg" alt="иконка instagram"
-                                class="burger__contacts-icon"></a>
+                        <a href="https://instagram.com/adab_kav?igshid=YmMyMTA2M2Y="
+                            title="Написать нам в Instagram"><img src="./images/icons_instagram.svg"
+                                alt="иконка instagram" class="burger__contacts-icon"></a>
                     </li>
                     <li class="burger__contacts-link">
-                        <a href="mailto:dinislam.gu@gmail.com" title="Написать нам на почту"><img src="./images/icons_mail.svg" alt="иконка mail"
-                                class="burger__contacts-icon"></a>
+                        <a href="mailto:dinislam.gu@gmail.com" title="Написать нам на почту"><img
+                                src="./images/icons_mail.svg" alt="иконка mail" class="burger__contacts-icon"></a>
                     </li>
                 </ul>
             </div>
         </div>
-
-        <script>
-            const products = [
-                {
-                    url: './card-pages/uniform-white-summer.html',
-                    sale: '-20%',
-                    category: 'формы',
-                    image: './images/uniform-white-summer.jpg',
-                    title: 'Мужская форма ADAB, лето белая',
-                    price: '6 392₽',
-                    currency: '(1 400₺ / 60$)',
-                    size: 'S, M, L, XL, XXL'
-                },
-                {
-                    url: './card-pages/uniform-white.html',
-                    sale: '-20%',
-                    category: 'формы',
-                    image: './images/uniform-white.jpg',
-                    title: 'Мужская форма ADAB, осень белая',
-                    price: '6 392₽',
-                    currency: '(1 400₺ / 60$)',
-                    size: 'S, M, L, XL, XXL'
-                },
-            ];
-
-            const productContainer = document.querySelector('.container-cards');
-            const productTemplate = productContainer.querySelector('.cards');
-            let loadedCards = 0;
-            const loadMoreButton = document.querySelector('.load-more-button');
-            function loadCards() {
-                const cardsToLoad = products.slice(loadedCards, loadedCards + 12);
-                cardsToLoad.forEach((product, index) => {
-                    const card = productTemplate.cloneNode(true);
-                    card.classList.add('cards');
-                    card.style.opacity = '0'; // Устанавливаем начальную прозрачность карточки
-                    card.style.display = 'block';
-                    card.querySelector('.card__img').src = product.image;
-                    card.querySelector('.card__img').alt = product.title;
-                    card.querySelector('.card__name').textContent = product.title;
-                    card.querySelector('.card__price').textContent = product.price;
-                    card.querySelector('.card__price-currency').textContent = product.currency;
-                    card.classList.add('card');
-                    card.onclick = function () {
-                        redirectToPage(product.url);
-                    };
-
-                    if (product.sale) { // Добавляем условие для отображения контейнера с скидкой
-                        card.querySelector('.card__sale').textContent = product.sale;
-                        card.querySelector('.card__sale').style.display = 'block';
-                    }
-
-                    productContainer.appendChild(card);
-                    // Задержка перед установкой полной прозрачности
-                    setTimeout(() => {
-                        card.style.opacity = '1'; // Плавно устанавливаем полную прозрачность
-                    }, index * 70); // Устанавливаем небольшую задержку
-                    loadedCards++;
-                });
-                if (loadedCards >= products.length) {
-                    loadMoreButton.style.display = 'none';
-                } else {
-                    loadMoreButton.style.display = loadedCards < 12 ? 'none' : 'block';
-                }
-            }
-            loadCards();
-            loadMoreButton.addEventListener('click', loadCards);
-
-            function redirectToPage(url) {
-                window.location.href = url;
-            }
-
-        </script>
-</body>
-
-<!-- <div id="myModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <div class="product-info">
-            <div class="product-images">
-                <img id="mainImage" src="фото_товара.jpg" alt="Фотография товара">
-            </div>
-            <div class="gallery">
-                <img src="./images/img1.jpg" alt="Фото 1" class="gallery-item">
-                <img src="./images/img2.jpg" alt="Фото 2" class="gallery-item">
-                <img src="./images/img3.jpg" alt="Фото 3" class="gallery-item">
-            </div>
-        </div>
-        <div class="product-description">
-            <h3 class="product-title">Мужская форма <br> ADAB, черная</h3>
-            <p class="product-price">7 500 РУБ</p>
-        </div>
-        <div class="product-size">
-            <h3 class="product-size__name">Размер</h3>
-            <ul class="product-size__items">
-                <li class="product-size__item">48</li>
-                <li class="product-size__item">50</li>
-                <li class="product-size__item">52</li>
-                <li class="product-size__item">54</li>
-            </ul>
-            <a href="#" class="product-size__link">Как подобрать размер</a>
-        </div>
-        <div class="product-about">
-            <p class="product-about__text">Тактическая рубашка в кавказском стиле, рукава выполнены из ткани Gabardin ,
-                а центр представлен Microfiber. У данной модели газыри представлены с одной стороны, рукав раскрывается
-                для удобства взятия омовения, в плечах имеются специальная ставка для того, чтобы не болели плечи при
-                ношение тяжелых рюкзаков.
-            </p>
-        </div>
     </div>
-</div> -->
+
+    <script>
+        const products = [
+            {
+                url: './card-pages/uniform-white-summer.html',
+                sale: '-20%',
+                category: 'формы',
+                image: './images/uniform-white-summer.jpg',
+                title: 'Мужская форма ADAB, лето белая',
+                price: '6 392₽',
+                currency: '(1 400₺ / 60$)',
+                size: 'S, M, L, XL, XXL'
+            },
+            {
+                url: './card-pages/uniform-white.html',
+                sale: '-20%',
+                category: 'формы',
+                image: './images/uniform-white.jpg',
+                title: 'Мужская форма ADAB, осень белая',
+                price: '6 392₽',
+                currency: '(1 400₺ / 60$)',
+                size: 'S, M, L, XL, XXL'
+            },
+        ];
+
+        const productContainer = document.querySelector('.container-cards');
+        const productTemplate = productContainer.querySelector('.cards');
+        let loadedCards = 0;
+        const loadMoreButton = document.querySelector('.load-more-button');
+        function loadCards() {
+            const cardsToLoad = products.slice(loadedCards, loadedCards + 12);
+            cardsToLoad.forEach((product, index) => {
+                const card = productTemplate.cloneNode(true);
+                card.classList.add('cards');
+                card.style.opacity = '0'; // Устанавливаем начальную прозрачность карточки
+                card.style.display = 'block';
+                card.querySelector('.card__img').src = product.image;
+                card.querySelector('.card__img').alt = product.title;
+                card.querySelector('.card__name').textContent = product.title;
+                card.querySelector('.card__price').textContent = product.price;
+                card.querySelector('.card__price-currency').textContent = product.currency;
+                card.classList.add('card');
+                card.onclick = function () {
+                    redirectToPage(product.url);
+                };
+
+                if (product.sale) { // Добавляем условие для отображения контейнера с скидкой
+                    card.querySelector('.card__sale').textContent = product.sale;
+                    card.querySelector('.card__sale').style.display = 'block';
+                }
+
+                productContainer.appendChild(card);
+                // Задержка перед установкой полной прозрачности
+                setTimeout(() => {
+                    card.style.opacity = '1'; // Плавно устанавливаем полную прозрачность
+                }, index * 70); // Устанавливаем небольшую задержку
+                loadedCards++;
+            });
+            if (loadedCards >= products.length) {
+                loadMoreButton.style.display = 'none';
+            } else {
+                loadMoreButton.style.display = loadedCards < 12 ? 'none' : 'block';
+            }
+        }
+        loadCards();
+        loadMoreButton.addEventListener('click', loadCards);
+
+        function redirectToPage(url) {
+            window.location.href = url;
+        }
+
+    </script>
+</body>
 
 </html>
