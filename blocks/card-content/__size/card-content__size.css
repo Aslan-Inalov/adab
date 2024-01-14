@@ -1,5 +1,8 @@
 .card-content__size {
     margin-top: 38px;
+}
+
+.card-content__size-text {
     width: max-content;
 }
 

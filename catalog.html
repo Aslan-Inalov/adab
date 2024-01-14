@@ -115,6 +115,7 @@
                     <ul class="cards" style="display: none;">
                         <li class="card" onclick="redirectToPage('')">
                             <img src="#" alt="товар" class="card__img">
+                            <div class="card__sale" style="display: none;"></div>
                             <div class="card__discription">
                                 <h3 class="card__name">Мужская форма</h3>
                                 <div class="card__price-container">
@@ -198,11 +199,12 @@
                 },
                 {
                     url: './card-pages/uniform-white-summer.html',
+                    sale: '-20%',
                     category: 'формы',
                     image: './images/uniform-white-summer.jpg',
                     title: 'Мужская форма ADAB, лето белая',
-                    price: '7 990₽',
-                    currency: '(1 750₺ / 75$)',
+                    price: '6 392₽',
+                    currency: '(1 400₺ / 60$)',
                     size: 'S, M, L, XL, XXL'
                 },
                 {
@@ -225,11 +227,12 @@
                 },
                 {
                     url: './card-pages/uniform-white.html',
+                    sale: '-20%',
                     category: 'формы',
                     image: './images/uniform-white.jpg',
                     title: 'Мужская форма ADAB, осень белая',
-                    price: '7 990₽',
-                    currency: '(1 750₺ / 75$)',
+                    price: '6 392₽',
+                    currency: '(1 400₺ / 60$)',
                     size: 'S, M, L, XL, XXL'
                 },
                 {
@@ -323,7 +326,7 @@
                 cardsToLoad.forEach((product, index) => {
                     const card = productTemplate.cloneNode(true);
                     card.classList.add('cards');
-                    card.style.opacity = '0'; // Устанавливаем начальную прозрачность карточки
+                    card.style.opacity = '0';
                     card.style.display = 'block';
                     card.querySelector('.card__img').src = product.image;
                     card.querySelector('.card__img').alt = product.title;
@@ -334,11 +337,16 @@
                     card.onclick = function () {
                         redirectToPage(product.url);
                     };
+
+                    if (product.sale) { // Добавляем условие для отображения контейнера с скидкой
+                        card.querySelector('.card__sale').textContent = product.sale;
+                        card.querySelector('.card__sale').style.display = 'block';
+                    }
+                    
                     productContainer.appendChild(card);
-                    // Задержка перед установкой полной прозрачности
                     setTimeout(() => {
-                        card.style.opacity = '1'; // Плавно устанавливаем полную прозрачность
-                    }, index * 70); // Устанавливаем небольшую задержку
+                        card.style.opacity = '1';
+                    }, index * 70);
                     loadedCards++;
                 });
                 if (loadedCards >= products.length) {
@@ -348,10 +356,10 @@
             loadCards();
             const loadMoreButton = document.querySelector('.load-more-button');
             loadMoreButton.addEventListener('click', loadCards);
-
             function redirectToPage(url) {
                 window.location.href = url;
             }
+
 
 
         </script>

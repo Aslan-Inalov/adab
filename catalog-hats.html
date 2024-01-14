@@ -118,10 +118,11 @@
             <section>
                 <div class="container-cards">
                     <ul class="cards" style="display: none;">
-                        <li class="card">
+                        <li class="card" onclick="redirectToPage('')">
                             <img src="#" alt="товар" class="card__img">
+                            <div class="card__sale" style="display: none;"></div>
                             <div class="card__discription">
-                                <h3 class="card__name">навзвание</h3>
+                                <h3 class="card__name">Мужская форма</h3>
                                 <div class="card__price-container">
                                     <p class="card__price">цена</p>
                                     <p class="card__price-currency">цена</p>
@@ -232,6 +233,12 @@
                     card.onclick = function () {
                         redirectToPage(product.url);
                     };
+
+                    if (product.sale) { // Добавляем условие для отображения контейнера с скидкой
+                        card.querySelector('.card__sale').textContent = product.sale;
+                        card.querySelector('.card__sale').style.display = 'block';
+                    }
+
                     productContainer.appendChild(card);
                     // Задержка перед установкой полной прозрачности
                     setTimeout(() => {

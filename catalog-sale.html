@@ -119,10 +119,11 @@
             <section>
                 <div class="container-cards">
                     <ul class="cards" style="display: none;">
-                        <li class="card">
+                        <li class="card" onclick="redirectToPage('')">
                             <img src="#" alt="товар" class="card__img">
+                            <div class="card__sale" style="display: none;"></div>
                             <div class="card__discription">
-                                <h3 class="card__name">навзвание</h3>
+                                <h3 class="card__name">Мужская форма</h3>
                                 <div class="card__price-container">
                                     <p class="card__price">цена</p>
                                     <p class="card__price-currency">цена</p>
@@ -190,7 +191,26 @@
 
         <script>
             const products = [
-        
+                {
+                    url: './card-pages/uniform-white-summer.html',
+                    sale: '-20%',
+                    category: 'формы',
+                    image: './images/uniform-white-summer.jpg',
+                    title: 'Мужская форма ADAB, лето белая',
+                    price: '6 392₽',
+                    currency: '(1 400₺ / 60$)',
+                    size: 'S, M, L, XL, XXL'
+                },
+                {
+                    url: './card-pages/uniform-white.html',
+                    sale: '-20%',
+                    category: 'формы',
+                    image: './images/uniform-white.jpg',
+                    title: 'Мужская форма ADAB, осень белая',
+                    price: '6 392₽',
+                    currency: '(1 400₺ / 60$)',
+                    size: 'S, M, L, XL, XXL'
+                },
             ];
 
             const productContainer = document.querySelector('.container-cards');
@@ -209,6 +229,16 @@
                     card.querySelector('.card__name').textContent = product.title;
                     card.querySelector('.card__price').textContent = product.price;
                     card.querySelector('.card__price-currency').textContent = product.currency;
+                    card.classList.add('card');
+                    card.onclick = function () {
+                        redirectToPage(product.url);
+                    };
+
+                    if (product.sale) { // Добавляем условие для отображения контейнера с скидкой
+                        card.querySelector('.card__sale').textContent = product.sale;
+                        card.querySelector('.card__sale').style.display = 'block';
+                    }
+
                     productContainer.appendChild(card);
                     // Задержка перед установкой полной прозрачности
                     setTimeout(() => {
@@ -228,7 +258,6 @@
             function redirectToPage(url) {
                 window.location.href = url;
             }
-
 
         </script>
 </body>

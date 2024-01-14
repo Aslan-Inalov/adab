@@ -16,6 +16,7 @@
 .card {
     list-style-type: none;
     cursor: pointer;
+    position: relative;
 }
 
 .card__img {
@@ -55,6 +56,19 @@
     line-height: 24px;
     letter-spacing: 0.26px;
     text-transform: uppercase;
+}
+
+.card__sale {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 10px 12px;
+    background-color: #38527A;
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    z-index: 1;
 }
 
 .card__price-currency {
@@ -133,6 +147,13 @@
     .load-more-button {
         padding: 18.5px 32px;
     }
+
+    .card__sale {
+        top: 10px;
+        left: 10px;
+        font-size: 13px;
+        line-height: 13px;
+    }
 }
 
 @media screen and (max-width: 660px) {
@@ -191,6 +212,10 @@
 
     .card__price-currency {
         font-size: 12px;
+    }
+
+    .card__sale {
+        padding: 8px 10px;
     }
 }
 

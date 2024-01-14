@@ -16,11 +16,24 @@
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
     .card-content__size-item {
         width: 45px;
-        height: 43px;
+        height: 42px;
         font-size: 13px;
         line-height: 13px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .card-content__size-item-numbers {
+        height: 38px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .card-content__size-item-numbers {
+        height: 35px;
+        font-size: 12px;
     }
 }

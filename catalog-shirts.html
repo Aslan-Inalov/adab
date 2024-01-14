@@ -119,10 +119,11 @@
             <section>
                 <div class="container-cards">
                     <ul class="cards" style="display: none;">
-                        <li class="card" onclick="redirectToPage('./card-pages/shirt-green.html')">
+                        <li class="card" onclick="redirectToPage('')">
                             <img src="#" alt="товар" class="card__img">
+                            <div class="card__sale" style="display: none;"></div>
                             <div class="card__discription">
-                                <h3 class="card__name">навзвание</h3>
+                                <h3 class="card__name">Мужская форма</h3>
                                 <div class="card__price-container">
                                     <p class="card__price">цена</p>
                                     <p class="card__price-currency">цена</p>
@@ -217,6 +218,12 @@
                     card.querySelector('.card__price').textContent = product.price;
                     card.querySelector('.card__price-currency').textContent = product.currency;
                     productContainer.appendChild(card);
+
+                    if (product.sale) { // Добавляем условие для отображения контейнера с скидкой
+                        card.querySelector('.card__sale').textContent = product.sale;
+                        card.querySelector('.card__sale').style.display = 'block';
+                    }
+
                     // Задержка перед установкой полной прозрачности
                     setTimeout(() => {
                         card.style.opacity = '1'; // Плавно устанавливаем полную прозрачность

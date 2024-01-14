@@ -7,6 +7,10 @@
     text-transform: uppercase;
 }
 
+.card-content__price-s {
+    color: #dadada;
+}
+
 @media screen and (max-width: 768px) {
     .card-content__price {
         font-size: 22px;

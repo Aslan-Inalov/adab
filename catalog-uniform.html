@@ -21,8 +21,7 @@
 
             <nav>
                 <ul class="header__menu">
-                    <li class="header__menu-item"><a class="header__menu-link"
-                            href="./catalog.html">Каталог</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="./catalog.html">Каталог</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="./about.html">О Бренде</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="#">Поддержка</a></li>
@@ -119,10 +118,11 @@
             <section>
                 <div class="container-cards">
                     <ul class="cards" style="display: none;">
-                        <li class="card">
+                        <li class="card" onclick="redirectToPage('')">
                             <img src="#" alt="товар" class="card__img">
+                            <div class="card__sale" style="display: none;"></div>
                             <div class="card__discription">
-                                <h3 class="card__name">навзвание</h3>
+                                <h3 class="card__name">Мужская форма</h3>
                                 <div class="card__price-container">
                                     <p class="card__price">цена</p>
                                     <p class="card__price-currency">цена</p>
@@ -169,20 +169,23 @@
             <div class="burger__contacts">
                 <ul class="burger__contacts-list">
                     <li class="burger__contacts-link">
-                        <a href="https://t.me/adab_kav" title="Написать нам в Telegram"><img src="./images/icons_telegram.svg" alt="иконка telegram"
+                        <a href="https://t.me/adab_kav" title="Написать нам в Telegram"><img
+                                src="./images/icons_telegram.svg" alt="иконка telegram"
                                 class="burger__contacts-icon"></a>
                     </li>
                     <li class="burger__contacts-link">
-                        <a href="https://wa.me/905078405635" title="Написать нам в Whatsapp"><img src="./images/icons_whatsapp.svg" alt="иконка whatsapp"
+                        <a href="https://wa.me/905078405635" title="Написать нам в Whatsapp"><img
+                                src="./images/icons_whatsapp.svg" alt="иконка whatsapp"
                                 class="burger__contacts-icon"></a>
                     </li>
                     <li class="burger__contacts-link">
-                        <a href="https://instagram.com/adab_kav?igshid=YmMyMTA2M2Y=" title="Написать нам в Instagram"><img src="./images/icons_instagram.svg" alt="иконка instagram"
-                                class="burger__contacts-icon"></a>
+                        <a href="https://instagram.com/adab_kav?igshid=YmMyMTA2M2Y="
+                            title="Написать нам в Instagram"><img src="./images/icons_instagram.svg"
+                                alt="иконка instagram" class="burger__contacts-icon"></a>
                     </li>
                     <li class="burger__contacts-link">
-                        <a href="mailto:dinislam.gu@gmail.com" title="Написать нам на почту"><img src="./images/icons_mail.svg" alt="иконка mail"
-                                class="burger__contacts-icon"></a>
+                        <a href="mailto:dinislam.gu@gmail.com" title="Написать нам на почту"><img
+                                src="./images/icons_mail.svg" alt="иконка mail" class="burger__contacts-icon"></a>
                     </li>
                 </ul>
             </div>
@@ -190,13 +193,14 @@
 
         <script>
             const products = [
-                {
+            {
                     url: './card-pages/uniform-white-summer.html',
+                    sale: '-20%',
                     category: 'формы',
                     image: './images/uniform-white-summer.jpg',
                     title: 'Мужская форма ADAB, лето белая',
-                    price: '7 990₽',
-                    currency: '(1 750₺ / 75$)',
+                    price: '6 392₽',
+                    currency: '(1 400₺ / 60$)',
                     size: 'S, M, L, XL, XXL'
                 },
                 {
@@ -219,11 +223,12 @@
                 },
                 {
                     url: './card-pages/uniform-white.html',
+                    sale: '-20%',
                     category: 'формы',
                     image: './images/uniform-white.jpg',
                     title: 'Мужская форма ADAB, осень белая',
-                    price: '7 990₽',
-                    currency: '(1 750₺ / 75$)',
+                    price: '6 392₽',
+                    currency: '(1 400₺ / 60$)',
                     size: 'S, M, L, XL, XXL'
                 },
             ];
@@ -248,6 +253,12 @@
                     card.onclick = function () {
                         redirectToPage(product.url);
                     };
+
+                    if (product.sale) { // Добавляем условие для отображения контейнера с скидкой
+                        card.querySelector('.card__sale').textContent = product.sale;
+                        card.querySelector('.card__sale').style.display = 'block';
+                    }
+
                     productContainer.appendChild(card);
                     // Задержка перед установкой полной прозрачности
                     setTimeout(() => {

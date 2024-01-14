@@ -43,7 +43,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 1px solid white;
 }
 
 .buttons {
@@ -111,5 +110,6 @@
 
     .ancillari-container {
         padding-bottom: 15.5%;
+        max-width: 40px;
     }
 }
