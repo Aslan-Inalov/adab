@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js" defer></script>
+    <title>ADAB</title>
+</head>
+
+<body class="root">
+    <div class="page">
+
+        <header class="header">
+            <a href="./index.html">
+                <div class="logo-container">
+                    <img src="./images/logo.png" alt="логотип" class="logo">
+                </div>
+            </a>
+
+            <nav>
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a class="header__menu-link" href="./catalog.html">Каталог</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="./about.html">О Бренде</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">Поддержка</a></li>
+                </ul>
+            </nav>
+
+            <button class="header__burger-btn"></button>
+        </header>
+
+        <main class="main">
+
+            <section class="link-intro">
+                <div class="link-intro__container" onclick="goBack()">
+                    <img src="../images/arrow.svg" alt="Назад" class="link-intro__logo">
+                    <p class="link-intro__text">Назад в каталог</p>
+                </div>
+            </section>
+
+            <section class="oredr__content">
+                <h1 class="order__title">Оформление заказа</h1>
+                <div class="order__payment-container">
+                    <h2 class="order__subtitle">1. Оплатить товар</h2>
+                    <p class="order__text">Оплата производится на Сбербанк по номеру 2202205043517363 карта на
+                        имя
+                        Шамхан Салавдиевич.</p>
+                </div>
+
+                <div class="order__form-container">
+                    <h2 class="order__subtitle">2. Заполнить форму</h2>
+                    <select id="country-select" class="styled-select">
+                        <option value="" selected disabled>Выберите вашу страну</option>
+                        <option value="form-europe">Europe / USA</option>
+                        <option value="form-russia">Russia</option>
+                        <option value="form-turkey">Turkey</option>
+                    </select>
+
+                    <form id="form-europe" class="order__form">
+                        <input type="text" name="name" class="order__input" placeholder="Фамилия Имя" minLength="2"
+                            maxLength="30" required>
+                        <input type="text" name="adress" class="order__input"
+                            placeholder="Адрес получателя (улица, номер дома)" minLength="2" maxLength="50" required>
+                        <input type="text" name="city" class="order__input" placeholder="Город получателя" minLength="2"
+                            maxLength="30" required>
+                        <input type="text" name="region" class="order__input"
+                            placeholder="Область, округ, штат (если есть)" minLength="2" maxLength="50" required>
+                        <input type="text" name="index" class="order__input" placeholder="Почтовый индекс" minLength="2"
+                            maxLength="30" required>
+                        <input type="text" name="country" class="order__input" placeholder="Страна доставки"
+                            minLength="2" maxLength="30" required>
+                        <input type="tel" name="number" class="order__input" placeholder="Номер телефона" required>
+                        <input type="email" name="email" class="order__input" placeholder="Адрес электронной почты"
+                            required>
+                        <input type="text" name="product" class="order__input product-name-input"
+                            placeholder="Наименование товара" minLength="10" maxLength="30" required>
+                        <input type="text" name="product" class="order__input"
+                            placeholder="Размер товара" required>
+                    </form>
+
+                    <form id="form-russia" class="order__form">
+                        <input type="text" name="name" class="order__input" placeholder="Фамилия Имя Отчество" minLength="2"
+                            maxLength="30" required>
+                        <input type="text" name="adress" class="order__input"
+                            placeholder="Адрес получателя" minLength="2" maxLength="50" required>
+                        <input type="text" name="index" class="order__input" placeholder="Почтовый индекс" minLength="2"
+                            maxLength="30" required>
+                        <input type="tel" name="number" class="order__input" placeholder="Номер телефона" required>
+                        <input type="email" name="email" class="order__input" placeholder="Адрес электронной почты"
+                            required>
+                        <input type="text" name="product" class="order__input product-name-input"
+                            placeholder="Наименование товара" minLength="10" maxLength="30" required>
+                        <input type="text" name="product" class="order__input"
+                            placeholder="Размер товара" required>
+                    </form>
+
+                    <form id="form-turkey" class="order__form">
+                        <input type="text" name="name" class="order__input" placeholder="Фамилия Имя" minLength="2"
+                            maxLength="30" required>
+                        <input type="text" name="adress" class="order__input"
+                            placeholder="Адрес получателя (улица, номер дома)" minLength="2" maxLength="50" required>
+                        <input type="text" name="city" class="order__input" placeholder="Город получателя" minLength="2"
+                            maxLength="30" required>
+                        <input type="text" name="region" class="order__input"
+                            placeholder="Область, округ, штат (если есть)" minLength="2" maxLength="50" required>
+                        <input type="text" name="country" class="order__input" placeholder="Страна доставки"
+                            minLength="2" maxLength="30" required>
+                        <input type="tel" name="number" class="order__input" placeholder="Номер телефона" required>
+                        <input type="email" name="email" class="order__input" placeholder="Адрес электронной почты"
+                            required>
+                        <input type="text" name="product" class="order__input product-name-input"
+                            placeholder="Наименование товара" minLength="10" maxLength="30" required>
+                        <input type="text" name="product" class="order__input"
+                            placeholder="Размер товара" required>
+                    </form>
+                    <button id="btn" class="order__btn">Оформить заказ</button>
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <p class="footer__copyright">© <span id="currentYear"></span> Adab</p>
+        </footer>
+
+        <div class="burger">
+            <div class="burger__header">
+                <a href="./index.html">
+                    <div class="logo-container">
+                        <img src="./images/logo.png" alt="логотип" class="logo">
+                    </div>
+                </a>
+                <button class="burger__close-btn"></button>
+            </div>
+
+            <nav class="burger__menu">
+                <ul class="burger__menu-list">
+                    <li class="burger__menu-item">
+                        <a href="./catalog.html" class="burger__menu-link">Каталог</a>
+                    </li>
+                    <li class="burger__menu-item">
+                        <a href="./about.html" class="burger__menu-link">О бренде</a>
+                    </li>
+                    <li class="burger__menu-item">
+                        <a href="#" class="burger__menu-link">Контакты</a>
+                    </li>
+                    <li class="burger__menu-item">
+                        <a href="#" class="burger__menu-link">Поддержка</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="burger__contacts">
+                <ul class="burger__contacts-list">
+                    <li class="burger__contacts-link">
+                        <a href="https://t.me/adab_kav" title="Написать нам в Telegram"><img
+                                src="./images/icons_telegram.svg" alt="иконка telegram"
+                                class="burger__contacts-icon"></a>
+                    </li>
+                    <li class="burger__contacts-link">
+                        <a href="https://wa.me/905078405635" title="Написать нам в Whatsapp"><img
+                                src="./images/icons_whatsapp.svg" alt="иконка whatsapp"
+                                class="burger__contacts-icon"></a>
+                    </li>
+                    <li class="burger__contacts-link">
+                        <a href="https://instagram.com/adab_kav?igshid=YmMyMTA2M2Y="
+                            title="Написать нам в Instagram"><img src="./images/icons_instagram.svg"
+                                alt="иконка instagram" class="burger__contacts-icon"></a>
+                    </li>
+                    <li class="burger__contacts-link">
+                        <a href="mailto:dinislam.gu@gmail.com" title="Написать нам на почту"><img
+                                src="./images/icons_mail.svg" alt="иконка mail" class="burger__contacts-icon"></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            history.back();
+        }
+
+        const countrySelect = document.getElementById('country-select');
+        const formEurope = document.getElementById('form-europe');
+        const formRussia = document.getElementById('form-russia');
+        const formTurkey = document.getElementById('form-turkey');
+        const button = document.getElementById('btn');
+        countrySelect.addEventListener('change', function () {
+            const selectedForm = document.getElementById(countrySelect.value);
+            formEurope.style.display = 'none';
+            formRussia.style.display = 'none';
+            formTurkey.style.display = 'none';
+            selectedForm.style.display = 'flex';
+            button.style.display = 'block';
+        });
+
+        var productName = localStorage.getItem('productName');
+        var productNameInputs = document.getElementsByClassName('product-name-input');
+        for (var i = 0; i < productNameInputs.length; i++) {
+            productNameInputs[i].value = productName;
+        }
+
+    </script>
+
+</body>
+
+</html>

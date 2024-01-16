@@ -1,0 +1,139 @@
+.oredr__content {
+    padding: 0 60px;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.order__payment-container {
+    margin-bottom: 60px;
+}
+
+.order__title {
+    color: #4B5A7A;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 30px 0 60px;
+}
+
+.order__subtitle {
+    color: #4B5A7A;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.order__text {
+    font-size: 18px;
+    line-height: 1.4;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.styled-select {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    appearance: none;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.order__form {
+    display: none;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.order__input {
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #F9F9F9;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+
+.order__btn {
+    display: none;
+    border: none;
+    border-radius: 3px;
+    background: #38527A;
+    color: #FFF;
+    text-align: center;
+    font-size: 13.891px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.28px;
+    text-transform: uppercase;
+    padding: 18px 0;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 100%;
+    max-width: 500px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.order__btn:hover {
+    background: #2b2a29;
+}
+
+@media screen and (max-width: 1024px) {
+    .oredr__content {
+        padding: 0 20px;
+    }
+
+    .order__title {
+        font-size: 50px;
+    }
+
+    .order__subtitle {
+        font-size: 30px;
+        line-height: 1.1;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .order__subtitle {
+        font-size: 30px;
+        line-height: 1.1;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .order__text {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .order__title {
+        font-size: 35px;
+    }
+
+    .order__subtitle {
+        font-size: 25px;
+    }
+
+    .order__text {
+        font-size: 14px;
+    }
+
+    .order__payment-container {
+        margin-bottom: 40px;
+    }
+}
