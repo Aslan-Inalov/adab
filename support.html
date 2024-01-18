@@ -26,11 +26,11 @@
 
             <nav>
                 <ul class="header__menu">
-                    <li class="header__menu-item"><a class="header__menu-link"
-                            href="./catalog.html">Каталог</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="./catalog.html">Каталог</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="./about.html">О Бренде</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
-                    <li class="header__menu-item"><a class="header__menu-link header__menu-link-active" href="./support.html">Поддержка</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link header__menu-link-active"
+                            href="./support.html">Поддержка</a></li>
                 </ul>
             </nav>
 
@@ -43,9 +43,128 @@
                     <ul class="nav-intro__item">
                         <li class="nav-intro__links"><a href="./index.html" class="nav-intro__link">Главная</a><span
                                 class="nav-intro__breadcrumb-divider">/</span></li>
-                        <li class="nav-intro__links"><a href="./support.html" class="nav-intro__link-active">Поддержка</a>
+                        <li class="nav-intro__links"><a href="./support.html"
+                                class="nav-intro__link-active">Поддержка</a>
                         </li>
                     </ul>
+                </div>
+            </section>
+
+            <section class="support-size">
+                <h2 class="support-size__title">Размерные сетки</h2>
+                <div class="support-size__container">
+                    <h3 onclick="toggleTable(1)" class="support-size__subtitle">Мужская форма ADAB</h2>
+                        <table id="table1">
+                            <tr>
+                                <th>Параметр, см</th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                                <th>XL</th>
+                                <th>2XL</th>
+                            </tr>
+                            <tr>
+                                <td>Плечи</td>
+                                <td>92</td>
+                                <td>96</td>
+                                <td>98</td>
+                                <td>102</td>
+                                <td>108</td>
+                            </tr>
+                            <tr>
+                                <td>Грудь</td>
+                                <td>113</td>
+                                <td>115</td>
+                                <td>121</td>
+                                <td>122</td>
+                                <td>128</td>
+                            </tr>
+                        </table>
+                </div>
+                <div class="support-size__container">
+                    <h3 onclick="toggleTable(2)" class="support-size__subtitle">Мужская рубаха ADAB</h2>
+                        <table id="table2">
+                            <tr>
+                                <th>Параметр, см</th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                                <th>XL</th>
+                                <th>2XL</th>
+                            </tr>
+                            <tr>
+                                <td>Плечи</td>
+                                <td>96</td>
+                                <td>101</td>
+                                <td>106</td>
+                                <td>109</td>
+                                <td>115</td>
+                            </tr>
+                            <tr>
+                                <td>Грудь</td>
+                                <td>92</td>
+                                <td>96</td>
+                                <td>102</td>
+                                <td>106</td>
+                                <td>110</td>
+                            </tr>
+                        </table>
+                </div>
+
+                <div class="support-size__container">
+                    <h3 onclick="toggleTable(3)" class="support-size__subtitle">Детская форма ADAB</h2>
+                        <table id="table3">
+                            <tr>
+                                <th>Рост</th>
+                                <th>104</th>
+                                <th>116</th>
+                                <th>128</th>
+                                <th>140</th>
+                                <th>152</th>
+                                <th>164</th>
+                                <th>176</th>
+                            </tr>
+                            <tr>
+                                <td>Возраст</td>
+                                <td>3-4</td>
+                                <td>5-6</td>
+                                <td>7-8</td>
+                                <td>9-10</td>
+                                <td>11-12</td>
+                                <td>13-15</td>
+                                <td>16-17</td>
+                            </tr>
+                            <tr>
+                                <th>RU</td>
+                                <td>28-30</td>
+                                <td>32</td>
+                                <td>34</td>
+                                <td>38</td>
+                                <td>40</td>
+                                <td>40-42</td>
+                                <td>42</td>
+                            </tr>
+                            <tr>
+                                <th>EU</th>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td>7</td>
+                                <td>9</td>
+                                <td>11</td>
+                                <td>13</td>
+                            </tr>
+                            <tr>
+                                <th>US</th>
+                                <td>4T</td>
+                                <td>5-6</td>
+                                <td>7</td>
+                                <td>S</td>
+                                <td>M/L</td>
+                                <td>L</td>
+                                <td>XL</td>
+                            </tr>
+                        </table>
                 </div>
             </section>
 
@@ -107,6 +226,22 @@
             </div>
         </div>
     </div>
+    <script>
+        function toggleTable(tableNumber) {
+            // Получаем ссылку на таблицу по номеру
+            var table = document.getElementById('table' + tableNumber);
+
+            // Проверяем текущее состояние видимости таблицы
+            if (table.style.display === 'none') {
+                // Если таблица скрыта, показываем ее
+                table.style.display = 'table';
+            } else {
+                // Если таблица отображается, скрываем ее
+                table.style.display = 'none';
+            }
+        }
+
+    </script>
 
 </body>
 
