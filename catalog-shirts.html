@@ -200,6 +200,7 @@
     <script>
         const products = [
             {
+                url: './card-pages/shirt-green.html',
                 category: 'рубашки',
                 image: './images/shirt-green.jpg',
                 title: 'Мужская тактическая рубаха ADAB, зеленная',
@@ -225,13 +226,17 @@
                 card.querySelector('.card__name').textContent = product.title;
                 card.querySelector('.card__price').textContent = product.price;
                 card.querySelector('.card__price-currency').textContent = product.currency;
-                productContainer.appendChild(card);
+                card.classList.add('card');
+                card.onclick = function () {
+                    redirectToPage(product.url);
+                };
 
                 if (product.sale) { // Добавляем условие для отображения контейнера с скидкой
                     card.querySelector('.card__sale').textContent = product.sale;
                     card.querySelector('.card__sale').style.display = 'block';
                 }
 
+                productContainer.appendChild(card);
                 // Задержка перед установкой полной прозрачности
                 setTimeout(() => {
                     card.style.opacity = '1'; // Плавно устанавливаем полную прозрачность

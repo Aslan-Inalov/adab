@@ -10,7 +10,7 @@
     <link rel="manifest" href="./favicon/site.webmanifest">
     <link rel="stylesheet" href="index.css">
     <script src="script.js" defer></script>
-    <title>ADAB</title>
+    <title>Оформление заказа</title>
 </head>
 
 <body class="root">
@@ -39,7 +39,7 @@
 
             <section class="link-intro">
                 <div class="link-intro__container" onclick="goBack()">
-                    <img src="../images/arrow.svg" alt="Назад" class="link-intro__logo">
+                    <img src="./images/arrow.svg" alt="Назад" class="link-intro__logo">
                     <p class="link-intro__text">Назад в каталог</p>
                 </div>
             </section>
@@ -48,9 +48,13 @@
                 <h1 class="order__title">Оформление заказа</h1>
                 <div class="order__payment-container">
                     <h2 class="order__subtitle">1. Оплатить товар</h2>
-                    <p class="order__text">Оплата производится на Сбербанк по номеру 2202205043517363 карта на
-                        имя
-                        Шамхан Салавдиевич.</p>
+                    <p class="order__text">Способы оплаты:</p>
+                    <ul class="order__items">
+                        <li class="order__text">На карту Сбербанка, <b>2202205043517363</b>, на имя Шамхан Салавдиевич
+                            А.</li>
+                        <li class="order__text">Kuveyt Türk, <b>TR92 0020 5000 0981 5521 0000 01</b>, SHAMKHAN
+                            ABDULKADIROV</li>
+                    </ul>
                 </div>
 
                 <div class="order__form-container">
@@ -63,63 +67,100 @@
                     </select>
 
                     <form id="form-europe" class="order__form">
-                        <input type="text" name="name" class="order__input" placeholder="Фамилия Имя" minLength="2"
-                            maxLength="30" required>
+                        <input type="text" name="name" class="order__input latin-input" pattern="^[a-zA-Z0-9\s\-]+$"
+                            placeholder="Фамилия Имя" minLength="2" maxLength="30" required>
+                        <span id="error-message" style="color: red; font-size: 10px;"></span>
+
+                        <input type="text" name="country" class="order__input latin-input" pattern="^[a-zA-Z0-9\s\-]+$"
+                            placeholder="Страна доставки" minLength="2" maxLength="30" required>
+                        <span id="error-message" style="color: red; font-size: 10px;"></span>
+
+                        <input type="text" name="region" class="order__input latin-input" pattern="^[a-zA-Z0-9\s\-]+$"
+                            placeholder="Область, округ, штат (если есть)" minLength="2" maxLength="50">
+                        <span id="error-message" style="color: red; font-size: 10px;"></span>
+
+                        <input type="text" name="city" class="order__input latin-input" pattern="^[a-zA-Z0-9\s\-]+$"
+                            placeholder="Город получателя" minLength="2" maxLength="30" required>
+                        <span id="error-message" style="color: red; font-size: 10px;"></span>
+
                         <input type="text" name="adress" class="order__input"
                             placeholder="Адрес получателя (улица, номер дома)" minLength="2" maxLength="50" required>
-                        <input type="text" name="city" class="order__input" placeholder="Город получателя" minLength="2"
-                            maxLength="30" required>
-                        <input type="text" name="region" class="order__input"
-                            placeholder="Область, округ, штат (если есть)" minLength="2" maxLength="50" required>
+
                         <input type="text" name="index" class="order__input" placeholder="Почтовый индекс" minLength="2"
                             maxLength="30" required>
-                        <input type="text" name="country" class="order__input" placeholder="Страна доставки"
-                            minLength="2" maxLength="30" required>
+
                         <input type="tel" name="number" class="order__input" placeholder="Номер телефона" required>
+
                         <input type="email" name="email" class="order__input" placeholder="Адрес электронной почты"
                             required>
+
                         <input type="text" name="product" class="order__input product-name-input"
                             placeholder="Наименование товара" minLength="10" maxLength="30" required>
-                        <input type="text" name="product" class="order__input"
-                            placeholder="Размер товара" required>
+
+                        <input type="text" name="size" class="order__input" placeholder="Размер товара" required>
+
+                        <input type="submit" id="submit-button" class="order__btn" value="Оформить заказ">
                     </form>
 
                     <form id="form-russia" class="order__form">
-                        <input type="text" name="name" class="order__input" placeholder="Фамилия Имя Отчество" minLength="2"
-                            maxLength="30" required>
-                        <input type="text" name="adress" class="order__input"
-                            placeholder="Адрес получателя" minLength="2" maxLength="50" required>
-                        <input type="text" name="index" class="order__input" placeholder="Почтовый индекс" minLength="2"
-                            maxLength="30" required>
-                        <input type="tel" name="number" class="order__input" placeholder="Номер телефона" required>
-                        <input type="email" name="email" class="order__input" placeholder="Адрес электронной почты"
+                        <input type="text" name="name-ru" class="order__input cyrill-input" pattern="^[А-Яа-яЁё\s\-]+$"
+                            placeholder="Фамилия Имя Отчество" minLength="2" maxLength="30" required>
+                        <span id="error-message" style="color: red; font-size: 10px;"></span>
+
+                        <input type="text" name="city-ru" class="order__input cyrill-input" pattern="^[А-Яа-яЁё\s\-]+$"
+                            placeholder="Город (поселок)" minLength="2" maxLength="30" required>
+                        <span id="error-message" style="color: red; font-size: 10px;"></span>
+
+                        <input type="text" name="adress-ru" class="order__input"
+                            placeholder="Адрес (улица, номер дома, квартира)" minLength="2" maxLength="50" required>
+
+                        <input type="text" name="index-ru" class="order__input" placeholder="Почтовый индекс"
+                            minLength="2" maxLength="30" required>
+
+                        <input type="tel" name="number-ru" class="order__input" placeholder="Номер телефона" required>
+
+                        <input type="email" name="email-ru" class="order__input" placeholder="Адрес электронной почты"
                             required>
-                        <input type="text" name="product" class="order__input product-name-input"
+
+                        <input type="text" name="product-ru" class="order__input product-name-input"
                             placeholder="Наименование товара" minLength="10" maxLength="30" required>
-                        <input type="text" name="product" class="order__input"
-                            placeholder="Размер товара" required>
+
+                        <input type="text" name="size-ru" class="order__input" placeholder="Размер товара" required>
+
+                        <input type="submit" id="submit-button-ru" class="order__btn" value="Оформить заказ">
                     </form>
 
                     <form id="form-turkey" class="order__form">
-                        <input type="text" name="name" class="order__input" placeholder="Фамилия Имя" minLength="2"
+                        <input type="text" name="name-tur" class="order__input tur-input"
+                            pattern="^[a-zA-Z0-9\s\-ıİşŞğĞüÜöÖçÇ]+$" placeholder="Фамилия Имя" minLength="2"
                             maxLength="30" required>
-                        <input type="text" name="adress" class="order__input"
+                        <span id="error-message" style="color: red; font-size: 10px;"></span>
+
+                        <input type="text" name="region-tur" class="order__input tur-input"
+                            pattern="^[a-zA-Z0-9\s\-ıİşŞğĞüÜöÖçÇ]+$" placeholder="Область, округ, штат (если есть)"
+                            minLength="2" maxLength="50">
+                        <span id="error-message" style="color: red; font-size: 10px;"></span>
+
+                        <input type="text" name="city-tur" class="order__input tur-input"
+                            pattern="^[a-zA-Z0-9\s\-ıİşŞğĞüÜöÖçÇ]+$" placeholder="Город получателя" minLength="2"
+                            maxLength="30" required>
+                        <span id="error-message" style="color: red; font-size: 10px;"></span>
+
+                        <input type="text" name="adress-tur" class="order__input"
                             placeholder="Адрес получателя (улица, номер дома)" minLength="2" maxLength="50" required>
-                        <input type="text" name="city" class="order__input" placeholder="Город получателя" minLength="2"
-                            maxLength="30" required>
-                        <input type="text" name="region" class="order__input"
-                            placeholder="Область, округ, штат (если есть)" minLength="2" maxLength="50" required>
-                        <input type="text" name="country" class="order__input" placeholder="Страна доставки"
-                            minLength="2" maxLength="30" required>
-                        <input type="tel" name="number" class="order__input" placeholder="Номер телефона" required>
-                        <input type="email" name="email" class="order__input" placeholder="Адрес электронной почты"
+
+                        <input type="tel" name="number-tur" class="order__input" placeholder="Номер телефона" required>
+
+                        <input type="email" name="email-tur" class="order__input" placeholder="Адрес электронной почты"
                             required>
-                        <input type="text" name="product" class="order__input product-name-input"
+
+                        <input type="text" name="product-tur" class="order__input product-name-input"
                             placeholder="Наименование товара" minLength="10" maxLength="30" required>
-                        <input type="text" name="product" class="order__input"
-                            placeholder="Размер товара" required>
+
+                        <input type="text" name="size-tur" class="order__input" placeholder="Размер товара" required>
+
+                        <input type="submit" id="submit-button-tur" class="order__btn" value="Оформить заказ">
                     </form>
-                    <button id="btn" class="order__btn">Оформить заказ</button>
 
                 </div>
             </section>
@@ -193,14 +234,12 @@
         const formEurope = document.getElementById('form-europe');
         const formRussia = document.getElementById('form-russia');
         const formTurkey = document.getElementById('form-turkey');
-        const button = document.getElementById('btn');
         countrySelect.addEventListener('change', function () {
             const selectedForm = document.getElementById(countrySelect.value);
             formEurope.style.display = 'none';
             formRussia.style.display = 'none';
             formTurkey.style.display = 'none';
             selectedForm.style.display = 'flex';
-            button.style.display = 'block';
         });
 
         var productName = localStorage.getItem('productName');
@@ -208,6 +247,227 @@
         for (var i = 0; i < productNameInputs.length; i++) {
             productNameInputs[i].value = productName;
         }
+
+        // Получаем кнопку
+        var submitButton = document.getElementById("submit-button");
+        // Добавляем обработчик события на изменение полей формы
+        document.getElementById("form-europe").addEventListener("change", function () {
+            // Получаем значения полей формы
+            var name = document.getElementsByName("name")[0].value;
+            var country = document.getElementsByName("country")[0].value;
+            var region = document.getElementsByName("region")[0].value;
+            var city = document.getElementsByName("city")[0].value;
+            var adress = document.getElementsByName("adress")[0].value;
+            var index = document.getElementsByName("index")[0].value;
+            var number = document.getElementsByName("number")[0].value;
+            var email = document.getElementsByName("email")[0].value;
+            var product = document.getElementsByName("product")[0].value;
+            var size = document.getElementsByName("size")[0].value;
+            // Проверяем, заполнены ли все поля формы
+            if (name && country && city && adress && index && number && email && product && size) {
+                // Если все поля заполнены, меняем цвет кнопки
+                submitButton.classList.add("active");
+
+            } else {
+                // Если есть незаполненные поля, возвращаем кнопке исходный цвет
+                submitButton.classList.remove("active");
+            }
+        });
+
+        document.getElementById("form-europe").addEventListener("submit", function (event) {
+            event.preventDefault(); // Отменяем стандартное поведение формы
+            // Получаем данные из формы
+            var name = document.getElementsByName("name")[0].value;
+            var country = document.getElementsByName("country")[0].value;
+            var region = document.getElementsByName("region")[0].value;
+            var city = document.getElementsByName("city")[0].value;
+            var adress = document.getElementsByName("adress")[0].value;
+            var index = document.getElementsByName("index")[0].value;
+            var number = document.getElementsByName("number")[0].value;
+            var email = document.getElementsByName("email")[0].value;
+            var product = document.getElementsByName("product")[0].value;
+            var size = document.getElementsByName("size")[0].value;
+            // Формируем запрос к API Телеграма
+            var token = '6282187277:AAHojLFzl9-pmrHjJgZs0ammnQKRVXGqqno';
+            var chatId = '-1001970157409';
+            var text = "Новый заказ из Европы/Америки:\nИмя: " + name + "\nСтрана: " + country + "\nОбласть: " + region + "\nГород: " + city + "\nАдрес: " + adress + "\nИндекс: " + index + "\nТелефон: " + number + "\nEmail: " + email + "\nТовар: " + product + "\nРазмер: " + size;
+            var telegramUrl = "https://api.telegram.org/bot" + token + "/sendMessage?chat_id=" + chatId + "&text=" + encodeURIComponent(text);
+            // Отправляем AJAX-запрос
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", telegramUrl, true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // После успешной отправки формы перенаправляем пользователя на другую страницу
+                    window.location.href = "./processed.html"; // Замените "новая_страница.html" на URL желаемой страницы
+                }
+            };
+            xhr.send();
+        });
+
+
+        // RUSSIA
+        // Получаем кнопку
+        var submitButtonRu = document.getElementById("submit-button-ru");
+        // Добавляем обработчик события на изменение полей формы
+        document.getElementById("form-russia").addEventListener("change", function () {
+            // Получаем значения полей формы
+            var name = document.getElementsByName("name-ru")[0].value;
+            var city = document.getElementsByName("city-ru")[0].value;
+            var adress = document.getElementsByName("adress-ru")[0].value;
+            var index = document.getElementsByName("index-ru")[0].value;
+            var number = document.getElementsByName("number-ru")[0].value;
+            var email = document.getElementsByName("email-ru")[0].value;
+            var product = document.getElementsByName("product-ru")[0].value;
+            var size = document.getElementsByName("size-ru")[0].value;
+            // Проверяем, заполнены ли все поля формы
+            if (name && city && adress && index && number && email && product && size) {
+                // Если все поля заполнены, меняем цвет кнопки
+                submitButtonRu.classList.add("active");
+
+            } else {
+                // Если есть незаполненные поля, возвращаем кнопке исходный цвет
+                submitButtonRu.classList.remove("active");
+            }
+        });
+
+        document.getElementById("form-russia").addEventListener("submit", function (event) {
+            event.preventDefault(); // Отменяем стандартное поведение формы
+            // Получаем данные из формы
+            var name = document.getElementsByName("name-ru")[0].value;
+            var city = document.getElementsByName("city-ru")[0].value;
+            var adress = document.getElementsByName("adress-ru")[0].value;
+            var index = document.getElementsByName("index-ru")[0].value;
+            var number = document.getElementsByName("number-ru")[0].value;
+            var email = document.getElementsByName("email-ru")[0].value;
+            var product = document.getElementsByName("product-ru")[0].value;
+            var size = document.getElementsByName("size-ru")[0].value;
+            // Формируем запрос к API Телеграма
+            var token = '6282187277:AAHojLFzl9-pmrHjJgZs0ammnQKRVXGqqno';
+            var chatId = '-1001970157409';
+            var text = "Новый заказ из России:\nИмя: " + name + "\nГород: " + city + "\nАдрес: " + adress + "\nИндекс: " + index + "\nНомер: " + number + "\nEmail: " + email + "\nТовар: " + product + "\nРазмер: " + size;
+            var telegramUrl = "https://api.telegram.org/bot" + token + "/sendMessage?chat_id=" + chatId + "&text=" + encodeURIComponent(text);
+            // Отправляем AJAX-запрос
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", telegramUrl, true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // После успешной отправки формы перенаправляем пользователя на другую страницу
+                    window.location.href = "./processed.html"; // Замените "новая_страница.html" на URL желаемой страницы
+                }
+            };
+            xhr.send();
+        });
+
+        // TURKEY
+        // Получаем кнопку
+        var submitButtonTur = document.getElementById("submit-button-tur");
+        // Добавляем обработчик события на изменение полей формы
+        document.getElementById("form-turkey").addEventListener("change", function () {
+            // Получаем значения полей формы
+            var name = document.getElementsByName("name-tur")[0].value;
+            var city = document.getElementsByName("city-tur")[0].value;
+            var adress = document.getElementsByName("adress-tur")[0].value;
+            var number = document.getElementsByName("number-tur")[0].value;
+            var email = document.getElementsByName("email-tur")[0].value;
+            var product = document.getElementsByName("product-tur")[0].value;
+            var size = document.getElementsByName("size-tur")[0].value;
+            // Проверяем, заполнены ли все поля формы
+            if (name && city && adress && number && email && product && size) {
+                // Если все поля заполнены, меняем цвет кнопки
+                submitButtonTur.classList.add("active");
+
+            } else {
+                // Если есть незаполненные поля, возвращаем кнопке исходный цвет
+                submitButtonTur.classList.remove("active");
+            }
+        });
+
+        document.getElementById("form-turkey").addEventListener("submit", function (event) {
+            event.preventDefault(); // Отменяем стандартное поведение формы
+            // Получаем данные из формы
+            var name = document.getElementsByName("name-tur")[0].value;
+            var region = document.getElementsByName("region-tur")[0].value;
+            var city = document.getElementsByName("city-tur")[0].value;
+            var adress = document.getElementsByName("adress-tur")[0].value;
+            var number = document.getElementsByName("number-tur")[0].value;
+            var email = document.getElementsByName("email-tur")[0].value;
+            var product = document.getElementsByName("product-tur")[0].value;
+            var size = document.getElementsByName("size-tur")[0].value;
+            // Формируем запрос к API Телеграма
+            var token = '6282187277:AAHojLFzl9-pmrHjJgZs0ammnQKRVXGqqno';
+            var chatId = '-1001970157409';
+            var text = "Новый заказ из Турции:\nИмя: " + name + "\nОбласть: " + region + "\nГород: " + city + "\nАдрес: " + adress + "\nНомер: " + number + "\nEmail: " + email + "\nТовар: " + product + "\nРазмер: " + size;
+            var telegramUrl = "https://api.telegram.org/bot" + token + "/sendMessage?chat_id=" + chatId + "&text=" + encodeURIComponent(text);
+            // Отправляем AJAX-запрос
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", telegramUrl, true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // После успешной отправки формы перенаправляем пользователя на другую страницу
+                    window.location.href = "./processed.html";
+                }
+            };
+            xhr.send();
+        });
+    </script>
+    <script>
+        var latinRegex = /^[a-zA-Z0-9\s\-]+$/;
+        var cyrillicRegex = /^[а-яА-Я0-9\s\-]+$/;
+        var turRegex = /^[a-zA-Z0-9\s\-ıİşŞğĞüÜöÖçÇ]+$/u;
+
+        // Получаем все инпуты формы "form-europe"
+        var inputsLatin = document.querySelectorAll("#form-europe input.latin-input");
+        // Обработчик события ввода во всех инпутах
+        for (var i = 0; i < inputsLatin.length; i++) {
+            inputsLatin[i].addEventListener("input", function () {
+                var inputValue = this.value;
+                // Проверяем, содержит ли значение только латинские символы
+                if (!latinRegex.test(inputValue)) {
+                    // Если значение содержит не латинские символы, выводим сообщение об ошибке
+                    this.nextElementSibling.textContent = "Поле должно содержать только латинские буквы";
+                } else {
+                    // Если значение содержит только латинские символы, очищаем сообщение об ошибке
+                    this.nextElementSibling.textContent = "";
+                }
+            });
+        }
+
+        // Получаем все инпуты формы "form-russia"
+        var inputsRussia = document.querySelectorAll("#form-russia input.cyrill-input");
+        // Обработчик события ввода во всех инпутах формы "form-russia"
+        for (var i = 0; i < inputsRussia.length; i++) {
+            inputsRussia[i].addEventListener("input", function () {
+                var inputValue = this.value;
+                // Проверяем, содержит ли значение только символы кириллицы 
+                if (!cyrillicRegex.test(inputValue)) {
+                    // Если значение содержит не символы кириллицы, выводим сообщение об ошибке
+                    this.nextElementSibling.textContent = "Поле должно содержать только буквы кириллицы";
+                } else {
+                    // Если значение содержит только символы кириллицы, очищаем сообщение об ошибке
+                    this.nextElementSibling.textContent = "";
+                }
+            });
+        }
+
+        // Получаем все инпуты формы "form-russia"
+        var inputsTurkey = document.querySelectorAll("#form-turkey input.tur-input");
+        // Обработчик события ввода во всех инпутах формы "form-russia"
+        for (var i = 0; i < inputsTurkey.length; i++) {
+            inputsTurkey[i].addEventListener("input", function () {
+                var inputValue = this.value;
+                // Проверяем, содержит ли значение только символы кириллицы 
+                if (!turRegex.test(inputValue)) {
+                    // Если значение содержит не символы кириллицы, выводим сообщение об ошибке
+                    this.nextElementSibling.textContent = "Поле должно содержать только латинские и турецкие буквы";
+                } else {
+                    // Если значение содержит только символы кириллицы, очищаем сообщение об ошибке
+                    this.nextElementSibling.textContent = "";
+                }
+            });
+        }
+
+
+
 
     </script>
 

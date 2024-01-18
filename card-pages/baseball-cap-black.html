@@ -10,7 +10,7 @@
     <link rel="manifest" href="../favicon/site.webmanifest">
     <link rel="stylesheet" href="../index.css">
     <script src="../script.js" defer></script>
-    <title>Мужская бейсболка премиум класса ADAB чёрная</title>
+    <title>Мужская бейсболка премиум класса ADAB, чёрная</title>
 </head>
 
 <body class="root">
@@ -98,7 +98,7 @@
                             небольшой пряжкой.</p>
                     </div>
                     <div class="card-content__btn-container">
-                        <button class="card-content__btn">Оформить заказ</button>
+                        <button class="card-content__btn" onclick="redirectToOrder('Мужская бейсболка премиум класса ADAB, чёрная')">Оформить заказ</button>
                     </div>
                 </div>
             </section>
@@ -200,6 +200,13 @@
                 var clickedIndex = Array.from(ancillariImages).indexOf(e.target);
                 showImage(clickedIndex);
             });
+        }
+
+        function redirectToOrder(productName) {
+            // Сохраняем значение имени товара в локальном хранилище
+            localStorage.setItem('productName', productName);
+            // Выполняем переход на страницу order.html
+            window.location.href = "../order.html";
         }
 
     </script>

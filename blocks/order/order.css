@@ -30,7 +30,7 @@
     font-size: 18px;
     line-height: 1.4;
     max-width: 90%;
-    margin: 0 auto;
+    margin: 5px auto;
 }
 
 .styled-select {
@@ -64,15 +64,13 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
-    margin-bottom: 10px;
+    margin-top: 15px;
 }
 
 .order__btn {
-    display: none;
     border: none;
+    color: gray;
     border-radius: 3px;
-    background: #38527A;
-    color: #FFF;
     text-align: center;
     font-size: 13.891px;
     font-weight: 500;
@@ -84,12 +82,29 @@
     margin-top: 50px;
     width: 100%;
     max-width: 500px;
-    transition: all 0.2s linear;
-    cursor: pointer;
 }
 
-.order__btn:hover {
+.order__btn.active {
+    background: #38527A;
+    color: #FFF;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.order__btn.active:hover {
     background: #2b2a29;
+}
+
+.order__processed-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.order__processed-text {
+    font-size: 20px;
+    line-height: 1.4;
 }
 
 @media screen and (max-width: 1024px) {

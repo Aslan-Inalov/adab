@@ -107,7 +107,7 @@
                         </p>
                     </div>
                     <div class="card-content__btn-container">
-                        <button class="card-content__btn">Оформить заказ</button>
+                        <button class="card-content__btn" onclick="redirectToOrder('Мужская обувь ADAB, синяя')">Оформить заказ</button>
                     </div>
                 </div>
             </section>
@@ -209,6 +209,13 @@
                 var clickedIndex = Array.from(ancillariImages).indexOf(e.target);
                 showImage(clickedIndex);
             });
+        }
+
+        function redirectToOrder(productName) {
+            // Сохраняем значение имени товара в локальном хранилище
+            localStorage.setItem('productName', productName);
+            // Выполняем переход на страницу order.html
+            window.location.href = "../order.html";
         }
 
     </script>
