@@ -116,6 +116,7 @@ td {
     display: flex;
     gap: 30px;
     margin-top: 15px;
+    width: 40%;
 }
 
 .support-block__link {
@@ -151,4 +152,101 @@ td {
 .icon-support.rotate {
     transform: rotate(180deg);
     /* Поворот на 180 градусов */
+}
+
+@media screen and (max-width: 820px) {
+    .support-block {
+        padding: 0 20px;
+    }
+
+    .support__title {
+        font-size: 45px;
+        line-height: 45px;
+        margin: 30px 0 50px;
+    }
+
+    .support-block__title {
+        font-size: 26px;
+        line-height: 29px;
+        letter-spacing: -0.8px;
+        margin-bottom: 25px;
+    }
+
+    .support__text {
+        font-size: 17px;
+        line-height: 1.35;
+    }
+
+    .support-block__consultation-title {
+        font-size: 12px;
+    }
+    
+    .support-block__consultation-subtitle {
+        font-size: 17px;
+        line-height: 1.35;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .table {
+        font-size: 9px;
+    }
+
+    th,
+    td:first-child {
+        padding: 6px 12px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .support-block__consultation {
+        flex-direction: column;
+        gap: 27px;
+        margin-top: 30px;
+    }
+    
+    .support-block__consultation-title {
+        font-size: 11px;
+    }
+    
+    .support-block__links {
+        display: flex;
+        gap: 30px;
+        width: 100%;
+    }
+    
+    .support-block__link {
+        font-size: 14px;
+        padding-bottom: 3px;
+    }
+    
+    .support-block__time-text {
+        font-size: 14px;
+    }
+    
+    .support-block__consultation-subtitle {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .table {
+        font-size: 8px;
+    }
+
+    th,
+    td:first-child {
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .table {
+        font-size: 7px;
+    }
+
+    th,
+    td:first-child {
+        padding: 4px 8px;
+    }
 }

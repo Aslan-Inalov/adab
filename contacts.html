@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js" defer></script>
+    <title>Контакты | ADAB</title>
+</head>
+
+<body class="root">
+    <div class="page">
+
+        <header class="header">
+            <a href="./index.html">
+                <div class="logo-container">
+                    <img src="./images/logo.png" alt="логотип" class="logo">
+                </div>
+            </a>
+
+            <nav>
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a class="header__menu-link" href="./catalog.html">Каталог</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="./about.html">О Бренде</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link header__menu-link-active"
+                            href="./support.html">Поддержка</a></li>
+                </ul>
+            </nav>
+
+            <button class="header__burger-btn"></button>
+        </header>
+
+        <main class="main">
+            <section class="nav-intro">
+                <div class="nav-intro__container">
+                    <ul class="nav-intro__item">
+                        <li class="nav-intro__links"><a href="./index.html" class="nav-intro__link">Главная</a><span
+                                class="nav-intro__breadcrumb-divider">/</span></li>
+                        <li class="nav-intro__links"><a href="./support.html"
+                                class="nav-intro__link-active">Поддержка</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <h1 class="support__title">Поддержка</h1>
+
+            <section class="support-block">
+                <h2 class="support-block__title">Доставка и Оплата</h2>
+                <div class="support-block__container">
+                    <div onclick="toggleTable(4)" class="support-block__toggle">
+                        <h3 class="support-block__subtitle">Доставка по России</h2>
+                            <img src="./images/icon-support.svg" alt="стрелочка" id="icon-support4"
+                                class="icon-support">
+                    </div>
+                    <div class="table" id="table4">
+                        <p class="support__text">
+                            1. СДЭК
+                        </p>
+                        <p class="support__text">
+                            2. Почта России
+                        </p>
+                        <p class="support__text">
+                            2. Маршрутные транспортные средства
+                        </p>
+                    </div>
+                </div>
+                <div class="support-block__container">
+                    <div onclick="toggleTable(5)" class="support-block__toggle">
+                        <h3 class="support-block__subtitle">Доставка по Турции</h2>
+                            <img src="./images/icon-support.svg" alt="стрелочка" id="icon-support5"
+                                class="icon-support">
+                    </div>
+                    <div class="table" id="table5">
+                        <p class="support__text">
+                            Почта PTT
+                        </p>
+                    </div>
+                </div>
+                <div class="support-block__container">
+                    <div onclick="toggleTable(6)" class="support-block__toggle">
+                        <h3 class="support-block__subtitle">Доставка по Европе / США</h2>
+                            <img src="./images/icon-support.svg" alt="стрелочка" id="icon-support6"
+                                class="icon-support">
+                    </div>
+                    <div class="table" id="table6">
+                        <p class="support__text">
+                            ShipEntegra
+                        </p>
+                    </div>
+                </div>
+                <div class="support-block__container">
+                    <div onclick="toggleTable(7)" class="support-block__toggle">
+                        <h3 class="support-block__subtitle">Способ оплаты</h2>
+                            <img src="./images/icon-support.svg" alt="стрелочка" id="icon-support7"
+                                class="icon-support">
+                    </div>
+                    <div class="table" id="table7">
+                        <p class="support__text">
+                            1. На карту Сбербанка, 2202205043517363, на имя Шамхан Салавдиевич А.
+                        </p>
+                        <p class="support__text">
+                            2. Kuveyt Türk, TR92 0020 5000 0981 5521 0000 01, SHAMKHAN ABDULKADIROV
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="support-block">
+                <h2 class="support-block__title">Размерные сетки</h2>
+                <div class="support-block__container">
+                    <div onclick="toggleTable(1)" class="support-block__toggle">
+                        <h3 class="support-block__subtitle">Мужская форма ADAB</h2>
+                            <img src="./images/icon-support.svg" alt="стрелочка" id="icon-support1"
+                                class="icon-support">
+                    </div>
+                    <div class="table" id="table1">
+                        <table>
+                            <tr>
+                                <th>Параметр, см</th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                                <th>XL</th>
+                                <th>2XL</th>
+                            </tr>
+                            <tr>
+                                <td>Плечи</td>
+                                <td>92</td>
+                                <td>96</td>
+                                <td>98</td>
+                                <td>102</td>
+                                <td>108</td>
+                            </tr>
+                            <tr>
+                                <td>Грудь</td>
+                                <td>113</td>
+                                <td>115</td>
+                                <td>121</td>
+                                <td>122</td>
+                                <td>128</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="support-block__container">
+                    <div onclick="toggleTable(2)" class="support-block__toggle">
+                        <h3 class="support-block__subtitle">Мужская рубаха ADAB</h2>
+                            <img src="./images/icon-support.svg" alt="стрелочка" id="icon-support2"
+                                class="icon-support">
+                    </div>
+                    <div class="table" id="table2">
+                        <table>
+                            <tr>
+                                <th>Параметр, см</th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                                <th>XL</th>
+                                <th>2XL</th>
+                            </tr>
+                            <tr>
+                                <td>Плечи</td>
+                                <td>96</td>
+                                <td>101</td>
+                                <td>106</td>
+                                <td>109</td>
+                                <td>115</td>
+                            </tr>
+                            <tr>
+                                <td>Грудь</td>
+                                <td>92</td>
+                                <td>96</td>
+                                <td>102</td>
+                                <td>106</td>
+                                <td>110</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="support-block__container">
+                    <div onclick="toggleTable(3)" class="support-block__toggle">
+                        <h3 class="support-block__subtitle">Детская форма ADAB</h2>
+                            <img src="./images/icon-support.svg" alt="стрелочка" id="icon-support3"
+                                class="icon-support">
+                    </div>
+                    <div class="table" id="table3">
+                        <table>
+                            <tr>
+                                <th>Рост</th>
+                                <th>104</th>
+                                <th>116</th>
+                                <th>128</th>
+                                <th>140</th>
+                                <th>152</th>
+                                <th>164</th>
+                                <th>176</th>
+                            </tr>
+                            <tr>
+                                <td>Возраст</td>
+                                <td>3-4</td>
+                                <td>5-6</td>
+                                <td>7-8</td>
+                                <td>9-10</td>
+                                <td>11-12</td>
+                                <td>13-15</td>
+                                <td>16-17</td>
+                            </tr>
+                            <tr>
+                                <th>RU</td>
+                                <td>28-30</td>
+                                <td>32</td>
+                                <td>34</td>
+                                <td>38</td>
+                                <td>40</td>
+                                <td>40-42</td>
+                                <td>42</td>
+                            </tr>
+                            <tr>
+                                <th>EU</th>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td>7</td>
+                                <td>9</td>
+                                <td>11</td>
+                                <td>13</td>
+                            </tr>
+                            <tr>
+                                <th>US</th>
+                                <td>4T</td>
+                                <td>5-6</td>
+                                <td>7</td>
+                                <td>S</td>
+                                <td>M/L</td>
+                                <td>L</td>
+                                <td>XL</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="support-block" style="margin-top: 80px;">
+                <h2 class="support-block__title">Персональная консультация</h2>
+                <p class="support-block__consultation-subtitle">Если вы сомневаетесь, напишите нам в мессенджерах, и мы
+                    вам поможем наиболее точно определить размер.</p>
+                <div class="support-block__consultation">
+                    <div class="support-block__messenger">
+                        <h4 class="support-block__consultation-title">Мессенджеры</h4>
+                        <div class="support-block__links">
+                            <a href="https://wa.me/905078405635" class="support-block__link">WHATSAPP</a>
+                            <a href="https://t.me/adab_kav" class="support-block__link">TELEGRAM</a>
+                        </div>
+                    </div>
+                    <div class="support-block__reg">
+                        <h4 class="support-block__consultation-title">Режим работы</h4>
+                        <div class="support-block__time">
+                            <p class="support-block__time-text">10:00 - 20:00</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <p class="footer__copyright">© <span id="currentYear"></span> Adab</p>
+        </footer>
+
+        <div class="burger">
+            <div class="burger__header">
+                <a href="./index.html">
+                    <div class="logo-container">
+                        <img src="./images/logo.png" alt="логотип" class="logo">
+                    </div>
+                </a>
+                <button class="burger__close-btn"></button>
+            </div>
+
+            <nav class="burger__menu">
+                <ul class="burger__menu-list">
+                    <li class="burger__menu-item">
+                        <a href="./catalog.html" class="burger__menu-link">Каталог</a>
+                    </li>
+                    <li class="burger__menu-item">
+                        <a href="./about.html" class="burger__menu-link">О бренде</a>
+                    </li>
+                    <li class="burger__menu-item">
+                        <a href="#" class="burger__menu-link">Контакты</a>
+                    </li>
+                    <li class="burger__menu-item">
+                        <a href="support.html" class="burger__menu-link burger__menu-link-active">Поддержка</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="burger__contacts">
+                <ul class="burger__contacts-list">
+                    <li class="burger__contacts-link">
+                        <a href="https://t.me/adab_kav" title="Написать нам в Telegram"><img
+                                src="./images/icons_telegram.svg" alt="иконка telegram"
+                                class="burger__contacts-icon"></a>
+                    </li>
+                    <li class="burger__contacts-link">
+                        <a href="https://wa.me/905078405635" title="Написать нам в Whatsapp"><img
+                                src="./images/icons_whatsapp.svg" alt="иконка whatsapp"
+                                class="burger__contacts-icon"></a>
+                    </li>
+                    <li class="burger__contacts-link">
+                        <a href="https://instagram.com/adab_kav?igshid=YmMyMTA2M2Y="
+                            title="Написать нам в Instagram"><img src="./images/icons_instagram.svg"
+                                alt="иконка instagram" class="burger__contacts-icon"></a>
+                    </li>
+                    <li class="burger__contacts-link">
+                        <a href="mailto:dinislam.gu@gmail.com" title="Написать нам на почту"><img
+                                src="./images/icons_mail.svg" alt="иконка mail" class="burger__contacts-icon"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleTable(tableNumber) {
+            // Получаем ссылку на таблицу по номеру
+            var table = document.getElementById('table' + tableNumber);
+            // Получаем ссылку на соответствующий элемент стрелки по ID
+            var iconElement = document.getElementById('icon-support' + tableNumber);
+
+            // Проверяем текущее состояние видимости таблицы
+            if (table.style.display === 'none' || table.style.display === '') {
+                // Если таблица скрыта или свойство display не установлено, показываем ее
+                table.style.display = 'table';
+                if (iconElement) {
+                    iconElement.classList.add('rotate'); // Добавляем класс rotate
+                }
+            } else {
+                // Если таблица отображается, скрываем ее
+                table.style.display = 'none';
+                if (iconElement) {
+                    iconElement.classList.remove('rotate'); // Удаляем класс rotate
+                }
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
