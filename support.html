@@ -10,7 +10,6 @@
     <link rel="manifest" href="./favicon/site.webmanifest">
     <link rel="stylesheet" href="index.css">
     <script src="script.js" defer></script>
-    <script src="slider.js" defer></script>
     <title>Поддержка | ADAB</title>
 </head>
 
@@ -50,11 +49,78 @@
                 </div>
             </section>
 
-            <section class="support-size">
-                <h2 class="support-size__title">Размерные сетки</h2>
-                <div class="support-size__container">
-                    <h3 onclick="toggleTable(1)" class="support-size__subtitle">Мужская форма ADAB</h2>
-                        <table id="table1">
+            <h1 class="support__title">Поддержка</h1>
+
+            <section class="support-block">
+                <h2 class="support-block__title">Доставка и Оплата</h2>
+                <div class="support-block__container">
+                    <div onclick="toggleTable(4)" class="support-block__toggle">
+                        <h3 class="support-block__subtitle">Доставка по России</h2>
+                            <img src="./images/icon-support.svg" alt="стрелочка" id="icon-support4"
+                                class="icon-support">
+                    </div>
+                    <div class="table" id="table4">
+                        <p class="support__text">
+                            1. СДЭК
+                        </p>
+                        <p class="support__text">
+                            2. Почта России
+                        </p>
+                        <p class="support__text">
+                            2. Маршрутные транспортные средства
+                        </p>
+                    </div>
+                </div>
+                <div class="support-block__container">
+                    <div onclick="toggleTable(5)" class="support-block__toggle">
+                        <h3 class="support-block__subtitle">Доставка по Турции</h2>
+                            <img src="./images/icon-support.svg" alt="стрелочка" id="icon-support5"
+                                class="icon-support">
+                    </div>
+                    <div class="table" id="table5">
+                        <p class="support__text">
+                            Почта PTT
+                        </p>
+                    </div>
+                </div>
+                <div class="support-block__container">
+                    <div onclick="toggleTable(6)" class="support-block__toggle">
+                        <h3 class="support-block__subtitle">Доставка по Европе / США</h2>
+                            <img src="./images/icon-support.svg" alt="стрелочка" id="icon-support6"
+                                class="icon-support">
+                    </div>
+                    <div class="table" id="table6">
+                        <p class="support__text">
+                            ShipEntegra
+                        </p>
+                    </div>
+                </div>
+                <div class="support-block__container">
+                    <div onclick="toggleTable(7)" class="support-block__toggle">
+                        <h3 class="support-block__subtitle">Способ оплаты</h2>
+                            <img src="./images/icon-support.svg" alt="стрелочка" id="icon-support7"
+                                class="icon-support">
+                    </div>
+                    <div class="table" id="table7">
+                        <p class="support__text">
+                            1. На карту Сбербанка, 2202205043517363, на имя Шамхан Салавдиевич А.
+                        </p>
+                        <p class="support__text">
+                            2. Kuveyt Türk, TR92 0020 5000 0981 5521 0000 01, SHAMKHAN ABDULKADIROV
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="support-block">
+                <h2 class="support-block__title">Размерные сетки</h2>
+                <div class="support-block__container">
+                    <div onclick="toggleTable(1)" class="support-block__toggle">
+                        <h3 class="support-block__subtitle">Мужская форма ADAB</h2>
+                            <img src="./images/icon-support.svg" alt="стрелочка" id="icon-support1"
+                                class="icon-support">
+                    </div>
+                    <div class="table" id="table1">
+                        <table>
                             <tr>
                                 <th>Параметр, см</th>
                                 <th>S</th>
@@ -80,10 +146,16 @@
                                 <td>128</td>
                             </tr>
                         </table>
+                    </div>
                 </div>
-                <div class="support-size__container">
-                    <h3 onclick="toggleTable(2)" class="support-size__subtitle">Мужская рубаха ADAB</h2>
-                        <table id="table2">
+                <div class="support-block__container">
+                    <div onclick="toggleTable(2)" class="support-block__toggle">
+                        <h3 class="support-block__subtitle">Мужская рубаха ADAB</h2>
+                            <img src="./images/icon-support.svg" alt="стрелочка" id="icon-support2"
+                                class="icon-support">
+                    </div>
+                    <div class="table" id="table2">
+                        <table>
                             <tr>
                                 <th>Параметр, см</th>
                                 <th>S</th>
@@ -109,11 +181,16 @@
                                 <td>110</td>
                             </tr>
                         </table>
+                    </div>
                 </div>
-
-                <div class="support-size__container">
-                    <h3 onclick="toggleTable(3)" class="support-size__subtitle">Детская форма ADAB</h2>
-                        <table id="table3">
+                <div class="support-block__container">
+                    <div onclick="toggleTable(3)" class="support-block__toggle">
+                        <h3 class="support-block__subtitle">Детская форма ADAB</h2>
+                            <img src="./images/icon-support.svg" alt="стрелочка" id="icon-support3"
+                                class="icon-support">
+                    </div>
+                    <div class="table" id="table3">
+                        <table>
                             <tr>
                                 <th>Рост</th>
                                 <th>104</th>
@@ -165,6 +242,28 @@
                                 <td>XL</td>
                             </tr>
                         </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="support-block" style="margin-top: 80px;">
+                <h2 class="support-block__title">Персональная консультация</h2>
+                <p class="support-block__consultation-subtitle">Если вы сомневаетесь, напишите нам в мессенджерах, и мы
+                    вам поможем наиболее точно определить размер.</p>
+                <div class="support-block__consultation">
+                    <div class="support-block__messenger">
+                        <h4 class="support-block__consultation-title">Мессенджеры</h4>
+                        <div class="support-block__links">
+                            <a href="https://wa.me/905078405635" class="support-block__link">WHATSAPP</a>
+                            <a href="https://t.me/adab_kav" class="support-block__link">TELEGRAM</a>
+                        </div>
+                    </div>
+                    <div class="support-block__reg">
+                        <h4 class="support-block__consultation-title">Режим работы</h4>
+                        <div class="support-block__time">
+                            <p class="support-block__time-text">10:00 - 20:00</p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -230,14 +329,22 @@
         function toggleTable(tableNumber) {
             // Получаем ссылку на таблицу по номеру
             var table = document.getElementById('table' + tableNumber);
+            // Получаем ссылку на соответствующий элемент стрелки по ID
+            var iconElement = document.getElementById('icon-support' + tableNumber);
 
             // Проверяем текущее состояние видимости таблицы
-            if (table.style.display === 'none') {
-                // Если таблица скрыта, показываем ее
+            if (table.style.display === 'none' || table.style.display === '') {
+                // Если таблица скрыта или свойство display не установлено, показываем ее
                 table.style.display = 'table';
+                if (iconElement) {
+                    iconElement.classList.add('rotate'); // Добавляем класс rotate
+                }
             } else {
                 // Если таблица отображается, скрываем ее
                 table.style.display = 'none';
+                if (iconElement) {
+                    iconElement.classList.remove('rotate'); // Удаляем класс rotate
+                }
             }
         }
 

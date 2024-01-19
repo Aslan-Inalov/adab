@@ -11,10 +11,28 @@
     <link rel="stylesheet" href="index.css">
     <script src="script.js" defer></script>
     <title>Заказ офрмлен</title>
+    <style>
+        @media (min-height: 670px) {
+            html {
+                height: 100%;
+                position: relative;
+                max-width: 1440px;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+            body {
+                position: fixed;
+                overflow: hidden;
+                height: 100%;
+                width: 100%;
+                max-width: 1440px;
+            }
+        }
+    </style>
 </head>
 
-<body class="root">
-    <div class="page">
+<body class="root" id="wrapper">
+    <div class="page" id="processed-page">
 
         <header class="header">
             <a href="./index.html">
@@ -46,18 +64,17 @@
                 </a>
             </section>
 
-            <h1 class="order__title">Ваш заказ оформлен!</h1>
+            <h1 class="order__title" id="processed-title">Ваш заказ оформлен!</h1>
             <div class="order__processed-container">
                 <p class="order__processed-text">Для подтверждения отправьте чек об оплате</p>
                 <a href="https://wa.me/905078405635" title="Написать нам в Whatsapp"><img
-                        src="./images/icons_whatsapp.svg" alt="иконка whatsapp" class="burger__contacts-icon"></a>
+                        src="./images/icons_whatsapp.svg" alt="иконка whatsapp" class="burger__contacts-icon" id="processed-icon"></a>
             </div>
-
 
         </main>
 
-        <footer class="footer">
-            <p class="footer__copyright">© <span id="currentYear"></span> Adab</p>
+        <footer class="footer" id="processed-footer">
+            <p class="footer__copyright" id="processed-footer-copyright">© <span id="currentYear"></span> Adab</p>
         </footer>
 
         <div class="burger">
