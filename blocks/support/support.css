@@ -119,6 +119,13 @@ td {
     width: 40%;
 }
 
+.support-block__link-text {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+    text-transform: uppercase;
+}
+
 .support-block__link {
     text-decoration: none;
     color: #2B2A29;
@@ -235,6 +242,10 @@ td {
         display: flex;
         gap: 30px;
         width: 100%;
+    }
+
+    .support-block__link-text {
+        font-size: 14px;
     }
 
     .support-block__link {
