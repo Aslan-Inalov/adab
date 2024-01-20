@@ -10,6 +10,7 @@
     <link rel="manifest" href="./favicon/site.webmanifest">
     <link rel="stylesheet" href="index.css">
     <script src="script.js" defer></script>
+    <script src="support.js" defer></script>
     <title>Поддержка | ADAB</title>
 </head>
 
@@ -27,7 +28,7 @@
                 <ul class="header__menu">
                     <li class="header__menu-item"><a class="header__menu-link" href="./catalog.html">Каталог</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="./about.html">О Бренде</a></li>
-                    <li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="./contacts.html">Контакты</a></li>
                     <li class="header__menu-item"><a class="header__menu-link header__menu-link-active"
                             href="./support.html">Поддержка</a></li>
                 </ul>
@@ -292,7 +293,7 @@
                         <a href="./about.html" class="burger__menu-link">О бренде</a>
                     </li>
                     <li class="burger__menu-item">
-                        <a href="#" class="burger__menu-link">Контакты</a>
+                        <a href="./contacts.html" class="burger__menu-link">Контакты</a>
                     </li>
                     <li class="burger__menu-item">
                         <a href="support.html" class="burger__menu-link burger__menu-link-active">Поддержка</a>
@@ -318,38 +319,13 @@
                                 alt="иконка instagram" class="burger__contacts-icon"></a>
                     </li>
                     <li class="burger__contacts-link">
-                        <a href="mailto:dinislam.gu@gmail.com" title="Написать нам на почту"><img
+                        <a href="mailto:adabkav@mail.ru" title="Написать нам на почту"><img
                                 src="./images/icons_mail.svg" alt="иконка mail" class="burger__contacts-icon"></a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-    <script>
-        function toggleTable(tableNumber) {
-            // Получаем ссылку на таблицу по номеру
-            var table = document.getElementById('table' + tableNumber);
-            // Получаем ссылку на соответствующий элемент стрелки по ID
-            var iconElement = document.getElementById('icon-support' + tableNumber);
-
-            // Проверяем текущее состояние видимости таблицы
-            if (table.style.display === 'none' || table.style.display === '') {
-                // Если таблица скрыта или свойство display не установлено, показываем ее
-                table.style.display = 'table';
-                if (iconElement) {
-                    iconElement.classList.add('rotate'); // Добавляем класс rotate
-                }
-            } else {
-                // Если таблица отображается, скрываем ее
-                table.style.display = 'none';
-                if (iconElement) {
-                    iconElement.classList.remove('rotate'); // Удаляем класс rotate
-                }
-            }
-        }
-
-    </script>
-
 </body>
 
 </html>

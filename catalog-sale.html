@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="index.css">
     <script src="script.js" defer></script>
     <script src="slider.js" defer></script>
+    <script src="catalog-sale.js" defer></script>
     <title>Скидки | ADAB</title>
 </head>
 
@@ -28,8 +29,8 @@
                 <ul class="header__menu">
                     <li class="header__menu-item"><a class="header__menu-link" href="./catalog.html">Каталог</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="./about.html">О Бренде</a></li>
-                    <li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
-                    <li class="header__menu-item"><a class="header__menu-link" href="#">Поддержка</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="./contacts.html">Контакты</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="./support.html">Поддержка</a></li>
                 </ul>
             </nav>
 
@@ -163,10 +164,10 @@
                         <a href="./about.html" class="burger__menu-link">О бренде</a>
                     </li>
                     <li class="burger__menu-item">
-                        <a href="#" class="burger__menu-link">Контакты</a>
+                        <a href="./contacts.html" class="burger__menu-link">Контакты</a>
                     </li>
                     <li class="burger__menu-item">
-                        <a href="#" class="burger__menu-link">Поддержка</a>
+                        <a href="./support.html" class="burger__menu-link">Поддержка</a>
                     </li>
                 </ul>
             </nav>
@@ -189,85 +190,13 @@
                                 alt="иконка instagram" class="burger__contacts-icon"></a>
                     </li>
                     <li class="burger__contacts-link">
-                        <a href="mailto:dinislam.gu@gmail.com" title="Написать нам на почту"><img
+                        <a href="mailto:adabkav@mail.ru" title="Написать нам на почту"><img
                                 src="./images/icons_mail.svg" alt="иконка mail" class="burger__contacts-icon"></a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-
-    <script>
-        const products = [
-            {
-                url: './card-pages/uniform-white-summer.html',
-                sale: '-20%',
-                category: 'формы',
-                image: './images/uniform-white-summer.jpg',
-                title: 'Мужская форма ADAB, лето белая',
-                price: '6 392₽',
-                currency: '(1 400₺ / 60$)',
-                size: 'S, M, L, XL, XXL'
-            },
-            {
-                url: './card-pages/uniform-white.html',
-                sale: '-20%',
-                category: 'формы',
-                image: './images/uniform-white.jpg',
-                title: 'Мужская форма ADAB, осень белая',
-                price: '6 392₽',
-                currency: '(1 400₺ / 60$)',
-                size: 'S, M, L, XL, XXL'
-            },
-        ];
-
-        const productContainer = document.querySelector('.container-cards');
-        const productTemplate = productContainer.querySelector('.cards');
-        let loadedCards = 0;
-        const loadMoreButton = document.querySelector('.load-more-button');
-        function loadCards() {
-            const cardsToLoad = products.slice(loadedCards, loadedCards + 12);
-            cardsToLoad.forEach((product, index) => {
-                const card = productTemplate.cloneNode(true);
-                card.classList.add('cards');
-                card.style.opacity = '0'; // Устанавливаем начальную прозрачность карточки
-                card.style.display = 'block';
-                card.querySelector('.card__img').src = product.image;
-                card.querySelector('.card__img').alt = product.title;
-                card.querySelector('.card__name').textContent = product.title;
-                card.querySelector('.card__price').textContent = product.price;
-                card.querySelector('.card__price-currency').textContent = product.currency;
-                card.classList.add('card');
-                card.onclick = function () {
-                    redirectToPage(product.url);
-                };
-
-                if (product.sale) { // Добавляем условие для отображения контейнера с скидкой
-                    card.querySelector('.card__sale').textContent = product.sale;
-                    card.querySelector('.card__sale').style.display = 'block';
-                }
-
-                productContainer.appendChild(card);
-                // Задержка перед установкой полной прозрачности
-                setTimeout(() => {
-                    card.style.opacity = '1'; // Плавно устанавливаем полную прозрачность
-                }, index * 70); // Устанавливаем небольшую задержку
-                loadedCards++;
-            });
-            if (loadedCards >= products.length) {
-                loadMoreButton.style.display = 'none';
-            } else {
-                loadMoreButton.style.display = loadedCards < 12 ? 'none' : 'block';
-            }
-        }
-        loadCards();
-        loadMoreButton.addEventListener('click', loadCards);
-
-        function redirectToPage(url) {
-            window.location.href = url;
-        }
-
-    </script>
 </body>
 
 </html>
