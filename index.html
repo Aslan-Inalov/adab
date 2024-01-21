@@ -18,7 +18,7 @@
     <div class="page">
 
         <header class="header">
-            <a href="./index.html">
+            <a href="./index.html" style="cursor: default; pointer-events: none;">
                 <div class="logo-container">
                     <img src="./images/logo.png" alt="логотип" class="logo">
                 </div>
@@ -247,6 +247,15 @@
 
         </div>
     </div>
+    <script>
+        // Проверяем, если в URL присутствует "index"
+        if (window.location.href.indexOf('index') > -1) {
+            // Удаляем "index" из URL без перезагрузки страницы
+            var newUrl = window.location.href.replace('index', '');
+            window.history.pushState({}, '', newUrl);
+        }
+    </script>
+
 </body>
 
 </html>
