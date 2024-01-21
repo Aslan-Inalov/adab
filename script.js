@@ -1,3 +1,10 @@
+// Проверяем, если расширение .html присутствует в URL
+if (window.location.href.indexOf('.html') > -1) {
+    // Удаляем расширение .html из URL без перезагрузки страницы
+    var newUrl = window.location.href.replace('.html', '');
+    window.history.pushState({}, '', newUrl);
+}
+
 var year = new Date().getFullYear();
 
 // Вставляем текущий год в элемент с id "currentYear"
