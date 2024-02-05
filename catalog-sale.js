@@ -1,5 +1,25 @@
 const products = [
     {
+        url: './card-pages/sleeveless-natural.html',
+        sale: '-20%',
+        category: 'безрукавка',
+        image: './images/sleeveless-natural.jpg',
+        title: 'Мужской жилет из натурального каракуля',
+        price: '36 240₽',
+        currency: '(11 200₺ / 400$)',
+        size: 'под заказ'
+    },
+    {
+        url: './card-pages/sleeveless-eco.html',
+        sale: '-20%',
+        category: 'безрукавка',
+        image: './images/sleeveless-eco.jpg',
+        title: 'Мужской жилет из овчины под каракуль',
+        price: '21 744₽',
+        currency: '(6 6400₺ / 240$)',
+        size: 'под заказ'
+    },
+    {
         url: './card-pages/uniform-white-summer.html',
         sale: '-20%',
         category: 'формы',

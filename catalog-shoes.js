@@ -1,5 +1,14 @@
 const products = [
     {
+        url: './card-pages/shoes-beige.html',
+        category: 'обувь',
+        image: './images/shoes-beige.jpg',
+        title: 'Мужская обувь ADAB, бежевые',
+        price: '5 500₽',
+        currency: '(1 500₺ / 60$)',
+        size: '40, 41, 42, 43, 44, 45'
+    },
+    {
         url: './card-pages/shoes-black-brown.html',
         category: 'обувь',
         image: './images/shoes-black-brown.jpg',

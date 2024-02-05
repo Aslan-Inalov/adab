@@ -105,6 +105,7 @@
 @import url(./blocks/card-content/__price/card-content__price.css);
 @import url(./blocks/card-content/__price-currency/card-content__price-currency.css);
 @import url(./blocks/card-content/__size/card-content__size.css);
+@import url(./blocks/card-content/__size-link/card-content__size-link.css);
 @import url(./blocks/card-content/__subtitle/card-content__subtitle.css);
 @import url(./blocks/card-content/__size-items/card-content__size-items.css);
 @import url(./blocks/card-content/__size-item/card-content__size-item.css);

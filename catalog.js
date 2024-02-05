@@ -48,20 +48,22 @@ const products = [
     },
     {
         url: './card-pages/sleeveless-natural.html',
+        sale: '-20%',
         category: 'безрукавка',
         image: './images/sleeveless-natural.jpg',
         title: 'Мужской жилет из натурального каракуля',
-        price: '45 300₽',
-        currency: '(14 000₺ / 500$)',
+        price: '36 240₽',
+        currency: '(11 200₺ / 400$)',
         size: 'под заказ'
     },
     {
         url: './card-pages/sleeveless-eco.html',
+        sale: '-20%',
         category: 'безрукавка',
         image: './images/sleeveless-eco.jpg',
         title: 'Мужской жилет из овчины под каракуль',
-        price: '27 180₽',
-        currency: '(8 300₺ / 300$)',
+        price: '21 744₽',
+        currency: '(6 6400₺ / 240$)',
         size: 'под заказ'
     },
     {
@@ -99,6 +101,15 @@ const products = [
         price: '4 500₽',
         currency: '(1 100₺ / 45$)',
         size: '104, 116, 128, 140, 152, 164, 176'
+    },
+    {
+        url: './card-pages/shoes-beige.html',
+        category: 'обувь',
+        image: './images/shoes-beige.jpg',
+        title: 'Мужская обувь ADAB, бежевые',
+        price: '5 500₽',
+        currency: '(1 500₺ / 60$)',
+        size: '40, 41, 42, 43, 44, 45'
     },
     {
         url: './card-pages/shoes-black-brown.html',
