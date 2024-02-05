@@ -31,7 +31,7 @@
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 370px) {
     .card-content__price-sleev {
         font-size: 17px;
     }
