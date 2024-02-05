@@ -11,6 +11,12 @@
     color: #dadada;
 }
 
+@media screen and (max-width: 900px) {
+    .card-content__price-sleev {
+        font-size: 21px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .card-content__price {
         font-size: 22px;
@@ -22,5 +28,11 @@
     .card-content__price {
         font-size: 20px;
         line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .card-content__price-sleev {
+        font-size: 17px;
     }
 }
