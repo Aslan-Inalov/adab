@@ -1,9 +1,18 @@
 const products = [
     {
+        url: './card-pages/tactical-uniform-black.html',
+        category: 'формы',
+        image: './images/tactical-uniform-black.jpg',
+        title: 'Мужская тактическая форма ADAB, чёрная',
+        price: '7 990₽',
+        currency: '(2 300₺ / 75$)',
+        size: 'S, M, L, XL, XXL'
+    },
+    {
         url: './card-pages/shirt-green.html',
         category: 'рубашки',
         image: './images/shirt-green.jpg',
-        title: 'Мужская тактическая рубаха ADAB, зеленная',
+        title: 'Мужская тактическая рубаха ADAB, зелённая',
         price: '4 450₽',
         currency: '(1 000₺ / 45$)',
         size: 'S, M, L, XL, XXL'
@@ -15,7 +24,7 @@ const products = [
         image: './images/uniform-white-summer.jpg',
         title: 'Мужская форма ADAB, лето белая',
         price: '6 392₽',
-        currency: '(1 400₺ / 60$)',
+        currency: '(1 800₺ / 60$)',
         size: 'S, M, L, XL, XXL'
     },
     {
@@ -24,7 +33,7 @@ const products = [
         image: './images/uniform-dark-blue.jpg',
         title: 'Мужская форма ADAB, темно-синяя',
         price: '7 990₽',
-        currency: '(1 750₺ / 75$)',
+        currency: '(2 300₺ / 75$)',
         size: 'S, M, L, XL, XXL'
     },
     {
@@ -33,7 +42,7 @@ const products = [
         image: './images/uniform-black.jpg',
         title: 'Мужская форма ADAB, чёрная',
         price: '7 990₽',
-        currency: '(1 750₺ / 75$)',
+        currency: '(2 300₺ / 75$)',
         size: 'M, L, XL'
     },
     {
@@ -43,7 +52,7 @@ const products = [
         image: './images/uniform-white.jpg',
         title: 'Мужская форма ADAB, осень белая',
         price: '6 392₽',
-        currency: '(1 400₺ / 60$)',
+        currency: '(1 800₺ / 60$)',
         size: 'S, M, L, XL, XXL'
     },
     {
