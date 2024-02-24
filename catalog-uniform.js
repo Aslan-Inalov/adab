@@ -1,5 +1,14 @@
 const products = [
     {
+        url: './card-pages/tactical-uniform-black.html',
+        category: 'формы',
+        image: './images/tactical-uniform-black.jpg',
+        title: 'Мужская тактическая форма ADAB, чёрная',
+        price: '7 990₽',
+        currency: '(2 300₺ / 75$)',
+        size: 'S, M, L, XL, XXL'
+    },
+    {
         url: './card-pages/uniform-white-summer.html',
         sale: '-20%',
         category: 'формы',
