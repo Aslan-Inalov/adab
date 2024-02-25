@@ -5,7 +5,7 @@ const products = [
         image: './images/t-shirt-blue.jpg',
         title: 'Классическая футболка ADAB, синяя',
         price: '2 500₽',
-        currency: '(750₺ / 27$)',
+        currency: '(780₺ / 27$)',
         size: 'S, M, L, XL'
     },
 ];
