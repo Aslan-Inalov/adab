@@ -1,5 +1,14 @@
 const products = [
     {
+        url: './card-pages/t-shirt-blue.html',
+        category: 'футболки',
+        image: './images/t-shirt-blue.jpg',
+        title: 'Классическая футболка ADAB, синяя',
+        price: '2 500₽',
+        currency: '(750₺ / 27$)',
+        size: 'S, M, L, XL'
+    },
+    {
         url: './card-pages/tactical-uniform-black.html',
         category: 'формы',
         image: './images/tactical-uniform-black.jpg',
