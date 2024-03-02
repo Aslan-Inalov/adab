@@ -110,19 +110,34 @@
                             <p class="card-content__season-text">Лето / Весна</p>
                         </div>
                     </div>
+                    <div class="hood-with">
+                        <div class="logo-with__container">
+                            <label class="hood-with__label hood-with__label-ferst">
+                                <input class="hood-with__input" id="hoodWith" type="radio" name="hood"
+                                    value="с логотипом на спине">
+                                С логотипом на спине
+                            </label>
+                            <label class="hood-with__label">
+                                <input class="hood-with__input" id="hoodWithout" type="radio" name="hood"
+                                    value="без логотипа на спине"> Без логотипа на спине
+                            </label>
+                        </div>
+                        <p class="hood-with__error" id="errorMessage">Пожалуйста, выберите вариант футболки.</p>
+                    </div>
                     <div class="card-content__about">
                         <p class="card-content__about-text">
                             Эта удлиненная футболка оверсайз из высококачественного хлопка супрем 30/2 прекрасно
-                            сочетает в себе комфорт и стиль. Воплощение классического дизайна, она подчеркивает вашу
-                            индивидуальность благодаря логотипу размером 7 см на груди и внушительному изображению
-                            размером 34 см на спине, которые представляют вашу принадлежность к марке ADAB. Свободный
-                            крой обеспечивает элегантный силуэт, а изысканные детали на рукавах и на подоле делают эту
-                            футболку идеальным выбором для повседневного стиля с выдающимся акцентом.
+                            сочетает в себе комфорт и стиль. Представлен в двух вариациях - с логотипом на спине и без.
+                            Воплощение классического дизайна, она подчеркивает вашу индивидуальность благодаря логотипу
+                            размером 7 см на груди и внушительному изображению размером 34 см на спине, которые
+                            представляют вашу принадлежность к марке ADAB. Свободный крой обеспечивает элегантный
+                            силуэт, а изысканные детали на рукавах и на подоле делают эту футболку идеальным выбором для
+                            повседневного стиля с выдающимся акцентом.
                         </p>
                     </div>
                     <div class="card-content__btn-container">
                         <button class="card-content__btn"
-                            onclick="redirectToOrder('Классическая футболка ADAB, белая')">Оформить
+                            onclick="redirectToOrder('Футболка оверсайз ADAB, белая')">Оформить
                             заказ</button>
                     </div>
                 </div>
@@ -228,10 +243,32 @@
         }
 
         function redirectToOrder(productName) {
-            // Сохраняем значение имени товара в локальном хранилище
-            localStorage.setItem('productName', productName);
-            // Выполняем переход на страницу order.html
-            window.location.href = "../order.html";
+            // Проверяем, выбран ли вариант с капюшеном или без капюшена
+            if (document.getElementById("hoodWith").checked || document.getElementById("hoodWithout").checked) {
+                // Получаем значение выбранной радиокнопки
+                var selectedOption = document.querySelector('input[name="hood"]:checked').value;
+
+                // Объединяем значения в одну строку
+                var combinedValue = productName + " / " + selectedOption;
+
+                // Сохраняем значение в локальном хранилище
+                localStorage.setItem('productName', combinedValue);
+
+                // Выполняем переход на страницу order.html
+                window.location.href = "../order.html";
+            } else {
+                // Отображаем сообщение об ошибке
+                document.getElementById("errorMessage").style.display = "block";
+            }
+        }
+
+        // Добавляем обработчик события для радиокнопок
+        var radioButtons = document.querySelectorAll('input[name="hood"]');
+        for (var i = 0; i < radioButtons.length; i++) {
+            radioButtons[i].addEventListener('change', function () {
+                // Скрываем сообщение об ошибке
+                document.getElementById("errorMessage").style.display = "none";
+            });
         }
 
     </script>
