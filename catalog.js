@@ -1,12 +1,11 @@
 const products = [
-
     {
         url: './card-pages/t-shirt-white.html',
         category: 'футболки',
         image: './images/t-shirt-white.jpg',
         title: 'Футболка оверсайз ADAB, белая',
         price: '2 250₽',
-        currency: '(700₺ / 24$)',
+        currency: '(630₺ / 20$)',
         size: 'S, M, L, XL'
     },
     {
@@ -15,7 +14,7 @@ const products = [
         image: './images/t-shirt-black.jpg',
         title: 'Футболка оверсайз ADAB, чёрная',
         price: '2 250₽',
-        currency: '(700₺ / 24$)',
+        currency: '(630₺ / 20$)',
         size: 'S, M, L, XL'
     },
     {
@@ -24,7 +23,7 @@ const products = [
         image: './images/t-shirt-blue.jpg',
         title: 'Классическая футболка ADAB, синяя',
         price: '2 500₽',
-        currency: '(780₺ / 27$)',
+        currency: '(690₺ / 22$)',
         size: 'S, M, L, XL'
     },
     {
