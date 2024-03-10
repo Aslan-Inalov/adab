@@ -1,5 +1,25 @@
 const products = [
     {
+        url: './card-pages/kids-uniform-black.html',
+        sale: '-31%',
+        category: 'детская одежда',
+        image: './images/kids-uniform-black.jpg',
+        title: 'Детская форма ADAB, чёрная',
+        price: '3 100₽',
+        currency: '(760₺ / 31$)',
+        size: '104, 116, 128, 140, 152, 164, 176'
+    },
+    {
+        url: './card-pages/kids-uniform-gray.html',
+        sale: '-31%',
+        category: 'детская одежда',
+        image: './images/kids-uniform-gray.jpg',
+        title: 'Детская форма ADAB, серая',
+        price: '3 100₽',
+        currency: '(760₺ / 31$)',
+        size: '104, 116, 128, 140, 152, 164, 176'
+    },
+    {
         url: './card-pages/sleeveless-natural.html',
         sale: '-20%',
         category: 'безрукавка',
