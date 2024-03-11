@@ -115,7 +115,7 @@ document.getElementById("form-russia").addEventListener("submit", function (even
     var size = document.getElementsByName("size-ru")[0].value;
     // Формируем запрос к API Телеграма
     var token = '6839056866:AAF1KQcqmfSbE3_2wMYTL4DWSJSOUkhLwSI';
-    var chatId = '-4100479671';
+    var chatId = '-1002083798857';
     var text = "Новый заказ из России:\nИмя: " + name + "\nГород: " + city + "\nАдрес: " + adress + "\nИндекс: " + index + "\nНомер: " + number + "\nEmail: " + email + "\nТовар: " + product + "\nРазмер: " + size;
     var telegramUrl = "https://api.telegram.org/bot" + token + "/sendMessage?chat_id=" + chatId + "&text=" + encodeURIComponent(text);
     // Отправляем AJAX-запрос
