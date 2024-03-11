@@ -61,7 +61,7 @@ document.getElementById("form-europe").addEventListener("submit", function (even
     var size = document.getElementsByName("size")[0].value;
     // Формируем запрос к API Телеграма
     var token = '6839056866:AAF1KQcqmfSbE3_2wMYTL4DWSJSOUkhLwSI';
-    var chatId = '-4100479671';
+    var chatId = '-1002083798857';
     var text = "Новый заказ из Европы/Америки:\nИмя: " + name + "\nСтрана: " + country + "\nОбласть: " + region + "\nГород: " + city + "\nАдрес: " + adress + "\nИндекс: " + index + "\nТелефон: " + number + "\nEmail: " + email + "\nТовар: " + product + "\nРазмер: " + size;
     var telegramUrl = "https://api.telegram.org/bot" + token + "/sendMessage?chat_id=" + chatId + "&text=" + encodeURIComponent(text);
     // Отправляем AJAX-запрос
@@ -167,7 +167,7 @@ document.getElementById("form-turkey").addEventListener("submit", function (even
     var size = document.getElementsByName("size-tur")[0].value;
     // Формируем запрос к API Телеграма
     var token = '6839056866:AAF1KQcqmfSbE3_2wMYTL4DWSJSOUkhLwSI';
-    var chatId = '-4100479671';
+    var chatId = '-1002083798857';
     var text = "Новый заказ из Турции:\nИмя: " + name + "\nОбласть: " + region + "\nГород: " + city + "\nАдрес: " + adress + "\nНомер: " + number + "\nEmail: " + email + "\nТовар: " + product + "\nРазмер: " + size;
     var telegramUrl = "https://api.telegram.org/bot" + token + "/sendMessage?chat_id=" + chatId + "&text=" + encodeURIComponent(text);
     // Отправляем AJAX-запрос
