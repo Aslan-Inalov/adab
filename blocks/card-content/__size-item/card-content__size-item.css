@@ -16,6 +16,23 @@
     text-transform: uppercase;
 }
 
+.card-content__size-item-none {
+    position: relative;
+    opacity: 0.4;
+}
+
+.card-content__size-item-none::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+
 @media screen and (max-width: 450px) {
     .card-content__size-item {
         width: 45px;
