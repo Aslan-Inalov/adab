@@ -1,22 +1,21 @@
 const products = [
     {
         url: './card-pages/baseball-cap-black.html',
-        sale: '-20%',
         category: 'головные уборы',
         image: './images/baseball-cap-black.jpg',
         title: 'Мужская бейсболка ADAB, чёрная',
-        price: '790₽',
-        currency: '(200₺ / 8$)',
+        price: '990₽',
+        currency: '(250₺ / 10$)',
         size: 'один размер'
     },
     {
         url: './card-pages/baseball-cap-white.html',
-        sale: '-20%',
+        // sale: '-20%',
         category: 'головные уборы',
         image: './images/baseball-cap-white.jpg',
         title: 'Мужская бейсболка ADAB, белая',
-        price: '790₽',
-        currency: '(200₺ / 8$)',
+        price: '990₽',
+        currency: '(250₺ / 10$)',
         size: 'один размер'
     },
 ];

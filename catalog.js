@@ -37,12 +37,12 @@ const products = [
     },
     {
         url: './card-pages/shirt-green.html',
-        sale: '-20%',
+        // sale: '-20%',
         category: 'рубашки',
         image: './images/shirt-green.jpg',
         title: 'Мужская тактическая рубаха ADAB, зелённая',
-        price: '3 560₽',
-        currency: '(800₺ / 36$)',
+        price: '4 450₽',
+        currency: '(1 000₺ / 45$)',
         size: 'S, M, L, XL, XXL'
     },
     {
@@ -57,22 +57,22 @@ const products = [
     },
     {
         url: './card-pages/uniform-dark-blue.html',
-        sale: '-20%',
+        // sale: '-20%',
         category: 'формы',
         image: './images/uniform-dark-blue.jpg',
         title: 'Мужская форма ADAB, темно-синяя',
-        price: '6 392₽',
-        currency: '(1 800₺ / 60$)',
+        price: '7 990₽',
+        currency: '(2 300₺ / 75$)',
         size: 'S, M, L, XL, XXL'
     },
     {
         url: './card-pages/uniform-black.html',
-        sale: '-20%',
+        // sale: '-20%',
         category: 'формы',
         image: './images/uniform-black.jpg',
         title: 'Мужская форма ADAB, чёрная',
-        price: '6 392₽',
-        currency: '(1 800₺ / 60$)',
+        price: '7 990₽',
+        currency: '(2 300₺ / 75$)',
         size: 'M, L, XL'
     },
     {
@@ -107,22 +107,22 @@ const products = [
     },
     {
         url: './card-pages/baseball-cap-black.html',
-        sale: '-20%',
+        // sale: '-20%',
         category: 'головные уборы',
         image: './images/baseball-cap-black.jpg',
         title: 'Мужская бейсболка ADAB, чёрная',
-        price: '790₽',
-        currency: '(200₺ / 8$)',
+        price: '990₽',
+        currency: '(250₺ / 10$)',
         size: 'один размер'
     },
     {
         url: './card-pages/baseball-cap-white.html',
-        sale: '-20%',
+        // sale: '-20%',
         category: 'головные уборы',
         image: './images/baseball-cap-white.jpg',
         title: 'Мужская бейсболка ADAB, белая',
-        price: '790₽',
-        currency: '(200₺ / 8$)',
+        price: '990₽',
+        currency: '(250₺ / 10$)',
         size: 'один размер'
     },
     {

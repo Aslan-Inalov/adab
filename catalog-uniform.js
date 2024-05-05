@@ -20,22 +20,22 @@ const products = [
     },
     {
         url: './card-pages/uniform-dark-blue.html',
-        sale: '-20%',
+        // sale: '-20%',
         category: 'формы',
         image: './images/uniform-dark-blue.jpg',
         title: 'Мужская форма ADAB, темно-синяя',
-        price: '6 392₽',
-        currency: '(1 800₺ / 60$)',
+        price: '7 990₽',
+        currency: '(2 300₺ / 75$)',
         size: 'S, M, L, XL, XXL'
     },
     {
         url: './card-pages/uniform-black.html',
-        sale: '-20%',
+        // sale: '-20%',
         category: 'формы',
         image: './images/uniform-black.jpg',
         title: 'Мужская форма ADAB, чёрная',
-        price: '6 392₽',
-        currency: '(1 800₺ / 60$)',
+        price: '7 990₽',
+        currency: '(2 300₺ / 75$)',
         size: 'M, L, XL'
     },
     {
