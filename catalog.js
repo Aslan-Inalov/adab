@@ -12,7 +12,7 @@ const products = [
         url: './card-pages/moccasins-blue.html',
         category: 'обувь',
         image: './images/moccasins-blue.jpg',
-        title: 'Кожаные мокасины ADAB, синие',
+        title: 'Нубуковые мокасины ADAB, синие',
         price: '4 620₽',
         currency: '(1 430₺ / 50$)',
         size: '40, 41, 42, 43, 44, 45'
