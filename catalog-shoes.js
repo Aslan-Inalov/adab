@@ -17,24 +17,24 @@ const products = [
         currency: '(1 430₺ / 50$)',
         size: '40, 41, 42, 43, 44, 45'
     },
-    // {
-    //     url: './card-pages/low-shoes-black.html',
-    //     category: 'обувь',
-    //     image: './images/low-shoes-black.jpg',
-    //     title: 'Летние полуботинки ADAB, черные',
-    //     price: '3 700₽',
-    //     currency: '(1 280₺ / 40$)',
-    //     size: '40, 41, 42, 43, 44, 45'
-    // },
-    // {
-    //     url: './card-pages/low-shoes-pearl.html',
-    //     category: 'обувь',
-    //     image: './images/low-shoes-pearl.jpg',
-    //     title: 'Летние полуботинки ADAB, перламутровые',
-    //     price: '3 700₽',
-    //     currency: '(1 280₺ / 40$)',
-    //     size: '40, 41, 42, 43, 44, 45'
-    // },
+    {
+        url: './card-pages/low-shoes-black.html',
+        category: 'обувь',
+        image: './images/low-shoes-black.jpg',
+        title: 'Легкие полуботинки ADAB, черные',
+        price: '3 700₽',
+        currency: '(1 280₺ / 40$)',
+        size: '40, 41, 42, 43, 44, 45'
+    },
+    {
+        url: './card-pages/low-shoes-pearl.html',
+        category: 'обувь',
+        image: './images/low-shoes-pearl.jpg',
+        title: 'Легкие полуботинки ADAB, перламутровые',
+        price: '3 700₽',
+        currency: '(1 280₺ / 40$)',
+        size: '40, 41, 42, 43, 44, 45'
+    },
     // {
     //     url: './card-pages/summer-sneakers-black.html',
     //     category: 'обувь',
