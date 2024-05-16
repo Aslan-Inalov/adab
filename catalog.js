@@ -35,42 +35,42 @@ const products = [
         currency: '(1 280₺ / 40$)',
         size: '40, 41, 42, 43, 44, 45'
     },
-    // {
-    //     url: './card-pages/summer-sneakers-black.html',
-    //     category: 'обувь',
-    //     image: './images/summer-sneakers-black.jpg',
-    //     title: 'Кожаные летние кроссовки ADAB, черные',
-    //     price: '4 250₽',
-    //     currency: '(1 340₺ / 46$)',
-    //     size: '40, 41, 42, 43, 44, 45'
-    // },
-    // {
-    //     url: './card-pages/summer-sneakers-white.html',
-    //     category: 'обувь',
-    //     image: './images/summer-sneakers-white.jpg',
-    //     title: 'Кожаные летние кроссовки ADAB, белые',
-    //     price: '4 250₽',
-    //     currency: '(1 340₺ / 46$)',
-    //     size: '40, 41, 42, 43, 44, 45'
-    // },
-    // {
-    //     url: './card-pages/summer-sneakers-blue.html',
-    //     category: 'обувь',
-    //     image: './images/summer-sneakers-blue.jpg',
-    //     title: 'Кожаные летние кроссовки ADAB, синие',
-    //     price: '4 250₽',
-    //     currency: '(1 340₺ / 46$)',
-    //     size: '40, 41, 42, 43, 44, 45'
-    // },
-    // {
-    //     url: './card-pages/summer-sneakers-beige.html',
-    //     category: 'обувь',
-    //     image: './images/summer-sneakers-beige.jpg',
-    //     title: 'Кожаные летние кроссовки ADAB, бежевые',
-    //     price: '4 250₽',
-    //     currency: '(1 340₺ / 46$)',
-    //     size: '40, 41, 42, 43, 44, 45'
-    // },
+    {
+        url: './card-pages/summer-sneakers-black.html',
+        category: 'обувь',
+        image: './images/summer-sneakers-black.jpg',
+        title: 'Кожаные летние кроссовки ADAB, черные',
+        price: '4 250₽',
+        currency: '(1 340₺ / 46$)',
+        size: '40, 41, 42, 43, 44, 45'
+    },
+    {
+        url: './card-pages/summer-sneakers-white.html',
+        category: 'обувь',
+        image: './images/summer-sneakers-white.jpg',
+        title: 'Кожаные летние кроссовки ADAB, белые',
+        price: '4 250₽',
+        currency: '(1 340₺ / 46$)',
+        size: '40, 41, 42, 43, 44, 45'
+    },
+    {
+        url: './card-pages/summer-sneakers-blue.html',
+        category: 'обувь',
+        image: './images/summer-sneakers-blue.jpg',
+        title: 'Нубуковые летние кроссовки ADAB, синие',
+        price: '4 250₽',
+        currency: '(1 340₺ / 46$)',
+        size: '40, 41, 42, 43, 44, 45'
+    },
+    {
+        url: './card-pages/summer-sneakers-beige.html',
+        category: 'обувь',
+        image: './images/summer-sneakers-beige.jpg',
+        title: 'Нубуковые летние кроссовки ADAB, бежевые',
+        price: '4 250₽',
+        currency: '(1 340₺ / 46$)',
+        size: '40, 41, 42, 43, 44, 45'
+    },
     {
         url: './card-pages/t-shirt-white.html',
         category: 'футболки',
