@@ -72,6 +72,33 @@ const products = [
         size: '40, 41, 42, 43, 44, 45'
     },
     {
+        url: './card-pages/sandals-blue-nubuck.html',
+        category: 'обувь',
+        image: './images/sandals-blue-nubuck.jpg',
+        title: 'Нубуковые сандалии ADAB, синие',
+        price: '4 250₽',
+        currency: '(1 340₺ / 46$)',
+        size: '40, 41, 42, 43, 44, 45'
+    },
+    {
+        url: './card-pages/sandals-green.html',
+        category: 'обувь',
+        image: './images/sandals-green.jpg',
+        title: 'Нубуковые сандалии ADAB, зеленные',
+        price: '4 250₽',
+        currency: '(1 340₺ / 46$)',
+        size: '40, 41, 42, 43, 44, 45'
+    },
+    {
+        url: './card-pages/sandals-blue.html',
+        category: 'обувь',
+        image: './images/sandals-blue.jpg',
+        title: 'Кожанные сандалии ADAB, синие',
+        price: '4 250₽',
+        currency: '(1 340₺ / 46$)',
+        size: '40, 41, 42, 43, 44, 45'
+    },
+    {
         url: './card-pages/shoes-beige.html',
         category: 'обувь',
         image: './images/shoes-beige.jpg',
