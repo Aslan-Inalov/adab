@@ -1,12 +1,12 @@
 const products = [
     {
         url: './card-pages/shirt-green.html',
-        // sale: '-20%',
+        sale: '-20%',
         category: 'рубашки',
         image: './images/shirt-green.jpg',
         title: 'Мужская тактическая рубаха ADAB, зелённая',
-        price: '4 450₽',
-        currency: '(1 000₺ / 45$)',
+        price: '3 500₽',
+        currency: '(800₺ / 36$)',
         size: 'S, M, L, XL, XXL'
     },
 ];

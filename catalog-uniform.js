@@ -1,11 +1,12 @@
 const products = [
     {
         url: './card-pages/tactical-uniform-black.html',
+        sale: '-20%',
         category: 'формы',
         image: './images/tactical-uniform-black.jpg',
         title: 'Мужская тактическая форма ADAB, чёрная',
-        price: '7 990₽',
-        currency: '(2 300₺ / 75$)',
+        price: '6 392₽',
+        currency: '(1 800₺ / 60$)',
         size: 'S, M, L, XL, XXL'
     },
     {
@@ -20,22 +21,22 @@ const products = [
     },
     {
         url: './card-pages/uniform-dark-blue.html',
-        // sale: '-20%',
+        sale: '-20%',
         category: 'формы',
         image: './images/uniform-dark-blue.jpg',
         title: 'Мужская форма ADAB, темно-синяя',
-        price: '7 990₽',
-        currency: '(2 300₺ / 75$)',
+        price: '6 392₽',
+        currency: '(1 800₺ / 60$)',
         size: 'S, M, L, XL, XXL'
     },
     {
         url: './card-pages/uniform-black.html',
-        // sale: '-20%',
+        sale: '-20%',
         category: 'формы',
         image: './images/uniform-black.jpg',
         title: 'Мужская форма ADAB, чёрная',
-        price: '7 990₽',
-        currency: '(2 300₺ / 75$)',
+        price: '6 392₽',
+        currency: '(1 800₺ / 60$)',
         size: 'M, L, XL'
     },
     {
