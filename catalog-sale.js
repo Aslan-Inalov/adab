@@ -1,11 +1,21 @@
 const products = [
     {
+        url: './card-pages/t-shirt-beige.html',
+        sale: '-20%',
+        category: 'футболки',
+        image: './images/t-shirt-beige.jpg',
+        title: 'Футболка оверсайз ADAB, бежевая',
+        price: '1 800₽',
+        currency: '(504₺ / 16$)',
+        size: 'S, M, L, XL'
+    },
+    {
         url: './card-pages/shirt-green.html',
         sale: '-20%',
         category: 'рубашки',
         image: './images/shirt-green.jpg',
         title: 'Мужская тактическая рубаха ADAB, зелённая',
-        price: '3 500₽',
+        price: '3 560₽',
         currency: '(800₺ / 36$)',
         size: 'S, M, L, XL, XXL'
     },

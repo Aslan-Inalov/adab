@@ -1,5 +1,15 @@
 const products = [
     {
+        url: './card-pages/t-shirt-beige.html',
+        sale: '-20%',
+        category: 'футболки',
+        image: './images/t-shirt-beige.jpg',
+        title: 'Футболка оверсайз ADAB, бежевая',
+        price: '1 800₽',
+        currency: '(504₺ / 16$)',
+        size: 'S, M, L, XL'
+    },
+    {
         url: './card-pages/t-shirt-white.html',
         sale: '-20%',
         category: 'футболки',
