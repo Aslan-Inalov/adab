@@ -1,22 +1,18 @@
-const products = [
-    {
-        url: './card-pages/shirt-green.html',
-        // sale: '-20%',
-        category: 'рубашки',
-        image: './images/shirt-green.jpg',
-        title: 'Мужская тактическая рубаха ADAB, зелённая',
-        price: '4 450₽',
-        currency: '(1 000₺ / 45$)',
-        size: 'S, M, L, XL, XXL'
-    },
-];
+import { products } from './data.js';
+
+// Получаем категорию
+const currentCategory = 'рубашки';
+
+// Фильтруем товары по категории
+const filteredProducts = products.filter(product => product.category === currentCategory);
+
 
 const productContainer = document.querySelector('.container-cards');
 const productTemplate = productContainer.querySelector('.cards');
 let loadedCards = 0;
 const loadMoreButton = document.querySelector('.load-more-button');
 function loadCards() {
-    const cardsToLoad = products.slice(loadedCards, loadedCards + 12);
+    const cardsToLoad = filteredProducts.slice(loadedCards, loadedCards + 12);
     cardsToLoad.forEach((product, index) => {
         const card = productTemplate.cloneNode(true);
         card.classList.add('cards');
@@ -31,12 +27,10 @@ function loadCards() {
         card.onclick = function () {
             redirectToPage(product.url);
         };
-
         if (product.sale) { // Добавляем условие для отображения контейнера с скидкой
             card.querySelector('.card__sale').textContent = product.sale;
             card.querySelector('.card__sale').style.display = 'block';
         }
-
         productContainer.appendChild(card);
         // Задержка перед установкой полной прозрачности
         setTimeout(() => {

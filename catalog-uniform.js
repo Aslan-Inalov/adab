@@ -1,61 +1,18 @@
-const products = [
-    {
-        url: './card-pages/tactical-uniform-black.html',
-        category: 'формы',
-        image: './images/tactical-uniform-black.jpg',
-        title: 'Мужская тактическая форма ADAB, чёрная',
-        price: '7 990₽',
-        currency: '(2 300₺ / 75$)',
-        size: 'S, M, L, XL, XXL'
-    },
-    {
-        url: './card-pages/uniform-white-summer.html',
-        sale: '-20%',
-        category: 'формы',
-        image: './images/uniform-white-summer.jpg',
-        title: 'Мужская форма ADAB, лето белая',
-        price: '6 392₽',
-        currency: '(1 800₺ / 60$)',
-        size: 'S, M, L, XL, XXL'
-    },
-    {
-        url: './card-pages/uniform-dark-blue.html',
-        // sale: '-20%',
-        category: 'формы',
-        image: './images/uniform-dark-blue.jpg',
-        title: 'Мужская форма ADAB, темно-синяя',
-        price: '7 990₽',
-        currency: '(2 300₺ / 75$)',
-        size: 'S, M, L, XL, XXL'
-    },
-    {
-        url: './card-pages/uniform-black.html',
-        // sale: '-20%',
-        category: 'формы',
-        image: './images/uniform-black.jpg',
-        title: 'Мужская форма ADAB, чёрная',
-        price: '7 990₽',
-        currency: '(2 300₺ / 75$)',
-        size: 'M, L, XL'
-    },
-    {
-        url: './card-pages/uniform-white.html',
-        sale: '-20%',
-        category: 'формы',
-        image: './images/uniform-white.jpg',
-        title: 'Мужская форма ADAB, осень белая',
-        price: '6 392₽',
-        currency: '(1 800₺ / 60$)',
-        size: 'S, M, L, XL, XXL'
-    },
-];
+import { products } from './data.js';
+
+// Получаем категорию
+const currentCategory = 'формы';
+
+// Фильтруем товары по категории
+const filteredProducts = products.filter(product => product.category === currentCategory);
+
 
 const productContainer = document.querySelector('.container-cards');
 const productTemplate = productContainer.querySelector('.cards');
 let loadedCards = 0;
 const loadMoreButton = document.querySelector('.load-more-button');
 function loadCards() {
-    const cardsToLoad = products.slice(loadedCards, loadedCards + 12);
+    const cardsToLoad = filteredProducts.slice(loadedCards, loadedCards + 12);
     cardsToLoad.forEach((product, index) => {
         const card = productTemplate.cloneNode(true);
         card.classList.add('cards');
@@ -70,12 +27,10 @@ function loadCards() {
         card.onclick = function () {
             redirectToPage(product.url);
         };
-
         if (product.sale) { // Добавляем условие для отображения контейнера с скидкой
             card.querySelector('.card__sale').textContent = product.sale;
             card.querySelector('.card__sale').style.display = 'block';
         }
-
         productContainer.appendChild(card);
         // Задержка перед установкой полной прозрачности
         setTimeout(() => {

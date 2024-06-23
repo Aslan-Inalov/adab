@@ -1,32 +1,18 @@
-const products = [
-    {
-        url: './card-pages/kids-uniform-black.html',
-        sale: '-31%',
-        category: 'детская одежда',
-        image: './images/kids-uniform-black.jpg',
-        title: 'Детская форма ADAB, чёрная',
-        price: '3 100₽',
-        currency: '(760₺ / 31$)',
-        size: '104, 116, 128, 140, 152, 164, 176'
-    },
-    {
-        url: './card-pages/kids-uniform-gray.html',
-        sale: '-31%',
-        category: 'детская одежда',
-        image: './images/kids-uniform-gray.jpg',
-        title: 'Детская форма ADAB, серая',
-        price: '3 100₽',
-        currency: '(760₺ / 31$)',
-        size: '104, 116, 128, 140, 152, 164, 176'
-    },
-];
+import { products } from './data.js';
+
+// Получаем категорию
+const currentCategory = 'детская одежда';
+
+// Фильтруем товары по категории
+const filteredProducts = products.filter(product => product.category === currentCategory);
+
 
 const productContainer = document.querySelector('.container-cards');
 const productTemplate = productContainer.querySelector('.cards');
 let loadedCards = 0;
 const loadMoreButton = document.querySelector('.load-more-button');
 function loadCards() {
-    const cardsToLoad = products.slice(loadedCards, loadedCards + 12);
+    const cardsToLoad = filteredProducts.slice(loadedCards, loadedCards + 12);
     cardsToLoad.forEach((product, index) => {
         const card = productTemplate.cloneNode(true);
         card.classList.add('cards');
@@ -41,12 +27,10 @@ function loadCards() {
         card.onclick = function () {
             redirectToPage(product.url);
         };
-
         if (product.sale) { // Добавляем условие для отображения контейнера с скидкой
             card.querySelector('.card__sale').textContent = product.sale;
             card.querySelector('.card__sale').style.display = 'block';
         }
-
         productContainer.appendChild(card);
         // Задержка перед установкой полной прозрачности
         setTimeout(() => {

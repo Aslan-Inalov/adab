@@ -1,31 +1,18 @@
-const products = [
-    {
-        url: './card-pages/baseball-cap-black.html',
-        category: 'головные уборы',
-        image: './images/baseball-cap-black.jpg',
-        title: 'Мужская бейсболка ADAB, чёрная',
-        price: '990₽',
-        currency: '(250₺ / 10$)',
-        size: 'один размер'
-    },
-    {
-        url: './card-pages/baseball-cap-white.html',
-        // sale: '-20%',
-        category: 'головные уборы',
-        image: './images/baseball-cap-white.jpg',
-        title: 'Мужская бейсболка ADAB, белая',
-        price: '990₽',
-        currency: '(250₺ / 10$)',
-        size: 'один размер'
-    },
-];
+import { products } from './data.js';
+
+// Получаем категорию
+const currentCategory = 'головные уборы';
+
+// Фильтруем товары по категории
+const filteredProducts = products.filter(product => product.category === currentCategory);
+
 
 const productContainer = document.querySelector('.container-cards');
 const productTemplate = productContainer.querySelector('.cards');
 let loadedCards = 0;
 const loadMoreButton = document.querySelector('.load-more-button');
 function loadCards() {
-    const cardsToLoad = products.slice(loadedCards, loadedCards + 12);
+    const cardsToLoad = filteredProducts.slice(loadedCards, loadedCards + 12);
     cardsToLoad.forEach((product, index) => {
         const card = productTemplate.cloneNode(true);
         card.classList.add('cards');
@@ -40,12 +27,10 @@ function loadCards() {
         card.onclick = function () {
             redirectToPage(product.url);
         };
-
         if (product.sale) { // Добавляем условие для отображения контейнера с скидкой
             card.querySelector('.card__sale').textContent = product.sale;
             card.querySelector('.card__sale').style.display = 'block';
         }
-
         productContainer.appendChild(card);
         // Задержка перед установкой полной прозрачности
         setTimeout(() => {

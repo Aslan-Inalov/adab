@@ -1,32 +1,18 @@
-const products = [
-    {
-        url: './card-pages/sleeveless-natural.html',
-        sale: '-20%',
-        category: 'безрукавка',
-        image: './images/sleeveless-natural.jpg',
-        title: 'Мужской жилет из натурального каракуля',
-        price: '36 240₽',
-        currency: '(11 200₺ / 400$)',
-        size: 'под заказ'
-    },
-    {
-        url: './card-pages/sleeveless-eco.html',
-        sale: '-20%',
-        category: 'безрукавка',
-        image: './images/sleeveless-eco.jpg',
-        title: 'Мужской жилет из овчины под каракуль',
-        price: '21 744₽',
-        currency: '(6 6400₺ / 240$)',
-        size: 'под заказ'
-    },
-];
+import { products } from './data.js';
+
+// Получаем категорию
+const currentCategory = 'безрукавка';
+
+// Фильтруем товары по категории
+const filteredProducts = products.filter(product => product.category === currentCategory);
+
 
 const productContainer = document.querySelector('.container-cards');
 const productTemplate = productContainer.querySelector('.cards');
 let loadedCards = 0;
 const loadMoreButton = document.querySelector('.load-more-button');
 function loadCards() {
-    const cardsToLoad = products.slice(loadedCards, loadedCards + 12);
+    const cardsToLoad = filteredProducts.slice(loadedCards, loadedCards + 12);
     cardsToLoad.forEach((product, index) => {
         const card = productTemplate.cloneNode(true);
         card.classList.add('cards');
@@ -41,12 +27,10 @@ function loadCards() {
         card.onclick = function () {
             redirectToPage(product.url);
         };
-
         if (product.sale) { // Добавляем условие для отображения контейнера с скидкой
             card.querySelector('.card__sale').textContent = product.sale;
             card.querySelector('.card__sale').style.display = 'block';
         }
-
         productContainer.appendChild(card);
         // Задержка перед установкой полной прозрачности
         setTimeout(() => {
