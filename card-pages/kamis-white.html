@@ -99,6 +99,20 @@
                             <p class="card-content__season-text">Лето</p>
                         </div>
                     </div>
+                    <div class="hood-with">
+                        <div class="logo-with__container">
+                            <label class="hood-with__label hood-with__label-ferst">
+                                <input class="hood-with__input" id="hoodWith" type="radio" name="hood"
+                                    value="с логотипом на спине">
+                                С орнаментом на рукавах
+                            </label>
+                            <label class="hood-with__label">
+                                <input class="hood-with__input" id="hoodWithout" type="radio" name="hood"
+                                    value="без логотипа на спине"> Без орнамента на рукавах
+                            </label>
+                        </div>
+                        <p class="hood-with__error" id="errorMessage">Пожалуйста, выберите вариант камиса.</p>
+                    </div>
                     <div class="card-content__about">
                         <p class="card-content__about-text">
                             Летний камис ADAB выполнен из высококачественного хлопка супрем
@@ -216,10 +230,32 @@
         }
 
         function redirectToOrder(productName) {
-            // Сохраняем значение имени товара в локальном хранилище
-            localStorage.setItem('productName', productName);
-            // Выполняем переход на страницу order.html
-            window.location.href = "../order.html";
+            // Проверяем, выбран ли вариант с капюшеном или без капюшена
+            if (document.getElementById("hoodWith").checked || document.getElementById("hoodWithout").checked) {
+                // Получаем значение выбранной радиокнопки
+                var selectedOption = document.querySelector('input[name="hood"]:checked').value;
+
+                // Объединяем значения в одну строку
+                var combinedValue = productName + " / " + selectedOption;
+
+                // Сохраняем значение в локальном хранилище
+                localStorage.setItem('productName', combinedValue);
+
+                // Выполняем переход на страницу order.html
+                window.location.href = "../order.html";
+            } else {
+                // Отображаем сообщение об ошибке
+                document.getElementById("errorMessage").style.display = "block";
+            }
+        }
+
+        // Добавляем обработчик события для радиокнопок
+        var radioButtons = document.querySelectorAll('input[name="hood"]');
+        for (var i = 0; i < radioButtons.length; i++) {
+            radioButtons[i].addEventListener('change', function () {
+                // Скрываем сообщение об ошибке
+                document.getElementById("errorMessage").style.display = "none";
+            });
         }
 
     </script>
