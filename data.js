@@ -50,6 +50,76 @@ const products = [
         size: 'S, M, L, XL, XXL'
     },
     {
+        url: './card-pages/kamis-white.html',
+        sale: '',
+        category: 'камисы',
+        image: './images/kamis-white.jpg',
+        title: 'Камис ADAB, лето белый',
+        price: '3 390₽',
+        currency: '(1 110₺ / 38$)',
+        size: 'S, M, L, XL, XXL'
+    },
+    {
+        url: './card-pages/kamis-black.html',
+        sale: '',
+        category: 'камисы',
+        image: './images/kamis-black.jpg',
+        title: 'Камис ADAB, лето черный',
+        price: '3 390₽',
+        currency: '(1 110₺ / 38$)',
+        size: 'S, M, L, XL, XXL'
+    },
+    {
+        url: './card-pages/kamis-khaki.html',
+        sale: '',
+        category: 'камисы',
+        image: './images/kamis-khaki.jpg',
+        title: 'Камис ADAB, лето хаки',
+        price: '3 390₽',
+        currency: '(1 110₺ / 38$)',
+        size: 'S, M, L, XL, XXL'
+    },
+    {
+        url: './card-pages/pants-summer-black.html',
+        sale: '',
+        category: 'штаны',
+        image: './images/pants-summer-black.jpg',
+        title: 'Штаны ADAB, лето черные',
+        price: '3 500₽',
+        currency: '(1 160₺ / 40$)',
+        size: 'S, M, L, XL, XXL'
+    },
+    {
+        url: './card-pages/pants-summer-khaki.html',
+        sale: '',
+        category: 'штаны',
+        image: './images/pants-summer-khaki.jpg',
+        title: 'Штаны ADAB, лето хаки',
+        price: '3 500₽',
+        currency: '(1 160₺ / 40$)',
+        size: 'S, M, L, XL, XXL'
+    },
+    {
+        url: './card-pages/pants-summer-blue.html',
+        sale: '',
+        category: 'штаны',
+        image: './images/pants-summer-blue.jpg',
+        title: 'Штаны ADAB, лето синие',
+        price: '3 500₽',
+        currency: '(1 160₺ / 40$)',
+        size: 'S, M, L, XL, XXL'
+    },
+    {
+        url: './card-pages/pants-summer-beige.html',
+        sale: '',
+        category: 'штаны',
+        image: './images/pants-summer-beige.jpg',
+        title: 'Штаны ADAB, лето бежевые',
+        price: '3 500₽',
+        currency: '(1 160₺ / 40$)',
+        size: 'S, M, L, XL, XXL'
+    },
+    {
         url: './card-pages/t-shirt-beige.html',
         // sale: '-20%',
         category: 'футболки',
