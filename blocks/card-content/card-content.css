@@ -82,6 +82,14 @@ input[type='radio'] {
     }
 }
 
+@media screen and (max-width: 395px) {
+    .hood-with__container-promo {
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
+}
+
 @media screen and (max-width: 340px) {
     .hood-with__label {
         font-size: 13px;
