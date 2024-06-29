@@ -1,0 +1,23 @@
+.promo__slider-img {
+    object-fit: contain;
+    width: 50%;
+    height: 400px;
+}
+
+@media screen and (max-width: 635px) {
+    .promo__slider-img {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 404px) {
+    .promo__slider-img {
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .promo__slider-img {
+        height: 250px;
+    }
+}

@@ -1,0 +1,12 @@
+.promo__image {
+    background-image: url(../../../images/kids-uniform-black.jpg);
+    background-size: cover;
+    width: 40%;
+    min-height: 560px;
+}
+
+@media screen and (max-width: 1150px) {
+    .promo__image {
+        display: none;
+    }
+}

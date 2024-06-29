@@ -1,0 +1,18 @@
+.promo__slider-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #c1c7d8;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #4B5A7A;
+  }

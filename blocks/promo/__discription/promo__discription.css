@@ -1,0 +1,10 @@
+.promo__discription {
+    margin: auto 0;
+    width: 335px;
+}
+
+@media screen and (max-width: 635px) {
+    .promo__discription {
+        width: 50%;
+    }
+}

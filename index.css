@@ -41,6 +41,18 @@
 @import url(./blocks/burger/__contacts-link/burger__contacts-link.css);
 @import url(./blocks/burger/__contacts-icon/burger__contacts-icon.css);
 
+/* PROMO */
+@import url(./blocks/promo/promo.css);
+@import url(./blocks/promo/__title/promo__title.css);
+@import url(./blocks/promo/__container/promo__container.css);
+@import url(./blocks/promo/__image/promo__image.css);
+@import url(./blocks/promo/__card/promo__card.css);
+@import url(./blocks/promo/__slider/promo__slider.css);
+@import url(./blocks/promo/__slider-img/promo__slider-img.css);
+@import url(./blocks/promo/__discription/promo__discription.css);
+@import url(./blocks/promo/__slider-text/promo__slider-text.css);
+@import url(./blocks/promo/__slider-dots/promo__slider-dots.css);
+
 /* INDEX-CATALOG */
 @import url(./blocks/index-catalog/index-catalog.css);
 @import url(./blocks/index-catalog/__container/index-catalog__container.css);

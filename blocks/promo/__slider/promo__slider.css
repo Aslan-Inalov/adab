@@ -1,0 +1,8 @@
+.promo__slider {
+    display: none;
+    max-height: 560px;
+}
+
+.active {
+    display: flex;
+}
