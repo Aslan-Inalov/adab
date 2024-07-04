@@ -183,7 +183,7 @@ const products = [
         image: './images/sleeveless-eco.jpg',
         title: 'Мужской жилет из овчины под каракуль',
         price: '21 744₽',
-        currency: '(6 6400₺ / 240$)',
+        currency: '(6 640₺ / 240$)',
         size: 'под заказ'
     },
     {
