@@ -35,7 +35,7 @@ function showSlide(n) {
             dotsContainer.children[currentSlide].classList.add("active");
 
             // 2. Запускаем новый setTimeout после завершения анимации
-            slides[currentSlide].timeout = setTimeout(nextSlide, 10000);
+            slides[currentSlide].timeout = setTimeout(nextSlide, 6000);
 
             // Делаем новый слайд видимым после завершения анимации
             gsap.set(slides[currentSlide], { scale: 1, opacity: 1 });
@@ -81,5 +81,5 @@ createDots();
 
 // Запускаем автовоспроизведение после загрузки страницы
 window.addEventListener('load', () => {
-    slides[currentSlide].timeout = setTimeout(nextSlide, 5000);
+    slides[currentSlide].timeout = setTimeout(nextSlide, 6000);
 });  
