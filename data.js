@@ -73,7 +73,7 @@ const products = [
         sale: '',
         category: 'камисы',
         image: './images/kamis-red.jpg',
-        title: 'Камис ADAB, лето красный',
+        title: 'Камис ADAB, лето бордовый',
         price: '3 730₽',
         currency: '(1 270₺ / 43$)',
         size: 'S, M, L, XL, XXL'
