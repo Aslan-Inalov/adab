@@ -59,6 +59,26 @@ const products = [
         size: 'S, M, L, XL, XXL'
     },
     {
+        url: './card-pages/kamis-blue.html',
+        sale: '',
+        category: 'камисы',
+        image: './images/kamis-blue.jpg',
+        title: 'Камис ADAB, лето синий',
+        price: '3 730₽',
+        currency: '(1 270₺ / 43$)',
+        size: 'S, M, L, XL, XXL'
+    },
+    {
+        url: './card-pages/kamis-red.html',
+        sale: '',
+        category: 'камисы',
+        image: './images/kamis-red.jpg',
+        title: 'Камис ADAB, лето красный',
+        price: '3 730₽',
+        currency: '(1 270₺ / 43$)',
+        size: 'S, M, L, XL, XXL'
+    },
+    {
         url: './card-pages/kamis-white.html',
         sale: '',
         category: 'камисы',
