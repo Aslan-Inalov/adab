@@ -4,6 +4,10 @@
     justify-content: space-between;
 }
 
+.about__container-store {
+    flex-direction: row-reverse;
+}
+
 @media screen and (max-width: 1030px) {
     .about__container {
         margin: 140px 0;
@@ -19,6 +23,10 @@
 @media screen and (max-width: 860px) {
     .about__container {
         margin-top: 80px;
+        flex-direction: column-reverse;
+    }
+
+    .about__container-store {
         flex-direction: column-reverse;
     }
 }

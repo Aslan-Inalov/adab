@@ -9,10 +9,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="manifest" href="./favicon/site.webmanifest">
     <link rel="stylesheet" href="index.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="script.js" defer></script>
-    <script src="slider.js" defer></script>
-    <script src="promo.js" defer></script>
     <title>ADAB</title>
 </head>
 
@@ -79,12 +75,27 @@
                         </a>
                         <a href="./catalog.html" style="text-decoration: none;">
                             <div class="promo__slider">
-                                <img src="./images/logo.jpg" alt="синяя футболка ADAB" class="promo__slider-img"
+                                <img src="./images/logo.jpg" alt="логотип ADAB" class="promo__slider-img"
                                     style="object-fit: contain;">
                                 <div class="promo__discription">
                                     <p class="promo__slider-text" style="margin-left: 0;">При покупке<br> нашей
                                         продукции на
                                         сумму от <b>10 000₽</b> доставка бесплатно</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://wa.me/905078405635" style="text-decoration: none;">
+                            <div class="promo__slider">
+                                <img src="./images/percent.svg" alt="синяя футболка ADAB" class="promo__slider-img"
+                                    style="object-fit: none;">
+                                <div class="promo__discription">
+                                    <p class="promo__slider-text" style="margin-left: 0;">Постоянным<br> клиентам -
+                                        <br>скидка
+                                        <b>10%</b>
+                                        <br>Просто отправьте<br> фото с товаром, приобретенным ранее – и мы предоставим
+                                        вам
+                                        скидку.
+                                    </p>
                                 </div>
                             </div>
                         </a>
@@ -94,96 +105,7 @@
                     <div class="promo__image"></div>
                 </div>
             </section>
-            <section class="index-catalog">
-                <h2 class="index-catalog__title">Каталог</h1>
-                    <div class="index-catalog__container">
-                        <div class="slider-wrapper">
-                            <button id="prev-slide" class="slide-button material-symbols-rounded">
-                                chevron_left
-                            </button>
-                            <ul class="image-list">
-                                <div class="image-item-container">
-                                    <a href="./catalog.html">
-                                        <img class="image-item-all" src="images/logo.png" alt="img-1" />
-                                        <div class="image-caption">Смотреть все</div>
-                                    </a>
-                                </div>
-                                <div class="image-item-container">
-                                    <a href="./catalog-sale.html">
-                                        <img class="image-item" src="images/sale.jpg" alt="img-9" />
-                                        <div class="image-caption">Скидки</div>
-                                    </a>
-                                </div>
-                                <div class="image-item-container">
-                                    <a href="./catalog-uniform.html">
-                                        <img class="image-item" src="images/img3.jpg" alt="img-3" />
-                                        <div class="image-caption">Формы</div>
-                                    </a>
-                                </div>
-                                <div class="image-item-container">
-                                    <a href="./catalog-khamis.html">
-                                        <img class="image-item" src="images/kamis-blue.jpg" alt="камис ADAB" />
-                                        <div class="image-caption">Камисы</div>
-                                    </a>
-                                </div>
-                                <div class="image-item-container">
-                                    <a href="./catalog-pants.html">
-                                        <img class="image-item" src="images/pants-summer-blue.jpg" alt="штаны ADAB" />
-                                        <div class="image-caption">Штаны</div>
-                                    </a>
-                                </div>
-                                <div class="image-item-container">
-                                    <a href="./catalog-shirts.html">
-                                        <img class="image-item" src="images/shirt-green.jpg" alt="img-4" />
-                                        <div class="image-caption">Рубашки</div>
-                                    </a>
-                                </div>
-                                <div class="image-item-container">
-                                    <a href="./catalog-t-shirts.html">
-                                        <img class="image-item" src="images/t-shirt-white.jpg" alt="img-4" />
-                                        <div class="image-caption">Футболки</div>
-                                    </a>
-                                </div>
-                                <div class="image-item-container">
-                                    <a href="./catalog-sleeveless.html">
-                                        <img class="image-item" src="images/img8.jpg" alt="img-6" />
-                                        <div class="image-caption">Безрукавки</div>
-                                    </a>
-                                </div>
-                                <div class="image-item-container">
-                                    <a href="./catalog-shoes.html">
-                                        <img class="image-item" src="images/img7.jpg" alt="img-7" />
-                                        <div class="image-caption">Обувь</div>
-                                    </a>
-                                </div>
-                                <div class="image-item-container">
-                                    <a href="./catalog-kids.html">
-                                        <img class="image-item" src="images/img9.jpg" alt="img-8" />
-                                        <div class="image-caption">Детская одежда</div>
-                                    </a>
-                                </div>
-                                <div class="image-item-container">
-                                    <a href="./catalog-hats.html">
-                                        <img class="image-item" src="images/img10.jpg" alt="img-9" />
-                                        <div class="image-caption">Головные уборы</div>
-                                    </a>
-                                </div>
-                            </ul>
-                            <button id="next-slide" class="slide-button material-symbols-rounded">
-                                chevron_right
-                            </button>
-                        </div>
-                        <div class="slider-scrollbar">
-                            <div class="scrollbar-track">
-                                <div class="scrollbar-thumb"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="index-catalog__link-container">
-                        <a href="./catalog.html" class="index-catalog__link">
-                            <p class="index-catalog__link-text">Смотреть всю коллекцию</p>
-                        </a>
-                    </div>
+            <section class="index-catalog" id="catalog">
             </section>
             <section class="advantage">
                 <div class="advantage__container advantage__container-ferst">
@@ -318,6 +240,10 @@
 
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js" defer></script>
+    <script src="slider.js" defer></script>
+    <script src="promo.js" defer></script>
     <script>
         // Проверяем, если в URL присутствует "index"
         if (window.location.href.indexOf('index') > -1) {
@@ -325,6 +251,10 @@
             var newUrl = window.location.href.replace('index', '');
             window.history.pushState({}, '', newUrl);
         }
+
+        fetch('./components/catalog-block.html')
+            .then(response => response.text())
+            .then(html => document.getElementById('catalog').innerHTML = html);
     </script>
 
 </body>

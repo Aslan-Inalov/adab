@@ -9,9 +9,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="manifest" href="./favicon/site.webmanifest">
     <link rel="stylesheet" href="index.css">
-    <script src="script.js" defer></script>
-    <script src="slider.js" defer></script>
-    <script type="module" src="catalog-pants.js" defer></script>
     <title>Штаны | ADAB</title>
 </head>
 
@@ -215,6 +212,14 @@
             </div>
         </div>
     </div>
+
+    <script src="script.js" defer></script>
+    <script src="slider.js" defer></script>
+    <script type="module">
+        import { initProductListing } from './js/product-listing.js';
+
+        initProductListing('штаны'); 
+    </script>
 </body>
 
 </html>

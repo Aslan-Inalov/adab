@@ -62,16 +62,13 @@ function prevSlide() {
 slides.forEach(slide => {
     slide.addEventListener('touchstart', e => {
         touchstartX = e.changedTouches[0].screenX;
-    });
+    }, { passive: true }); //  <-- Добавляем флаг passive 
 
     slide.addEventListener('touchend', e => {
         touchendX = e.changedTouches[0].screenX;
         checkDirection();
     });
 });
-
-
-
 
 function nextSlide() {
     showSlide(currentSlide + 1);
