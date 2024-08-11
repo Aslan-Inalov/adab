@@ -65,7 +65,7 @@ const products = [
         image: './images/kamis-blue.jpg',
         title: 'Камис ADAB, лето синий',
         price: '3 730₽',
-        currency: '(1 270₺ / 43$)',
+        currency: '(1 155₺ / 43$)',
         size: 'S, M, L, XL, XXL'
     },
     {
@@ -75,7 +75,7 @@ const products = [
         image: './images/kamis-red.jpg',
         title: 'Камис ADAB, лето бордовый',
         price: '3 730₽',
-        currency: '(1 270₺ / 43$)',
+        currency: '(1 155₺ / 43$)',
         size: 'S, M, L, XL, XXL'
     },
     {
@@ -85,7 +85,7 @@ const products = [
         image: './images/kamis-white.jpg',
         title: 'Камис ADAB, лето белый',
         price: '3 730₽',
-        currency: '(1 270₺ / 43$)',
+        currency: '(1 155₺ / 43$)',
         size: 'S, M, L, XL, XXL'
     },
     {
@@ -95,7 +95,7 @@ const products = [
         image: './images/kamis-black.jpg',
         title: 'Камис ADAB, лето черный',
         price: '3 730₽',
-        currency: '(1 270₺ / 43$)',
+        currency: '(1 155₺ / 43$)',
         size: 'S, M, L, XL, XXL'
     },
     {
@@ -105,7 +105,7 @@ const products = [
         image: './images/kamis-khaki.jpg',
         title: 'Камис ADAB, лето хаки',
         price: '3 730₽',
-        currency: '(1 270₺ / 43$)',
+        currency: '(1 155₺ / 43$)',
         size: 'S, M, L, XL, XXL'
     },
     {
@@ -155,7 +155,7 @@ const products = [
         image: './images/t-shirt-blue.jpg',
         title: 'Классическая футболка ADAB, синяя',
         price: '2 750₽',
-        currency: '(940₺ / 32$)',
+        currency: '(855₺ / 32$)',
         size: 'S, M, L, XL'
     },
     {
@@ -165,7 +165,7 @@ const products = [
         image: './images/t-shirt-beige.jpg',
         title: 'Футболка оверсайз ADAB, бежевая',
         price: '2 480₽',
-        currency: '(820₺ / 28$)',
+        currency: '(755₺ / 28$)',
         size: 'S, M, L, XL'
     },
     {
@@ -174,7 +174,7 @@ const products = [
         image: './images/t-shirt-white.jpg',
         title: 'Футболка оверсайз ADAB, белая',
         price: '2 480₽',
-        currency: '(820₺ / 28$)',
+        currency: '(755₺ / 28$)',
         size: 'S, M, L, XL'
     },
     {
@@ -183,7 +183,7 @@ const products = [
         image: './images/t-shirt-black.jpg',
         title: 'Футболка оверсайз ADAB, чёрная',
         price: '2 480₽',
-        currency: '(820₺ / 28$)',
+        currency: '(755₺ / 28$)',
         size: 'S, M, L, XL'
     },
     {
