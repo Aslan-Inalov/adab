@@ -10,6 +10,26 @@ const products = [
         size: 'S, M, L, XL, XXL'
     },
     {
+        url: './card-pages/uniform-ramadi.html',
+        sale: '',
+        category: 'формы',
+        image: './images/uniform-ramadi.jpg',
+        title: 'Мужской костюм Рамадий',
+        price: '8 790₽',
+        currency: '(2 940₺ / 100$)',
+        size: 'S, M, L, XL, XXL'
+    },
+    {
+        url: './card-pages/uniform-sharaf.html',
+        sale: '',
+        category: 'формы',
+        image: './images/uniform-sharaf.jpg',
+        title: 'Мужской костюм Шараф',
+        price: '5 930₽',
+        currency: '(2 000₺ / 65$)',
+        size: 'S, M, L, XL, XXL'
+    },
+    {
         url: './card-pages/uniform-white-summer.html',
         sale: '-35%',
         category: 'формы',
