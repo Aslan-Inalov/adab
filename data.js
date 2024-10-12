@@ -170,12 +170,12 @@ const products = [
     },
     {
         url: './card-pages/t-shirt-blue-classic.html',
-        sale: '+ ПОДАРОК',
+        sale: '-30% + ПОДАРОК',
         category: 'футболки',
         image: './images/t-shirt-blue-classic.jpg',
         title: 'Классическая футболка ADAB, синяя',
-        price: '2 750₽',
-        currency: '(855₺ / 32$)',
+        price: '1 925₽',
+        currency: '(599₺ / 23$)',
         size: 'S, M, L, XL'
     },
     {
