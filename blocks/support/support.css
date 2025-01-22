@@ -152,6 +152,7 @@ td {
     font-weight: 500;
     font-size: 15px;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .support-block__consultation-subtitle {
