@@ -1,7 +1,20 @@
-.fond__container-wrapper {
+.f-wrapper {
     display: flex;
     justify-content: center;
+}
+
+.f-wrapper-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.fond__container-wrapper {
+    display: flex;
     margin: 0 10px;
+}
+
+.fond__container-wrapper-first {
+    margin-top: 100px;
 }
 
 .fond__container-contacts {
@@ -150,6 +163,62 @@
     font-weight: 500;
 }
 
+
+.requisites-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.requisites-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    /* color: #555; */
+}
+
+.requisites-list li:last-child {
+    border-bottom: none;
+}
+
+.requisites-list strong {
+    color: #000;
+    font-weight: 600;
+}
+
+.fond__requisites {
+    display: flex;
+    gap: 250px;
+}
+
+.qr-code {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.qr-code img {
+    width: 150px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.fond__payment-info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.card-number {
+    text-align: center;
+    background-color: #dcedee;
+    /* Светло-зеленый фон */
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 @media screen and (max-width: 1310px) {
     .fond__container-text-first {
         margin-top: 0;
@@ -179,6 +248,10 @@
         gap: 150px;
     }
 
+    .fond__requisites {
+        gap: 150px;
+    }
+
 }
 
 @media screen and (max-width: 940px) {
@@ -191,6 +264,10 @@
     .fond__container-first {
         margin-top: 80px;
         flex-direction: column-reverse;
+    }
+
+    .fond__container-wrapper-first {
+        margin-top: 80px;
     }
 
     .fond__container-text-first {
@@ -241,6 +318,10 @@
         gap: 100px;
     }
 
+    .fond__requisites {
+        gap: 100px;
+    }
+
 }
 
 @media screen and (max-width: 860px) {
@@ -249,6 +330,10 @@
     }
 
     .fond__container-contacts {
+        gap: 50px;
+    }
+
+    .fond__requisites {
         gap: 50px;
     }
 }
@@ -279,6 +364,10 @@
     }
 
     .fond__container-contacts {
+        flex-direction: column;
+    }
+
+    .fond__requisites {
         flex-direction: column;
     }
 }
@@ -327,7 +416,7 @@
     }
 
     .fond__description {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 24px;
     }
 
@@ -342,6 +431,10 @@
     }
 
     .fond__contacts-text {
+        font-size: 14px;
+    }
+
+    .requisites-list li {
         font-size: 14px;
     }
 
