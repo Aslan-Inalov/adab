@@ -384,7 +384,7 @@ const products = [
         sale: '-25%',
         category: 'обувь',
         image: './images/sandals-green.jpg',
-        title: 'Нубуковые сандалии ADAB, зеленные',
+        title: 'Нубуковые сандалии ADAB, зелёные',
         price: '3 510₽',
         currency: '(1 170₺ / 40$)',
         size: '40, 41, 42, 43, 44, 45'
