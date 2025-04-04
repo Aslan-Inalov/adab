@@ -4,7 +4,7 @@ const products = [
         sale: '',
         category: 'рубашки',
         image: './images/shirt-green.jpg',
-        title: 'Мужская тактическая рубаха ADAB, зелённая',
+        title: 'Мужская тактическая рубаха ADAB, зелёная',
         price: '4 900₽',
         currency: '(1 650₺ / 56$)',
         size: 'S, M, L, XL, XXL'
@@ -371,7 +371,7 @@ const products = [
         url: './card-pages/sandals-green.html',
         category: 'обувь',
         image: './images/sandals-green.jpg',
-        title: 'Нубуковые сандалии ADAB, зеленные',
+        title: 'Нубуковые сандалии ADAB, зелёные',
         price: '4 680₽',
         currency: '(1 560₺ / 53$)',
         size: '40, 41, 42, 43, 44, 45'
