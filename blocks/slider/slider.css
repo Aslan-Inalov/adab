@@ -1,5 +1,7 @@
 .slider-wrapper {
     position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 .slider-wrapper .slide-button {
@@ -35,8 +37,10 @@
 }
 
 .slider-wrapper .image-list {
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(11, 1fr); */
+    display: flex;
+    flex-wrap: nowrap;
     gap: 30px;
     font-size: 0;
     list-style: none;
@@ -109,6 +113,7 @@
 }
 
 .slider-wrapper .image-item-container {
+    flex-shrink: 0;
     position: relative;
     display: inline-block;
     width: 160px;

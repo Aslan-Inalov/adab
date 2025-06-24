@@ -113,7 +113,7 @@ const products = [
         sale: '',
         category: 'камисы',
         image: './images/kamis-black.jpg',
-        title: 'Камис ADAB, лето черный',
+        title: 'Камис ADAB, лето чёрный',
         price: '3 730₽',
         currency: '(1 155₺ / 43$)',
         size: 'S, M, L, XL, XXL'
@@ -133,7 +133,7 @@ const products = [
         sale: '',
         category: 'штаны',
         image: './images/pants-summer-black.jpg',
-        title: 'Штаны ADAB, лето черные',
+        title: 'Штаны ADAB, лето чёрные',
         price: '3 850₽',
         currency: '(1 290₺ / 44$)',
         size: 'S, M, L, XL, XXL'
@@ -290,7 +290,7 @@ const products = [
         url: './card-pages/moccasins-black.html',
         category: 'обувь',
         image: './images/moccasins-black.jpg',
-        title: 'Кожаные мокасины ADAB, черные',
+        title: 'Кожаные мокасины ADAB, чёрные',
         price: '5 090₽',
         currency: '(1 700₺ / 58$)',
         size: '40, 41, 42, 43, 44, 45'
@@ -308,7 +308,7 @@ const products = [
         url: './card-pages/low-shoes-black.html',
         category: 'обувь',
         image: './images/low-shoes-black.jpg',
-        title: 'Легкие полуботинки ADAB, черные',
+        title: 'Легкие полуботинки ADAB, чёрные',
         price: '4 070₽',
         currency: '(1 350₺ / 46$)',
         size: '40, 41, 42, 43, 44, 45'
@@ -326,7 +326,7 @@ const products = [
         url: './card-pages/summer-sneakers-black.html',
         category: 'обувь',
         image: './images/summer-sneakers-black.jpg',
-        title: 'Кожаные летние кроссовки ADAB, черные',
+        title: 'Кожаные летние кроссовки ADAB, чёрные',
         price: '4 680₽',
         currency: '(1 560₺ / 53$)',
         size: '40, 41, 42, 43, 44, 45'
@@ -398,7 +398,7 @@ const products = [
         url: './card-pages/shoes-black-brown.html',
         category: 'обувь',
         image: './images/shoes-black-brown.jpg',
-        title: 'Мужская обувь ADAB, черно-коричневые',
+        title: 'Мужская обувь ADAB, чёрно-коричневые',
         price: '6 050₽',
         currency: '(2 030₺ / 69$)',
         size: '40, 41, 42, 43, 44, 45'
@@ -416,10 +416,60 @@ const products = [
         url: './card-pages/shoes-black.html',
         category: 'обувь',
         image: './images/shoes-black.jpg',
-        title: 'Мужская обувь ADAB, черная',
+        title: 'Мужская обувь ADAB, чёрная',
         price: '6 050₽',
         currency: '(2 030₺ / 69$)',
         size: '40, 41'
+    },
+    {
+        url: './card-pages/swim-shorts-black.html',
+        sale: '',
+        category: 'шорты для плавания',
+        image: './images/img11.jpg',
+        title: 'Шорты для плавания ADAB, чёрные',
+        price: '2 800₽',
+        currency: '(1 200₺ / 35$)',
+        size: 'S, M, L, XL'
+    },
+    {
+        url: './card-pages/swim-shorts-blue.html',
+        sale: '',
+        category: 'шорты для плавания',
+        image: './images/swim-shorts-blue.jpg',
+        title: 'Шорты для плавания ADAB, синие',
+        price: '2 800₽',
+        currency: '(1 200₺ / 35$)',
+        size: 'S, M, L, XL'
+    },
+    {
+        url: './card-pages/swim-shorts-lightblue.html',
+        sale: '',
+        category: 'шорты для плавания',
+        image: './images/swim-shorts-lightblue.jpg',
+        title: 'Шорты для плавания ADAB, голубые',
+        price: '2 800₽',
+        currency: '(1 200₺ / 35$)',
+        size: 'S, M, L, XL'
+    },
+    {
+        url: './card-pages/swim-shorts-khaki.html',
+        sale: '',
+        category: 'шорты для плавания',
+        image: './images/swim-shorts-khaki.jpg',
+        title: 'Шорты для плавания ADAB, хаки',
+        price: '2 800₽',
+        currency: '(1 200₺ / 35$)',
+        size: 'S, M, L, XL'
+    },
+    {
+        url: './card-pages/swim-shorts-grey.html',
+        sale: '',
+        category: 'шорты для плавания',
+        image: './images/swim-shorts-grey.jpg',
+        title: 'Шорты для плавания ADAB, серые',
+        price: '2 800₽',
+        currency: '(1 200₺ / 35$)',
+        size: 'S, M, L, XL'
     },
 ];
 
