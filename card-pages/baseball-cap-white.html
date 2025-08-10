@@ -224,6 +224,8 @@
         function redirectToOrder(productName) {
             // Сохраняем значение имени товара в локальном хранилище
             localStorage.setItem('productName', productName);
+            localStorage.setItem('productSize', 'Один размер');
+
             // Выполняем переход на страницу order.html
             window.location.href = "../order.html";
         }

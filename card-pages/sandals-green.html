@@ -49,8 +49,7 @@
                 <div class="card-content__slider">
                     <div class="basic">
                         <div class="basic-container">
-                            <img src="../images/sandals-green.jpg" alt="Нубуковые сандалии ADAB"
-                                class="basic-img">
+                            <img src="../images/sandals-green.jpg" alt="Нубуковые сандалии ADAB" class="basic-img">
                             <div class="buttons">
                                 <button class="btn-left"><img src="../images/icon-left.svg" alt="иконка лево"></button>
                                 <button class="btn-right"><img src="../images/icon-right.svg"
@@ -60,28 +59,27 @@
                     </div>
                     <div class="ancillari">
                         <div class="ancillari-container">
-                            <img src="../images/sandals-green.jpg" alt="Нубуковые сандалии ADAB"
+                            <img src="../images/sandals-green.jpg" alt="Нубуковые сандалии ADAB" class="ancillari-img">
+                        </div>
+                        <div class="ancillari-container">
+                            <img src="../images/sandals-green/sandals-green2.jpg" alt="Нубуковые сандалии ADAB"
                                 class="ancillari-img">
                         </div>
                         <div class="ancillari-container">
-                            <img src="../images/sandals-green/sandals-green2.jpg"
-                                alt="Нубуковые сандалии ADAB" class="ancillari-img">
+                            <img src="../images/sandals-green/sandals-green3.jpg" alt="Нубуковые сандалии ADAB"
+                                class="ancillari-img">
                         </div>
                         <div class="ancillari-container">
-                            <img src="../images/sandals-green/sandals-green3.jpg"
-                                alt="Нубуковые сандалии ADAB" class="ancillari-img">
+                            <img src="../images/sandals-green/sandals-green4.jpg" alt="Нубуковые сандалии ADAB"
+                                class="ancillari-img">
                         </div>
                         <div class="ancillari-container">
-                            <img src="../images/sandals-green/sandals-green4.jpg"
-                                alt="Нубуковые сандалии ADAB" class="ancillari-img">
+                            <img src="../images/sandals-green/sandals-green5.jpg" alt="Нубуковые сандалии ADAB"
+                                class="ancillari-img">
                         </div>
                         <div class="ancillari-container">
-                            <img src="../images/sandals-green/sandals-green5.jpg"
-                                alt="Нубуковые сандалии ADAB" class="ancillari-img">
-                        </div>
-                        <div class="ancillari-container">
-                            <img src="../images/sandals-green/sandals-green6.jpg"
-                                alt="Нубуковые сандалии ADAB" class="ancillari-img">
+                            <img src="../images/sandals-green/sandals-green6.jpg" alt="Нубуковые сандалии ADAB"
+                                class="ancillari-img">
                         </div>
                     </div>
                 </div>
@@ -226,6 +224,7 @@
         function redirectToOrder(productName) {
             // Сохраняем значение имени товара в локальном хранилище
             localStorage.setItem('productName', productName);
+            localStorage.setItem('productSize', '');
             // Выполняем переход на страницу order.html
             window.location.href = "../order.html";
         }

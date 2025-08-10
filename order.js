@@ -20,6 +20,15 @@ for (var i = 0; i < productNameInputs.length; i++) {
     productNameInputs[i].value = productName;
 }
 
+const productSize = localStorage.getItem('productSize') || '';
+document.querySelectorAll('.product-size-input').forEach(input => {
+    if (input instanceof HTMLInputElement) {
+        input.value = productSize;
+    }
+});
+
+
+
 // Получаем кнопку
 var submitButton = document.getElementById("submit-button");
 // Добавляем обработчик события на изменение полей формы

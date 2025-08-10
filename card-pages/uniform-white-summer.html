@@ -92,7 +92,8 @@
                         </div>
                         <div class="card-content__price-container-block">
                             <p class="card-content__price card-content__price-currency">(1 910₺, 65$)</p>
-                            <s class="card-content__price card-content__price-currency card-content__price-s">(2 940₺, 100$)</s>
+                            <s class="card-content__price card-content__price-currency card-content__price-s">(2 940₺,
+                                100$)</s>
                         </div>
                     </div>
                     <div class="card-content__size">
@@ -257,6 +258,7 @@
 
                 // Сохраняем значение в локальном хранилище
                 localStorage.setItem('productName', combinedValue);
+                localStorage.setItem('productSize', '');
 
                 // Выполняем переход на страницу order.html
                 window.location.href = "../order.html";

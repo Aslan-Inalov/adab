@@ -137,7 +137,8 @@
                         <p>Модель представлена в пяти цветах: чёрном, белом, хаки, синем и бордовом.</p>
                     </div>
                     <div class="card-content__btn-container">
-                        <button class="card-content__btn" onclick="redirectToOrder('Камис ADAB, бордовый лето')">Оформить
+                        <button class="card-content__btn"
+                            onclick="redirectToOrder('Камис ADAB, бордовый лето')">Оформить
                             заказ</button>
                     </div>
                 </div>
@@ -256,6 +257,7 @@
 
                 // Сохраняем значение в локальном хранилище
                 localStorage.setItem('productName', combinedValue);
+                localStorage.setItem('productSize', '');
 
                 // Выполняем переход на страницу order.html
                 window.location.href = "../order.html";

@@ -93,8 +93,11 @@
                             <s class="card-content__price card-content__price-sleev card-content__price-s">49 830₽</s>
                         </div>
                         <div class="card-content__price-container-block">
-                            <p class="card-content__price card-content__price-sleev card-content__price-currency">(13 280₺ / 452$)</p>
-                            <s class="card-content__price card-content__price-sleev card-content__price-currency card-content__price-s">(16 600₺,
+                            <p class="card-content__price card-content__price-sleev card-content__price-currency">(13
+                                280₺ / 452$)</p>
+                            <s
+                                class="card-content__price card-content__price-sleev card-content__price-currency card-content__price-s">(16
+                                600₺,
                                 565$)</s>
                         </div>
                     </div>
@@ -235,6 +238,7 @@
         function redirectToOrder(productName) {
             // Сохраняем значение имени товара в локальном хранилище
             localStorage.setItem('productName', productName);
+            localStorage.setItem('productSize', '');
             // Выполняем переход на страницу order.html
             window.location.href = "../order.html";
         }

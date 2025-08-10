@@ -113,7 +113,8 @@
                     </div>
                     <div class="card-content__btn-container">
                         <button class="card-content__btn"
-                            onclick="redirectToOrder('Нубуковые летние кроссовки ADAB, бежевые')">Оформить заказ</button>
+                            onclick="redirectToOrder('Нубуковые летние кроссовки ADAB, бежевые')">Оформить
+                            заказ</button>
                     </div>
                 </div>
             </section>
@@ -223,6 +224,7 @@
         function redirectToOrder(productName) {
             // Сохраняем значение имени товара в локальном хранилище
             localStorage.setItem('productName', productName);
+            localStorage.setItem('productSize', '');
             // Выполняем переход на страницу order.html
             window.location.href = "../order.html";
         }
