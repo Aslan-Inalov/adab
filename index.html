@@ -106,7 +106,15 @@
                     <div class="promo__image"></div>
                 </div>
             </section>
-            <section class="index-catalog" id="catalog">
+            <section class="index-catalog">
+                <h2 class="index-catalog__title">Каталог</h1>
+                    <div class="index-catalog__container" id="catalog">
+                    </div>
+                    <div class="index-catalog__link-container">
+                        <a href="./catalog.html" class="index-catalog__link">
+                            <p class="index-catalog__link-text">Смотреть всю коллекцию</p>
+                        </a>
+                    </div>
             </section>
             <section class="promo">
                 <h2 class="promo__title">Фонд Адаб</h2>
@@ -263,7 +271,7 @@
     <script src="script.js" defer></script>
     <script src="slider.js" defer></script>
     <script src="promo.js" defer></script>
-    <script>
+    <!-- <script>
         // Проверяем, если в URL присутствует "index"
         if (window.location.href.indexOf('index') > -1) {
             // Удаляем "index" из URL без перезагрузки страницы
@@ -274,7 +282,7 @@
         fetch('./components/catalog-block.html')
             .then(response => response.text())
             .then(html => document.getElementById('catalog').innerHTML = html);
-    </script>
+    </script> -->
 
 </body>
 

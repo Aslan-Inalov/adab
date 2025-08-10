@@ -38,3 +38,32 @@ links.forEach(function (link) {
         link.classList.add('active');
     }
 });
+
+fetch('./components/catalog-block.html')
+    .then(response => response.text())
+    .then(html => {
+        document.getElementById('catalog').innerHTML = html;
+        activateCurrentCatalogItem();
+    });
+
+function activateCurrentCatalogItem() {
+    // Нормализуем URL текущей страницы
+    const getPageName = (url) => {
+        return url.split('/').pop()
+            .replace('.html', '')
+            .replace('catalog-', ''); // дополнительно убираем префикс если нужно
+    };
+
+    const currentPage = getPageName(window.location.pathname);
+
+    document.querySelectorAll('.image-item-container').forEach(container => {
+        const link = container.querySelector('a');
+        if (link) {
+            const linkPage = getPageName(link.getAttribute('href'));
+            if (linkPage === currentPage) {
+                container.classList.add('image-item-container-active');
+                console.log('Active item found:', linkPage); // для отладки
+            }
+        }
+    });
+}

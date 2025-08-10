@@ -471,6 +471,46 @@ const products = [
         currency: '(1 200₺ / 35$)',
         size: 'S, M, L, XL'
     },
+    {
+        url: './card-pages/wallet-ginger.html',
+        sale: '',
+        category: 'аксессуары',
+        image: './images/wallet-ginger.jpg',
+        title: 'Кошелёк ADAB, рыжий',
+        price: '1 200₽',
+        currency: '(500₺ / 15$)',
+        size: 'один размер'
+    },
+    {
+        url: './card-pages/wallet-black.html',
+        sale: '',
+        category: 'аксессуары',
+        image: './images/wallet-black.jpg',
+        title: 'Кошелёк ADAB, чёрный',
+        price: '1 200₽',
+        currency: '(500₺ / 15$)',
+        size: 'один размер'
+    },
+    {
+        url: './card-pages/wallet-olive.html',
+        sale: '',
+        category: 'аксессуары',
+        image: './images/wallet-olive.jpg',
+        title: 'Кошелёк ADAB, оливковый',
+        price: '1 200₽',
+        currency: '(500₺ / 15$)',
+        size: 'один размер'
+    },
+    {
+        url: './card-pages/wallet-blue.html',
+        sale: '',
+        category: 'аксессуары',
+        image: './images/wallet-blue.jpg',
+        title: 'Кошелёк ADAB, тёмно-синий',
+        price: '1 200₽',
+        currency: '(500₺ / 15$)',
+        size: 'один размер'
+    },
 ];
 
 export { products }; 
