@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="stylesheet" href="../index.css">
+    <title>ADAB</title>
+</head>
+
+<body class="root">
+    <div class="page">
+
+        <header class="header">
+            <a href="./index.html" style="cursor: default; pointer-events: none;">
+                <div class="logo-container">
+                    <img src="../images/logo.png" alt="logo" class="logo">
+                </div>
+            </a>
+
+            <nav>
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a class="header__menu-link" href="./catalog.html">Katalog</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="./about.html">Hakkımızda</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="./fond.html">Vakıf</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="./contacts.html">İletişim</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="./support.html">Destek</a></li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="../index.html">RU</a> /
+                        <a class="header__menu-link header__menu-link-active" href="./index.html">TR</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__lang header__lang--compact">
+                <a class="header__menu-link" href="../index.html">RU</a>
+                <span class="header__lang-divider">/</span>
+                <a class="header__menu-link header__menu-link-active" href="./index.html">TR</a>
+            </div>
+            <button class="header__burger-btn"></button>
+        </header>
+
+        <main class="main">
+            <section class="intro">
+                <div class="intro__container">
+                    <h1 class="intro__title">Erkek giyim<br><span style="line-height: initial;">Adab</span></h1>
+                    <p class="intro__subtitle">Modern Kafkas kıyafetleri<br> Military tarzında</p>
+                    <img src="../images/img1.jpg" alt="ADAB erkek kıyafeti" class="intro__image-oval">
+                    <div class="intro__catalog">
+                        <a href="./catalog.html" class="intro__catalog-link">
+                            <p class="intro__catalog-text">Kataloğa geç</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="intro__image"></div>
+            </section>
+
+            <section class="promo">
+                <h2 class="promo__title">Kampanyalarımız</h2>
+                <div class="promo__container">
+                    <div class="promo__card">
+                        <a href="./catalog-hats.html" style="text-decoration: none;">
+                            <div class="promo__slider active">
+                                <img src="../images/baseball-cap-white/baseball-cap-white3.jpg"
+                                    alt="beyaz ADAB beyzbol kepi" class="promo__slider-img">
+                                <div class="promo__discription">
+                                    <p class="promo__slider-text">Herhangi iki renk beyzbol kepi alana, üçüncü kep —
+                                        hediye!</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./card-pages/t-shirt-blue-classic.html" style="text-decoration: none;">
+                            <div class="promo__slider">
+                                <img src="../images/t-shirt-blue-classic/t-shirt-blue-classic2.jpg"
+                                    alt="mavi ADAB tişört" class="promo__slider-img">
+                                <div class="promo__discription">
+                                    <p class="promo__slider-text">Yaz sonuna kadar klasik ADAB tişörtü alana
+                                        seçtiği ADAB kep hediye</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./catalog.html" style="text-decoration: none;">
+                            <div class="promo__slider">
+                                <img src="../images/logo.jpg" alt="ADAB logo" class="promo__slider-img"
+                                    style="object-fit: contain;">
+                                <div class="promo__discription">
+                                    <p class="promo__slider-text" style="margin-left: 0;">Ürünlerimizden
+                                        <br><b>5 000₺</b> ve üzeri alışverişlerde
+                                        kargo ücretsiz</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://wa.me/905078405635" style="text-decoration: none;">
+                            <div class="promo__slider">
+                                <img src="../images/percent.svg" alt="indirim" class="promo__slider-img"
+                                    style="object-fit: none;">
+                                <div class="promo__discription">
+                                    <p class="promo__slider-text" style="margin-left: 0;">Sürekli müşterilere
+                                        <br><b>%10</b> indirim.
+                                        <br>Daha önce aldığınız ürünle<br> bir fotoğraf gönderin — indirimi uygulayalım.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="promo__slider-dots">
+                        </div>
+                    </div>
+                    <div class="promo__image"></div>
+                </div>
+            </section>
+
+            <section class="index-catalog">
+                <h2 class="index-catalog__title">Katalog</h2>
+                <div class="index-catalog__container" id="catalog">
+                </div>
+                <div class="index-catalog__link-container">
+                    <a href="./catalog.html" class="index-catalog__link">
+                        <p class="index-catalog__link-text">Tüm koleksiyonu gör</p>
+                    </a>
+                </div>
+            </section>
+
+            <section class="promo">
+                <h2 class="promo__title">Adab Vakfı</h2>
+                <div class="fond__container-promo">
+                    <div class="fond__promo">
+                        <h3 class="fond__promo-title">Yeni hayır vakfımızın kurulduğunu duyurmaktan mutluluk duyuyoruz</h3>
+                        <p class="advantage__text">Adab, Kafkasya’daki çocuk hastanelerinin modern ekipmanla
+                            donatılması ve gerekli malzemelerin temini için bir hayır vakfı başlatıyor.</p>
+                        <a href="./fond.html" class="fond__link">
+                            <p class="advantage__link-text">Daha fazla bilgi</p>
+                        </a>
+                    </div>
+                    <div class="fond__image"></div>
+                </div>
+            </section>
+
+            <section class="advantage">
+                <div class="advantage__container advantage__container-ferst">
+                    <div class="advantage__image-ferst">
+                    </div>
+                    <div class="advantage__container-content">
+                        <div class="advantage__content-ferst">
+                            <h2 class="advantage__title">Karakterini vurgulayan kıyafetler</h2>
+                            <div class="advantage__description">
+                                <p class="advantage__text">
+                                    Kafkasya’nın kalbinde, dağların arasında şekillenen kültür; asalet ve edep.
+                                </p>
+                                <p class="advantage__text">
+                                    ADAB, günlük kullanım ve resmi ortamlar için kaliteli kumaş ve özenli işçiliği
+                                    birleştirir.
+                                </p>
+                                <p class="advantage__text">
+                                    ADAB kıyafetleri; konfor, stil ve dayanıklılığın yanı sıra kültürel ve
+                                    inanç değerlerini de yansıtır.
+                                </p>
+                            </div>
+                            <a href="./about.html" class="advantage__link">
+                                <p class="advantage__link-text">Hakkımızda daha fazla</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="advantage__container">
+                    <div class="advantage__container-content">
+                        <div class="advantage__content">
+                            <h2 class="advantage__title">Kafkas kimliğini koruma</h2>
+                            <p class="advantage__text">ADAB, İslami çerçevede Kafkas kimliğini korumak için kuruldu.
+                                Görünüm, kişinin aidiyetini hatırlatır.
+                            </p>
+                            <p class="advantage__text advantage__text-quote">“Ey insanlar! Biz sizi bir erkek ve bir
+                                dişiden yarattık ve birbirinizi tanımanız için sizi milletler ve kabileler kıldık.
+                                Allah katında en üstün olanınız, en çok takvâ sahibi olanınızdır. Şüphesiz Allah
+                                bilendir, haberdardır.”<br>
+                                Kur’an: Hucurât Sûresi, 13. ayet.</p>
+                            <a href="./about.html" class="advantage__link">
+                                <p class="advantage__link-text">Hakkımızda daha fazla</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="advantage__image">
+                    </div>
+                </div>
+                <div class="video-container">
+                    <video class="video" src="../video/video1.MP4" preload="metadata" poster="../images/poster1.png"
+                        controls></video>
+                </div>
+            </section>
+
+            <div class="index-contacts">
+                <h4 class="index-contacts-title">Bizimle iletişime geçin</h4>
+                <div class="index-contacts__links">
+                    <a href="https://wa.me/905078405635" class="index-contacts__link">Whatsapp</a>
+                    <a href="https://t.me/adab_kav" class="index-contacts__link">Telegram</a>
+                    <a href="https://instagram.com/adab_kav?igshid=YmMyMTA2M2Y="
+                        class="index-contacts__link">Instagram</a>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p class="footer__copyright">© <span id="currentYear"></span> Adab</p>
+        </footer>
+
+        <div class="burger">
+            <div class="burger__header">
+                <a href="./index.html">
+                    <div class="logo-container">
+                        <img src="../images/logo.png" alt="logo" class="logo">
+                    </div>
+                </a>
+                <button class="burger__close-btn"></button>
+            </div>
+
+            <nav class="burger__menu">
+                <ul class="burger__menu-list">
+                    <li class="burger__menu-item">
+                        <a href="./catalog.html" class="burger__menu-link">Katalog</a>
+                    </li>
+                    <li class="burger__menu-item">
+                        <a href="./about.html" class="burger__menu-link">Hakkımızda</a>
+                    </li>
+                    <li class="burger__menu-item">
+                        <a href="./fond.html" class="burger__menu-link">Vakıf</a>
+                    </li>
+                    <li class="burger__menu-item">
+                        <a href="./contacts.html" class="burger__menu-link">İletişim</a>
+                    </li>
+                    <li class="burger__menu-item">
+                        <a href="./support.html" class="burger__menu-link">Destek</a>
+                    </li>
+                    <li class="burger__menu-item">
+                        <a href="../index.html" class="burger__menu-link">RU</a> /
+                        <a href="./index.html" class="burger__menu-link burger__menu-link-active">TR</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="burger__contacts">
+                <ul class="burger__contacts-list">
+                    <li class="burger__contacts-link">
+                        <a href="https://t.me/adab_kav" title="Bize Telegram’dan yazın"><img
+                                src="../images/icons_telegram.svg" alt="telegram ikonu"
+                                class="burger__contacts-icon"></a>
+                    </li>
+                    <li class="burger__contacts-link">
+                        <a href="https://wa.me/905078405635" title="Bize Whatsapp’tan yazın"><img
+                                src="../images/icons_whatsapp.svg" alt="whatsapp ikonu"
+                                class="burger__contacts-icon"></a>
+                    </li>
+                    <li class="burger__contacts-link">
+                        <a href="https://instagram.com/adab_kav?igshid=YmMyMTA2M2Y="
+                            title="Bize Instagram’dan yazın"><img src="../images/icons_instagram.svg"
+                                alt="instagram ikonu" class="burger__contacts-icon"></a>
+                    </li>
+                    <li class="burger__contacts-link">
+                        <a href="mailto:adabkav@mail.ru" title="Bize e‑posta yazın"><img
+                                src="../images/icons_mail.svg" alt="mail ikonu" class="burger__contacts-icon"></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="../script.js" defer></script>
+    <script src="../slider.js" defer></script>
+    <script src="../promo.js" defer></script>
+</body>
+
+</html>

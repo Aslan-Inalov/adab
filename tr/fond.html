@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="stylesheet" href="../index.css">
+    <script src="../script.js" defer></script>
+    <title>Vakıf | ADAB</title>
+    <style>
+        .video-carousel { margin: 0 auto 120px; padding: 20px 0; max-width: 100%; position: relative; }
+        .carousel-title { text-align: center; margin-bottom: 30px; font-size: 32px; color: #333; }
+        .carousel-container { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; padding: 20px 10px; margin: 0 10px; gap: 30px; scrollbar-width: none; }
+        .carousel-container::-webkit-scrollbar { display: none; }
+        .video-slide { scroll-snap-align: start; flex: 0 0 auto; width: 500px; height: 600px; overflow: hidden; background: #000; transition: transform 0.3s; position: relative; }
+        .video-carousel__container { width: 100%; height: 100%; }
+        .video-carousel__container video { width: 100%; height: 100%; border: none; object-fit: cover; }
+        .video-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 15px; text-align: center; font-size: 16px; font-weight: 500; }
+        .carousel-dots { display: flex; justify-content: center; margin-top: 20px; gap: 10px; }
+        .dot { width: 12px; height: 12px; border-radius: 50%; background: #ccc; cursor: pointer; transition: background 0.3s; }
+        .dot.active { background: #333; }
+        @media (max-width: 450px) {
+            .video-carousel { margin-bottom: 60px; }
+            .video-slide { width: 300px; height: 550px; }
+            .carousel-container { gap: 20px; padding: 15px 10px; }
+            .carousel-title { font-size: 26px; margin-bottom: 20px; }
+            .video-caption { padding: 10px; font-size: 14px; }
+        }
+    </style>
+</head>
+
+<body class="root">
+    <div class="page">
+        <header class="header">
+            <a href="./index.html">
+                <div class="logo-container">
+                    <img src="../images/logo.png" alt="logo" class="logo">
+                </div>
+            </a>
+
+            <nav>
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a class="header__menu-link" href="./catalog.html">Katalog</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="./about.html">Hakkımızda</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link header__menu-link-active" href="./fond.html">Vakıf</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="./contacts.html">İletişim</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="./support.html">Destek</a></li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="../fond.html">RU</a> /
+                        <a class="header__menu-link header__menu-link-active" href="./fond.html">TR</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__lang header__lang--compact">
+                <a class="header__menu-link" href="../fond.html">RU</a>
+                <span class="header__lang-divider">/</span>
+                <a class="header__menu-link header__menu-link-active" href="./fond.html">TR</a>
+            </div>
+            <button class="header__burger-btn"></button>
+        </header>
+
+        <main class="main">
+            <section class="nav-intro">
+                <div class="nav-intro__container">
+                    <ul class="nav-intro__item">
+                        <li class="nav-intro__links"><a href="./index.html" class="nav-intro__link">Ana sayfa</a><span class="nav-intro__breadcrumb-divider">/</span></li>
+                        <li class="nav-intro__links"><a href="./fond.html" class="nav-intro__link-active">Vakıf</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="about">
+                <h1 class="about__title">ADAB Vakfı</h1>
+                <div class="about__container fond__container-first">
+                    <div class="about__video-container fond__video-container">
+                        <video class="video" src="../video/fond.mp4" preload="metadata" controls></video>
+                    </div>
+                    <div class="about__container-description fond__container-description-first">
+                        <div class="about__container-text fond__container-text-first">
+                            <h2 class="fond__title">Kafkasya’daki sağlık hizmetlerini iyileştirmek için yeni bir hayır vakfı başlattığımızı duyurmaktan mutluluk duyuyoruz</h2>
+                            <div>
+                                <p class="fond__description">Kafkasya’daki sağlık hizmetlerini çağdaş bir seviyeye taşımayı hedefleyen iddialı bir hayır projesi başlattık. Bu girişim tüm bölge için büyük önem taşıyor ve herkesi azami dikkat ve destek göstermeye çağırıyoruz.</p>
+                            </div>
+                            <div>
+                                <p class="fond__text">Ağır hastalıkları olan çocuklar için (onkoloji veya nörolojik rahatsızlıklar gibi) yürütülen bağış kampanyalarını hepimiz görüyoruz. Çoğu zaman çok kısa sürede büyük meblağlar toplanabiliyor. Elhamdülillah, bu çok önemli; katılan herkesten Allah razı olsun. Ancak bir yoğun bakım hekimi olarak biliyorum ki bu paralar, cumhuriyetlerimizin her birinde her yıl yüzlerce çocuğun hayatını kurtarmaya yetecek düzeydedir — her yıl. Dahası, daha çok çocuk ağır sakatlıktan korunabilir.</p>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fond__container">
+                    <div class="fond__container-img"></div>
+                    <div class="fond__container-description">
+                        <div class="fond__container-text">
+                            <h2 class="fond__title">Kafkasya sağlık sistemindeki iki ana sorun</h2>
+                            <div>
+                                <p class="fond__text">Kafkasya’da, ülkenin birçok bölgesinde olduğu gibi sağlık alanında iki temel sorun öne çıkmaktadır:</p>
+                                <p class="fond__text" style="padding: 15px 25px 0 10px">1. Modern ekipman ve malzeme eksikliği. Bu, belki Moskova ve St. Petersburg hariç tüm ülke için geçerli bir sorun; Kafkasya’da daha da belirgin.</p>
+                                <p class="fond__text" style="padding: 15px 25px 0 10px">2. Yüksek nitelikli uzman yetersizliği. Bunun çok sayıda sebebi var; suçlu aramak yerine çözüm üretmek gerekiyor.</p>
+                            </div>
+                            <div>
+                                <p class="fond__text">Sorunun özünü daha iyi anlamak için bazı veriler: Moskova’daki hastanemiz, ülkenin en büyük ve donanımlı acil çocuk hastanelerinden biridir. 2023’te 1284 yoğun bakım hastası kabul edildi ve 7’si vefat etti. Benzer işlevli Kafkasya’daki bir hastanede ise 365 hasta kabul edilip 38’i vefat etti. Bu fark, ekipman ve eğitim düzeyinin ne kadar hayati olduğunu gösteriyor.</p>
+                            </div>
+                            <div>
+                                <p class="fond__description about__description-last">Çözümümüz inşallah şu şekilde: Bir vakıf kuruyor, bağış topluyor, belirli bir hastane için gereken tüm ekipman ve sarf malzemelerini tedarik ediyoruz. Personel eğitimini şart koşarak hastanenin takip ve kontrolünü sağlıyoruz. Hedef seviyeye ulaştığında bir sonraki çocuk hastanesine geçiyoruz ve böylece devam ediyoruz.</p>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-carousel">
+                    <div class="carousel-container" id="carousel">
+                        <div class="video-slide"><div class="video-carousel__container"><video class="video" src="../video/fond1.mp4" preload="metadata" controls></video></div></div>
+                        <div class="video-slide"><div class="video-carousel__container"><video class="video" src="../video/fond2.mp4" preload="metadata" controls></video></div></div>
+                        <div class="video-slide"><div class="video-carousel__container"><video class="video" src="../video/fond3.mp4#t=0.6" preload="metadata" controls></video></div></div>
+                    </div>
+                    <div class="carousel-dots" id="dots"></div>
+                </div>
+
+                <div class="f-wrapper">
+                    <div class="f-wrapper-container">
+                        <div class="fond__container-wrapper">
+                            <div class="fond__payment-container">
+                                <h3 class="support-block__title">Ödeme bilgileri</h3>
+                                <div class="fond__requisites">
+                                    <ul class="requisites-list">
+                                        <li><strong>Adı:</strong> БФ ПЗ "АДАБ" (КУЛЬТУРА)</li>
+                                        <li><strong>ИНН:</strong> 0600018835</li>
+                                        <li><strong>КПП:</strong> 060001001</li>
+                                        <li><strong>ОГРН:</strong> 1250600000408</li>
+                                        <li><strong>Hesap No:</strong> 40703810305710000010</li>
+                                        <li><strong>Banka:</strong> АСТРАХАНСКОЕ ОТДЕЛЕНИЕ N8625 ПАО СБЕРБАНК</li>
+                                        <li><strong>Banka BIC:</strong> 041203602</li>
+                                        <li><strong>Корсчёт:</strong> 30101810500000000602</li>
+                                        <li><strong>ИНН банка:</strong> 7707083893</li>
+                                        <li><strong>КПП банка:</strong> 301502001</li>
+                                    </ul>
+                                    <div class="fond__payment-info">
+                                        <div class="qr-code">
+                                            <img src="../images/qr-code.jpg" alt="Ödeme için QR kodu">
+                                            <p class="fond__description about__description-last">Ödeme için QR kodunu tarayın</p>
+                                        </div>
+                                        <div class="qr-code">
+                                            <img src="../images/qr-code2.jpg" alt="Bireysel ödemeler için QR" style="width: 200px;">
+                                            <p class="fond__description about__description-last">Bireysel transferler için QR</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fond__container-wrapper fond__container-wrapper-first">
+                            <div class="fond__container-contacts">
+                                <div class="fond__contacts">
+                                    <h3 class="support-block__title">Yönetici iletişimleri</h3>
+
+                                    <h4 class="support-block__consultation-title">Genel Müdür</h4>
+                                    <div class="fond-contacts">
+                                        <p class="fond__contacts-text">Абдулкадиров Шамхан Салавдиевич</p>
+                                        <a href="tel:+79673313137" class="support-block__link" style="border: none;">+7 (967) 331-31-37</a>
+                                    </div>
+
+                                    <h4 class="support-block__consultation-title">Sağlık organizasyonu hakkında</h4>
+                                    <div class="fond-contacts" style="margin-bottom: 0;">
+                                        <p class="fond__contacts-text">Абдулкадиров Шамхан Салавдиевич</p>
+                                        <a href="tel:+79673313137" class="support-block__link" style="border: none;">+7 (967) 331-31-37</a>
+                                    </div>
+                                    <div class="fond-contacts">
+                                        <p class="fond__contacts-text">Нальгиев Руслан Рахманович</p>
+                                        <a href="tel:+79996375941" class="support-block__link" style="border: none;">+7 (999) 637-59-41</a>
+                                    </div>
+
+                                    <h4 class="support-block__consultation-title">Finans ile ilgili</h4>
+                                    <div class="fond-contacts">
+                                        <p class="fond__contacts-text">Муцаев Абдулла Вахаевич</p>
+                                        <a href="tel:+79899304890" class="support-block__link" style="border: none;">+7 (989) 930-48-90</a>
+                                    </div>
+
+                                </div>
+                                <div class="fond__doc">
+                                    <h3 class="support-block__title">Belgeler</h3>
+                                    <ul class="fond__doc-container">
+                                        <li class="fond__doc-list"><a href="../documents/UchDokum_991230f3e9684ff383362c9ee22e7aa5.pdf" target="_blank" class="support-block__link">Tüzük</a></li>
+                                        <li class="fond__doc-list"><a href="../documents/SvidUchetUL_40ffdb147c784db69e2cf52572713bbb.pdf" target="_blank" class="support-block__link">Vergi sertifikası</a></li>
+                                        <li class="fond__doc-list"><a href="../documents/VypZapEGRUL_519f16c1b5fa4aaeb92bc8f59513c0c3.pdf" target="_blank" class="support-block__link">OGRN sertifikası</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p class="footer__copyright">© <span id="currentYear"></span> Adab</p>
+        </footer>
+
+        <div class="burger">
+            <div class="burger__header">
+                <a href="./index.html"><div class="logo-container"><img src="../images/logo.png" alt="logo" class="logo"></div></a>
+                <button class="burger__close-btn"></button>
+            </div>
+            <nav class="burger__menu">
+                <ul class="burger__menu-list">
+                    <li class="burger__menu-item"><a href="./catalog.html" class="burger__menu-link">Katalog</a></li>
+                    <li class="burger__menu-item"><a href="./about.html" class="burger__menu-link">Hakkımızda</a></li>
+                    <li class="burger__menu-item"><a href="./fond.html" class="burger__menu-link burger__menu-link-active">Vakıf</a></li>
+                    <li class="burger__menu-item"><a href="./contacts.html" class="burger__menu-link">İletişim</a></li>
+                    <li class="burger__menu-item"><a href="./support.html" class="burger__menu-link">Destek</a></li>
+                    <li class="burger__menu-item"><a href="../fond.html" class="burger__menu-link">RU</a> / <a href="./fond.html" class="burger__menu-link burger__menu-link-active">TR</a></li>
+                </ul>
+            </nav>
+            <div class="burger__contacts">
+                <ul class="burger__contacts-list">
+                    <li class="burger__contacts-link"><a href="https://t.me/adab_kav" title="Telegram"><img src="../images/icons_telegram.svg" alt="telegram" class="burger__contacts-icon"></a></li>
+                    <li class="burger__contacts-link"><a href="https://wa.me/905078405635" title="Whatsapp"><img src="../images/icons_whatsapp.svg" alt="whatsapp" class="burger__contacts-icon"></a></li>
+                    <li class="burger__contacts-link"><a href="https://instagram.com/adab_kav?igshid=YmMyMTA2M2Y=" title="Instagram"><img src="../images/icons_instagram.svg" alt="instagram" class="burger__contacts-icon"></a></li>
+                    <li class="burger__contacts-link"><a href="mailto:adabkav@mail.ru" title="E‑posta"><img src="../images/icons_mail.svg" alt="mail" class="burger__contacts-icon"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const carousel = document.getElementById('carousel');
+            const dotsContainer = document.getElementById('dots');
+            const slides = document.querySelectorAll('.video-slide');
+            slides.forEach((slide, index) => {
+                const dot = document.createElement('div');
+                dot.classList.add('dot');
+                if (index === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => { scrollToSlide(index); });
+                dotsContainer.appendChild(dot);
+            });
+            function scrollToSlide(index) {
+                const slide = slides[index];
+                carousel.scrollTo({ left: slide.offsetLeft - carousel.offsetLeft, behavior: 'smooth' });
+                updateDots(index);
+            }
+            function updateDots(activeIndex) {
+                document.querySelectorAll('.dot').forEach((dot, index) => {
+                    if (index === activeIndex) { dot.classList.add('active'); } else { dot.classList.remove('active'); }
+                });
+            }
+            let debounceTimer;
+            carousel.addEventListener('scroll', () => {
+                clearTimeout(debounceTimer);
+                debounceTimer = setTimeout(() => {
+                    const scrollPosition = carousel.scrollLeft;
+                    const slideWidth = slides[0].offsetWidth + 30;
+                    const activeIndex = Math.round(scrollPosition / slideWidth);
+                    updateDots(activeIndex);
+                }, 100);
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+

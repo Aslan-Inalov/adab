@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="stylesheet" href="../index.css">
+    <script src="../script.js" defer></script>
+    <title>Sipariş oluşturuldu</title>
+    <style>
+        @media (min-height: 670px) {
+            html { height: 100%; position: relative; max-width: 1440px; margin: 0 auto; overflow: hidden; }
+            body { position: fixed; overflow: hidden; height: 100%; width: 100%; max-width: 1440px; }
+        }
+    </style>
+</head>
+
+<body class="root" id="wrapper">
+    <div class="page" id="processed-page">
+
+        <header class="header">
+            <a href="./index.html">
+                <div class="logo-container">
+                    <img src="../images/logo.png" alt="logo" class="logo">
+                </div>
+            </a>
+
+            <nav>
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a class="header__menu-link" href="./catalog.html">Katalog</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="./about.html">Hakkımızda</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="./fond.html">Vakıf</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="./contacts.html">İletişim</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="./support.html">Destek</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="../processed.html">RU</a> /
+                        <a class="header__menu-link header__menu-link-active" href="./processed.html">TR</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__lang header__lang--compact">
+                <a class="header__menu-link" href="../processed.html">RU</a>
+                <span class="header__lang-divider">/</span>
+                <a class="header__menu-link header__menu-link-active" href="./processed.html">TR</a>
+            </div>
+            <button class="header__burger-btn"></button>
+        </header>
+
+        <main class="main">
+            <section class="link-intro">
+                <a href="./catalog.html" style="all: unset;">
+                    <div class="link-intro__container">
+                        <img src="../images/arrow.svg" alt="Geri" class="link-intro__logo">
+                        <p class="link-intro__text">Kataloğa geri dön</p>
+                    </div>
+                </a>
+            </section>
+
+            <h1 class="order__title" id="processed-title">Siparişiniz oluşturuldu!</h1>
+            <div class="order__processed-container">
+                <p class="order__processed-text">Onay için ödeme dekontunu gönderin</p>
+                <a href="https://wa.me/905078405635" title="Whatsapp’tan yazın"><img src="../images/icons_whatsapp.svg" alt="whatsapp ikonu" class="burger__contacts-icon" id="processed-icon"></a>
+            </div>
+        </main>
+
+        <footer class="footer" id="processed-footer">
+            <p class="footer__copyright" id="processed-footer-copyright">© <span id="currentYear"></span> Adab</p>
+        </footer>
+
+        <div class="burger">
+            <div class="burger__header">
+                <a href="./index.html">
+                    <div class="logo-container">
+                        <img src="../images/logo.png" alt="logo" class="logo">
+                    </div>
+                </a>
+                <button class="burger__close-btn"></button>
+            </div>
+
+            <nav class="burger__menu">
+                <ul class="burger__menu-list">
+                    <li class="burger__menu-item"><a href="./catalog.html" class="burger__menu-link">Katalog</a></li>
+                    <li class="burger__menu-item"><a href="./about.html" class="burger__menu-link">Hakkımızda</a></li>
+                    <li class="burger__menu-item"><a href="./fond.html" class="burger__menu-link">Vakıf</a></li>
+                    <li class="burger__menu-item"><a href="./contacts.html" class="burger__menu-link">İletişim</a></li>
+                    <li class="burger__menu-item"><a href="./support.html" class="burger__menu-link">Destek</a></li>
+                    <li class="burger__menu-item"><a href="../processed.html" class="burger__menu-link">RU</a> / <a href="./processed.html" class="burger__menu-link burger__menu-link-active">TR</a></li>
+                </ul>
+            </nav>
+
+            <div class="burger__contacts">
+                <ul class="burger__contacts-list">
+                    <li class="burger__contacts-link"><a href="https://t.me/adab_kav" title="Telegram"><img src="../images/icons_telegram.svg" alt="telegram ikonu" class="burger__contacts-icon"></a></li>
+                    <li class="burger__contacts-link"><a href="https://wa.me/905078405635" title="Whatsapp"><img src="../images/icons_whatsapp.svg" alt="whatsapp ikonu" class="burger__contacts-icon"></a></li>
+                    <li class="burger__contacts-link"><a href="https://instagram.com/adab_kav?igshid=YmMyMTA2M2Y=" title="Instagram"><img src="../images/icons_instagram.svg" alt="instagram ikonu" class="burger__contacts-icon"></a></li>
+                    <li class="burger__contacts-link"><a href="mailto:adabkav@mail.ru" title="E‑posta"><img src="../images/icons_mail.svg" alt="mail ikonu" class="burger__contacts-icon"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+

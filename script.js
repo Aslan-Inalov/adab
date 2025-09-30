@@ -1,8 +1,8 @@
-// Проверяем, если расширение .html присутствует в URL
-if (window.location.href.indexOf('.html') > -1) {
-    // Удаляем расширение .html из URL без перезагрузки страницы
-    var newUrl = window.location.href.replace('.html', '');
-    window.history.pushState({}, '', newUrl);
+// script.js
+if (!['localhost', '127.0.0.1'].includes(location.hostname)) {
+  if (location.href.includes('.html')) {
+    history.pushState({}, '', location.href.replace('.html', ''));
+  }
 }
 
 var year = new Date().getFullYear();
@@ -10,41 +10,55 @@ var year = new Date().getFullYear();
 // Вставляем текущий год в элемент с id "currentYear"
 document.getElementById("currentYear").innerHTML = year;
 
-document.querySelector('.header__burger-btn').addEventListener('click', function () {
-    document.querySelector('.burger').classList.add('burger_opened');
-    document.querySelector('.root').style.overflow = 'hidden';
-});
+const burgerBtn = document.querySelector('.header__burger-btn');
+const burger = document.querySelector('.burger');
+const burgerCloseBtn = document.querySelector('.burger__close-btn');
+const root = document.querySelector('.root');
 
-document.querySelector('.burger__close-btn').addEventListener('click', function () {
-    document.querySelector('.burger').classList.remove('burger_opened');
-    document.querySelector('.root').style.overflow = 'auto';
-});
-
-// Получаем все ссылки в меню
-var links = document.querySelectorAll('.burger-menu__link');
-// Добавляем обработчик события для каждой ссылки
-links.forEach(function (link) {
-    link.addEventListener('click', function () {
-        // Добавляем класс "hidden" к контейнеру "burger-container"
-        document.querySelector('.burger-container').classList.add('hidden');
+if (burgerBtn && burger && burgerCloseBtn && root) {
+    burgerBtn.addEventListener('click', function () {
+        burger.classList.add('burger_opened');
+        root.style.overflow = 'hidden';
     });
-});
 
-// Получаем все ссылки в меню
-var links = document.querySelectorAll('.burger-menu__link');
-// Проверяем каждую ссылку, если ее URL соответствует текущему пути, добавляем стиль "active"
-links.forEach(function (link) {
+    burgerCloseBtn.addEventListener('click', function () {
+        burger.classList.remove('burger_opened');
+        root.style.overflow = 'auto';
+    });
+}
+
+// Закрытие по клику в пунктах меню бургера + подсветка активной ссылки
+const menuLinks = document.querySelectorAll('.burger__menu-link');
+menuLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+        if (burger) burger.classList.remove('burger_opened');
+        if (root) root.style.overflow = 'auto';
+    });
+
     if (link.href === window.location.href) {
-        link.classList.add('active');
+        link.classList.add('burger__menu-link-active');
     }
 });
 
 fetch('./components/catalog-block.html')
     .then(response => response.text())
     .then(html => {
-        document.getElementById('catalog').innerHTML = html;
-        activateCurrentCatalogItem();
-    });
+        const catalogEl = document.getElementById('catalog');
+        if (catalogEl) {
+            catalogEl.innerHTML = html;
+            activateCurrentCatalogItem();
+
+            // После инъекции разметки — триггерим инициализацию слайдера
+            setTimeout(() => {
+                try {
+                    window.dispatchEvent(new Event('resize'));
+                } catch (e) {
+                    console.warn('Slider init trigger failed', e);
+                }
+            }, 0);
+        }
+    })
+    .catch(err => console.error('Failed to load catalog block:', err));
 
 function activateCurrentCatalogItem() {
     // Нормализуем URL текущей страницы

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="stylesheet" href="../index.css">
+    <script src="../script.js" defer></script>
+    <script src="../support.js" defer></script>
+    <title>Destek | ADAB</title>
+</head>
+
+<body class="root">
+    <div class="page">
+
+        <header class="header">
+            <a href="./index.html">
+                <div class="logo-container">
+                    <img src="../images/logo.png" alt="logo" class="logo">
+                </div>
+            </a>
+
+            <nav>
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a class="header__menu-link" href="./catalog.html">Katalog</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="./about.html">Hakkımızda</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="./fond.html">Vakıf</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="./contacts.html">İletişim</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link header__menu-link-active" href="./support.html">Destek</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="../support.html">RU</a> /
+                        <a class="header__menu-link header__menu-link-active" href="./support.html">TR</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__lang header__lang--compact">
+                <a class="header__menu-link" href="../support.html">RU</a>
+                <span class="header__lang-divider">/</span>
+                <a class="header__menu-link header__menu-link-active" href="./support.html">TR</a>
+            </div>
+            <button class="header__burger-btn"></button>
+        </header>
+
+        <main class="main">
+            <section class="nav-intro">
+                <div class="nav-intro__container">
+                    <ul class="nav-intro__item">
+                        <li class="nav-intro__links"><a href="./index.html" class="nav-intro__link">Ana sayfa</a><span class="nav-intro__breadcrumb-divider">/</span></li>
+                        <li class="nav-intro__links"><a href="./support.html" class="nav-intro__link-active">Destek</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <h1 class="support__title">Destek</h1>
+
+            <section class="support-block">
+                <h2 class="support-block__title">Teslimat ve Ödeme</h2>
+                <div class="support-block__container">
+                    <div onclick="toggleTable(5)" class="support-block__toggle">
+                        <h3 class="support-block__subtitle">Rusya içi teslimat</h3>
+                        <img src="../images/icon-support.svg" alt="ok" id="icon-support5" class="icon-support">
+                    </div>
+                    <div class="table" id="table5">
+                        <p class="support__text">1. CDEK</p>
+                        <p class="support__text">2. Rusya Postası</p>
+                        <p class="support__text">3. Servis araçları</p>
+                    </div>
+                </div>
+                <div class="support-block__container">
+                    <div onclick="toggleTable(6)" class="support-block__toggle">
+                        <h3 class="support-block__subtitle">Türkiye içi teslimat</h3>
+                        <img src="../images/icon-support.svg" alt="ok" id="icon-support6" class="icon-support">
+                    </div>
+                    <div class="table" id="table6">
+                        <p class="support__text">PTT</p>
+                    </div>
+                </div>
+                <div class="support-block__container">
+                    <div onclick="toggleTable(7)" class="support-block__toggle">
+                        <h3 class="support-block__subtitle">Avrupa / ABD teslimat</h3>
+                        <img src="../images/icon-support.svg" alt="ok" id="icon-support7" class="icon-support">
+                    </div>
+                    <div class="table" id="table7">
+                        <p class="support__text">ShipEntegra</p>
+                    </div>
+                </div>
+                <div class="support-block__container">
+                    <div onclick="toggleTable(8)" class="support-block__toggle">
+                        <h3 class="support-block__subtitle">Ödeme yöntemi</h3>
+                        <img src="../images/icon-support.svg" alt="ok" id="icon-support8" class="icon-support">
+                    </div>
+                    <div class="table" id="table8">
+                        <p class="support__text">1. T‑Banka kartı, <b>2200701722584536</b>, Şamkhan S.</p>
+                        <p class="support__text">2. KuveytTürk, <b>TR92 0020 5000 0981 5521 0000 01</b>, SHAMKHAN ABDULKADIROV</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="support-block" id="size" style="scroll-margin-top: 90px;">
+                <h2 class="support-block__title">Beden tabloları</h2>
+                <div class="support-block__container">
+                    <div onclick="toggleTable(1)" class="support-block__toggle">
+                        <h3 class="support-block__subtitle">ADAB erkek üniforması</h3>
+                        <img src="../images/icon-support.svg" alt="ok" id="icon-support1" class="icon-support">
+                    </div>
+                    <div class="table" id="table1">
+                        <table>
+                            <tr>
+                                <th>Parametre, cm</th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                                <th>XL</th>
+                                <th>2XL</th>
+                            </tr>
+                            <tr>
+                                <td>Omuz</td>
+                                <td>46</td>
+                                <td>48</td>
+                                <td>49</td>
+                                <td>51</td>
+                                <td>54</td>
+                            </tr>
+                            <tr>
+                                <td>Göğüs çevresi</td>
+                                <td>113</td>
+                                <td>115</td>
+                                <td>121</td>
+                                <td>122</td>
+                                <td>128</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="support-block__container">
+                    <div onclick="toggleTable(2)" class="support-block__toggle">
+                        <h3 class="support-block__subtitle">ADAB taktik üniforma</h3>
+                        <img src="../images/icon-support.svg" alt="ok" id="icon-support2" class="icon-support">
+                    </div>
+                    <div class="table" id="table2">
+                        <h3 class="table-title">Gömlek</h3>
+                        <table>
+                            <tr>
+                                <th>Parametre, cm</th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                                <th>XL</th>
+                                <th>2XL</th>
+                            </tr>
+                            <tr>
+                                <td>Omuz</td>
+                                <td>47</td>
+                                <td>49</td>
+                                <td>51</td>
+                                <td>53</td>
+                                <td>55</td>
+                            </tr>
+                            <tr>
+                                <td>Göğüs çevresi</td>
+                                <td>110</td>
+                                <td>114</td>
+                                <td>116</td>
+                                <td>120</td>
+                                <td>124</td>
+                            </tr>
+                        </table>
+
+                        <h3 class="table-title table-title-buttom">Pantolon</h3>
+                        <table>
+                            <tr>
+                                <th>Parametre, cm</th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                                <th>XL</th>
+                                <th>2XL</th>
+                            </tr>
+                            <tr>
+                                <td>Bel</td>
+                                <td>41</td>
+                                <td>43</td>
+                                <td>45</td>
+                                <td>47</td>
+                                <td>49</td>
+                            </tr>
+                            <tr>
+                                <td>Kalça (belin 20 cm altı)</td>
+                                <td>51</td>
+                                <td>53</td>
+                                <td>55</td>
+                                <td>57</td>
+                                <td>59</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="support-block__container">
+                    <div onclick="toggleTable(3)" class="support-block__toggle">
+                        <h3 class="support-block__subtitle">ADAB erkek gömlek</h3>
+                        <img src="../images/icon-support.svg" alt="ok" id="icon-support3" class="icon-support">
+                    </div>
+                    <div class="table" id="table3">
+                        <table>
+                            <tr>
+                                <th>Parametre, cm</th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                                <th>XL</th>
+                                <th>2XL</th>
+                            </tr>
+                            <tr>
+                                <td>Omuz</td>
+                                <td>48</td>
+                                <td>50,5</td>
+                                <td>53</td>
+                                <td>54,5</td>
+                                <td>57,5</td>
+                            </tr>
+                            <tr>
+                                <td>Göğüs çevresi</td>
+                                <td>92</td>
+                                <td>96</td>
+                                <td>102</td>
+                                <td>106</td>
+                                <td>110</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="support-block__container">
+                    <div onclick="toggleTable(9)" class="support-block__toggle">
+                        <h3 class="support-block__subtitle">ADAB klasik tişört</h3>
+                        <img src="../images/icon-support.svg" alt="ok" id="icon-support9" class="icon-support">
+                    </div>
+                    <div class="table" id="table9">
+                        <table>
+                            <tr>
+                                <th>Parametre, cm</th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                                <th>XL</th>
+                            </tr>
+                            <tr>
+                                <td>Göğüs çevresi</td>
+                                <td>104</td>
+                                <td>108</td>
+                                <td>112</td>
+                                <td>116</td>
+                            </tr>
+                            <tr>
+                                <td>Genişlik</td>
+                                <td>52</td>
+                                <td>54</td>
+                                <td>56</td>
+                                <td>58</td>
+                            </tr>
+                            <tr>
+                                <td>Uzunluk</td>
+                                <td>74</td>
+                                <td>76</td>
+                                <td>78</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>Yaka</td>
+                                <td>20</td>
+                                <td>20</td>
+                                <td>21</td>
+                                <td>21</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="support-block__container">
+                    <div onclick="toggleTable(10)" class="support-block__toggle">
+                        <h3 class="support-block__subtitle">ADAB oversize tişört</h3>
+                        <img src="../images/icon-support.svg" alt="ok" id="icon-support10" class="icon-support">
+                    </div>
+                    <div class="table" id="table10">
+                        <table>
+                            <tr>
+                                <th>Parametre, cm</th>
+                                <th>XS</th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                                <th>XL</th>
+                            </tr>
+                            <tr>
+                                <td>Göğüs çevresi</td>
+                                <td>112</td>
+                                <td>118</td>
+                                <td>122</td>
+                                <td>126</td>
+                                <td>130</td>
+                            </tr>
+                            <tr>
+                                <td>Genişlik</td>
+                                <td>56</td>
+                                <td>58</td>
+                                <td>60</td>
+                                <td>62</td>
+                                <td>64</td>
+                            </tr>
+                            <tr>
+                                <td>Uzunluk</td>
+                                <td>74,5</td>
+                                <td>76</td>
+                                <td>77,5</td>
+                                <td>79</td>
+                                <td>80,5</td>
+                            </tr>
+                            <tr>
+                                <td>Yaka</td>
+                                <td>18,5</td>
+                                <td>19</td>
+                                <td>19,5</td>
+                                <td>20</td>
+                                <td>20,5</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="support-block__container">
+                    <div onclick="toggleTable(4)" class="support-block__toggle">
+                        <h3 class="support-block__subtitle">ADAB çocuk forması</h3>
+                        <img src="../images/icon-support.svg" alt="ok" id="icon-support4" class="icon-support">
+                    </div>
+                    <div class="table" id="table4">
+                        <table class="table-kids">
+                            <tr>
+                                <th class="th-kids">Boy</th>
+                                <th class="th-kids">104</th>
+                                <th class="th-kids">116</th>
+                                <th class="th-kids">128</th>
+                                <th class="th-kids">140</th>
+                                <th class="th-kids">152</th>
+                                <th class="th-kids">164</th>
+                                <th class="th-kids">176</th>
+                            </tr>
+                            <tr>
+                                <td class="td-kids">Yaş</td>
+                                <td class="td-kids">3-4</td>
+                                <td class="td-kids">5-6</td>
+                                <td class="td-kids">7-8</td>
+                                <td class="td-kids">9-10</td>
+                                <td class="td-kids">11-12</td>
+                                <td class="td-kids">13-15</td>
+                                <td class="td-kids">16-17</td>
+                            </tr>
+                            <tr>
+                                <th>RU</th>
+                                <td>28-30</td>
+                                <td>32</td>
+                                <td>34</td>
+                                <td>38</td>
+                                <td>40</td>
+                                <td>40-42</td>
+                                <td>42</td>
+                            </tr>
+                            <tr>
+                                <th>EU</th>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td>7</td>
+                                <td>9</td>
+                                <td>11</td>
+                                <td>13</td>
+                            </tr>
+                            <tr>
+                                <th>US</th>
+                                <td>4T</td>
+                                <td>5-6</td>
+                                <td>7</td>
+                                <td>S</td>
+                                <td>M/L</td>
+                                <td>L</td>
+                                <td>XL</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="support-block" style="margin-top: 80px;">
+                <h2 class="support-block__title">Kişisel danışmanlık</h2>
+                <p class="support-block__consultation-subtitle">Emin değilseniz bize yazın, bedeninizi en doğru şekilde belirlemeye yardımcı olalım.</p>
+                <div class="support-block__consultation">
+                    <div class="support-block__messenger">
+                        <h4 class="support-block__consultation-title">Mesajlaşma</h4>
+                        <div class="support-block__links">
+                            <a href="https://wa.me/905078405635" class="support-block__link">WHATSAPP</a>
+                            <a href="https://t.me/adab_kav" class="support-block__link">TELEGRAM</a>
+                        </div>
+                    </div>
+                    <div class="support-block__reg">
+                        <h4 class="support-block__consultation-title">Çalışma saatleri</h4>
+                        <div class="support-block__time">
+                            <p class="support-block__time-text">08:00 - 22:00</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p class="footer__copyright">© <span id="currentYear"></span> Adab</p>
+        </footer>
+
+        <div class="burger">
+            <div class="burger__header">
+                <a href="./index.html"><div class="logo-container"><img src="../images/logo.png" alt="logo" class="logo"></div></a>
+                <button class="burger__close-btn"></button>
+            </div>
+
+            <nav class="burger__menu">
+                <ul class="burger__menu-list">
+                    <li class="burger__menu-item"><a href="./catalog.html" class="burger__menu-link">Katalog</a></li>
+                    <li class="burger__menu-item"><a href="./about.html" class="burger__menu-link">Hakkımızda</a></li>
+                    <li class="burger__menu-item"><a href="./fond.html" class="burger__menu-link">Vakıf</a></li>
+                    <li class="burger__menu-item"><a href="./contacts.html" class="burger__menu-link">İletişim</a></li>
+                    <li class="burger__menu-item"><a href="./support.html" class="burger__menu-link burger__menu-link-active">Destek</a></li>
+                    <li class="burger__menu-item"><a href="../support.html" class="burger__menu-link">RU</a> / <a href="./support.html" class="burger__menu-link burger__menu-link-active">TR</a></li>
+                </ul>
+            </nav>
+
+            <div class="burger__contacts">
+                <ul class="burger__contacts-list">
+                    <li class="burger__contacts-link"><a href="https://t.me/adab_kav" title="Telegram"><img src="../images/icons_telegram.svg" alt="telegram" class="burger__contacts-icon"></a></li>
+                    <li class="burger__contacts-link"><a href="https://wa.me/905078405635" title="Whatsapp"><img src="../images/icons_whatsapp.svg" alt="whatsapp" class="burger__contacts-icon"></a></li>
+                    <li class="burger__contacts-link"><a href="https://instagram.com/adab_kav?igshid=YmMyMTA2M2Y=" title="Instagram"><img src="../images/icons_instagram.svg" alt="instagram" class="burger__contacts-icon"></a></li>
+                    <li class="burger__contacts-link"><a href="mailto:adabkav@mail.ru" title="E‑posta"><img src="../images/icons_mail.svg" alt="mail" class="burger__contacts-icon"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+

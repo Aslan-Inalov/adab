@@ -22,16 +22,25 @@
                 </div>
             </a>
 
-            <nav>
+            <nav style="display: flex; align-items: center; gap: 24px;">
                 <ul class="header__menu">
                     <li class="header__menu-item"><a class="header__menu-link" href="./catalog.html">Каталог</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="./about.html">О Бренде</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="./fond.html">Фонд</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="./contacts.html">Контакты</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="./support.html">Поддержка</a></li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link header__menu-link-active" href="./index.html">RU</a> /
+                        <a class="header__menu-link" href="./tr/index.html">TR</a>
+                    </li>
                 </ul>
             </nav>
 
+            <div class="header__lang header__lang--compact">
+                <a class="header__menu-link header__menu-link-active" href="./index.html">RU</a>
+                <span class="header__lang-divider">/</span>
+                <a class="header__menu-link" href="./tr/index.html">TR</a>
+            </div>
             <button class="header__burger-btn"></button>
         </header>
 
@@ -238,6 +247,10 @@
                     <li class="burger__menu-item">
                         <a href="./support.html" class="burger__menu-link">Поддержка</a>
                     </li>
+                    <li class="burger__menu-item">
+                        <a href="./index.html" class="burger__menu-link burger__menu-link-active">RU</a> /
+                        <a href="./tr/index.html" class="burger__menu-link">TR</a>
+                    </li>
                 </ul>
             </nav>
 
@@ -271,19 +284,6 @@
     <script src="script.js" defer></script>
     <script src="slider.js" defer></script>
     <script src="promo.js" defer></script>
-    <!-- <script>
-        // Проверяем, если в URL присутствует "index"
-        if (window.location.href.indexOf('index') > -1) {
-            // Удаляем "index" из URL без перезагрузки страницы
-            var newUrl = window.location.href.replace('index', '');
-            window.history.pushState({}, '', newUrl);
-        }
-
-        fetch('./components/catalog-block.html')
-            .then(response => response.text())
-            .then(html => document.getElementById('catalog').innerHTML = html);
-    </script> -->
-
 </body>
 
 </html>

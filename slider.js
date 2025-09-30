@@ -1,10 +1,18 @@
 const initSlider = () => {
-    const imageList = document.querySelector(".slider-wrapper .image-list");
-    const imageItemContainers = document.querySelectorAll(".slider-wrapper .image-item-container");
-    const imageCaptions = document.querySelectorAll(".slider-wrapper .image-caption");
-    const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
-    const sliderScrollbar = document.querySelector(".index-catalog__container .slider-scrollbar");
+    const wrapper = document.querySelector(".slider-wrapper");
+    const container = document.querySelector(".index-catalog__container");
+    if (!wrapper || !container) return;
+
+    const imageList = wrapper.querySelector(".image-list");
+    const imageItemContainers = wrapper.querySelectorAll(".image-item-container");
+    const imageCaptions = wrapper.querySelectorAll(".image-caption");
+    const slideButtons = wrapper.querySelectorAll(".slide-button");
+    const sliderScrollbar = container.querySelector(".slider-scrollbar");
+    if (!imageList || !sliderScrollbar || slideButtons.length === 0) return;
+
     const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
+    if (!scrollbarThumb) return;
+
     const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
 
     // Handle scrollbar thumb drag
